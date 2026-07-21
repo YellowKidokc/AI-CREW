@@ -20,6 +20,16 @@ tags: #lean4 #verification #formal-proof
 
 ---
 
+## Temporal Direction Measurement Note
+
+tags: #measurement #lean4 #bool-model #quantum-gravity
+
+2026-07-21 - Codex read `PAPER_temporal_direction_of_measurement_v1.md` and `TEMPORAL_DIRECTION_BREAKTHROUGH.md` from Saved Notes. Those files report nine Lean 4 structural theorems compiling on a minimal Bool model, including triadic sufficiency and the necessity of L via `forgetQuestion` not being injective.
+
+Honesty note: Codex did not inspect the Lean source files directly. The next verification step is to locate the Lean files, record theorem names, run the compile command, and preserve exact output.
+
+---
+
 ## Change Log
 
 | Date | Change | Agent |

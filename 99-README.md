@@ -27,6 +27,9 @@ Read `THEOPHYSICS/STANDING-PROBLEMS.md` and `THEOPHYSICS/BREAKTHROUGHS.md`. Then
 ### Step 4: Check rulings
 Read `GLOBAL-RULINGS/RULINGS.md` and your project's `RULINGS.md`. These are binding. Don't contradict them.
 
+### Step 5: If doing code work
+Read `CODERS/README.md`. If you are Codex, also read `00-CODEX-START-HERE.md` and the relevant Codex lane file in `CODERS/`.
+
 ## Folder Structure
 
 ```

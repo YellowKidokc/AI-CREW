@@ -30,6 +30,11 @@ Two derivation paths converge (Noether from time-translation symmetry + Bianchi 
 tags: #infrastructure #comms
 comms.faiththruphysics.com is offline. Rebuild pending. Multi-AI coordination currently manual.
 
+### SP-06: Temporal measurement program needs Hilbert-space and empirical bridge
+tags: #measurement #quantum-gravity #lean4 #landauer #born-rule
+The temporal-direction measurement paper has a clean structural thesis and nine reported Lean 4 proofs on a minimal Bool model. The open frontier is extending the proof structure to finite/infinite-dimensional Hilbert space, connecting actualization cost to the Born rule, and identifying a measurable prediction that differs from standard interpretations.
+Source notes: `THEOPHYSICS/topics/temporal-direction-measurement.md`.
+
 ---
 
 ## Solved
