@@ -26,6 +26,11 @@ tags: #trench #handoff #theophysics #measurement #quantum-gravity #codex
 - Added `THEOPHYSICS/topics/temporal-direction-measurement.md`.
 - Added SP-06 to `THEOPHYSICS/STANDING-PROBLEMS.md`.
 - Added a Lean 4 topic note for the reported Bool-model proof status.
+- Added notes from David's pasted thread clarifying that the Lean/category work includes a scaffold and research gaps, with the Hilbert actualization bridge still open.
+- Verified the temporal-direction `.docx` is attached to Zenodo draft record `21480941` at `100%` upload progress.
+- Filled and saved required Zenodo draft metadata for the temporal-direction paper.
+- Verified Zenodo preview citation and all-versions DOI shown before publication.
+- Fixed remaining required Zenodo draft fields and saved successfully; publish button became available.
 
 ### What I did NOT verify:
 
@@ -34,6 +39,10 @@ tags: #trench #handoff #theophysics #measurement #quantum-gravity #codex
 - I did not validate the Bool-to-Hilbert extension.
 - I did not inspect every Saved Notes file.
 - I did not locate the exact Lean 4 source file for the nine Bool bridge tests.
+- I did not locate the reported `TriadicActualization.lean` file.
+- The T1 Lean kernels found under `pipeline-workflows` are related closure/external-operator skeletons, not verified as the temporal measurement triad.
+- I did not publish the Zenodo record.
+- I did not verify final public URL after publication.
 
 ### What surprised me:
 
@@ -41,7 +50,7 @@ The cleanest form of the argument is not theological first. It is structural: fo
 
 ### What the next agent should check first:
 
-Find the Lean 4 source files for the nine reported Bool bridge tests and record their exact path, theorem names, compile command, and current compile status.
+Complete and verify Zenodo draft metadata, then publish when David explicitly confirms. After publication, record DOI/public URL. Then find the exact Lean 4 source files for the reported Bool bridge tests / `TriadicActualization.lean`, and record their path, theorem names, `sorry` count, compile command, and current compile status.
 
 ### Tags for this session:
 

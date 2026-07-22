@@ -24,7 +24,8 @@ Before making changes, read:
 8. `CODERS/README.md` when doing code work
 9. The relevant project's `STATUS.md`
 10. `GLOBAL-RULINGS/RULINGS.md`
-11. Any project-level `RULINGS.md`, `DECISIONS.md`, or latest trench report
+11. Latest relevant file in `SIGN-OFFS/`
+12. Any project-level `RULINGS.md`, `DECISIONS.md`, or latest trench report
 
 ## Operating Rules
 
@@ -32,6 +33,7 @@ Before making changes, read:
 - Keep code in its source repo unless David explicitly asks to move or merge it.
 - Use this repo for coordination memory: status, decisions, handoffs, links, risks, and next actions.
 - After meaningful work, update the relevant project status or add a trench report.
+- Before ending, add one session sign-off in `SIGN-OFFS/`.
 - If you did not test something, say so.
 - If a repo path exists but you did not inspect it, say "path verified, contents unverified."
 - If you are unsure which repo is source of truth, identify the ambiguity before changing code.
@@ -44,6 +46,7 @@ Before making changes, read:
 - What was tested?
 - What remains uncertain?
 - What should the next agent check first?
+- Did you add a `SIGN-OFFS/` entry?
 
 ## Current Codex Context
 

@@ -30,6 +30,9 @@ Read `GLOBAL-RULINGS/RULINGS.md` and your project's `RULINGS.md`. These are bind
 ### Step 5: If doing code work
 Read `CODERS/README.md`. If you are Codex, also read `00-CODEX-START-HERE.md` and the relevant Codex lane file in `CODERS/`.
 
+### Step 6: Before signing off
+Add one session sign-off in `SIGN-OFFS/`. Project trench reports still live with their projects, but `SIGN-OFFS/` is the cross-project closeout trail.
+
 ## Folder Structure
 
 ```
@@ -72,6 +75,7 @@ Read `CODERS/README.md`. If you are Codex, also read `00-CODEX-START-HERE.md` an
 - Never delete. Archive to `999_archive/`.
 - Tag every file at write time. See `TAGS.md`.
 - Fill out SHIFT-CHANGE at session end. No exceptions.
+- Add one `SIGN-OFFS/` entry at session end.
 - State what you did NOT verify. Honesty sections are mandatory.
 - Rulings are FINAL unless David reopens them.
 - Boundaries are LOCKED. Don't push past them.
