@@ -35,6 +35,12 @@ tags: #measurement #quantum-gravity #lean4 #landauer #born-rule
 The temporal-direction measurement paper has a clean structural thesis and nine reported Lean 4 proofs on a minimal Bool model. The open frontier is extending the proof structure to finite/infinite-dimensional Hilbert space, connecting actualization cost to the Born rule, and identifying a measurable prediction that differs from standard interpretations.
 Source notes: `THEOPHYSICS/topics/temporal-direction-measurement.md`.
 
+### SP-07: Atom architecture exists, enforcement is incomplete
+tags: #atoms #claim-graph #claim-burden #descent #infrastructure
+The atom repository defines the 14-stage workbench, route profiles, claim burdens, Descent Invariants, Application nodes, bridge grades, scoped falsification, controlled vocabulary, and root layer. The implementation does not yet enforce the whole contract. Missing or incomplete work includes the specified atom builder, renderer, and graph reader; claim-level completion reporting; updated evidence/falsification/everyday templates; expanded schema and glyph validation; Unicode fallback reconciliation; and generated scholarly/public publishing.
+Source of truth: `YellowKidokc/Faith-through-physics-atoms`, branch `OBS-Plugin-Final-Claude`.
+Coordination state: `THEOPHYSICS/topics/atom-system-architecture.md`.
+
 ---
 
 ## Solved
