@@ -1,0 +1,28 @@
+---
+fis_schema: "folder-index.v1"
+folder_id: "FLD-20260723-23300c49"
+folder: "GitHub\ai-crew\CODERS"
+folder_class: "project"
+confidence: 0.6
+dependency_risk: 0.0
+dominant_family: "text"
+dominant_ratio: 0.833
+file_count: 6
+classified_at: "2026-07-23T09:24:00"
+allowed_actions: ["index", "rename_internal", "subfolder_sort", "archive_exports"]
+suggested_name: "coders"
+---
+
+# FIS Folder Index: CODERS
+
+**Class**: project  ·  **Confidence**: 60%  ·  **Files**: 6  ·  **Dominant**: text (83%)
+
+## Allowed actions
+- index
+- rename_internal
+- subfolder_sort
+- archive_exports
+
+**Suggested name**: `coders`  (not applied — review before use)
+
+<!-- FIS folder-index.v1: parseable note; safe to regenerate. -->
