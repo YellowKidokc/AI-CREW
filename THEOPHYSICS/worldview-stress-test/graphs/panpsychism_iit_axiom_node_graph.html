@@ -1,0 +1,400 @@
+<title>Panpsychism (IIT) · Axiom-Node Graph</title>
+<style>
+  :root{
+    --bg:#0e1218; --panel:#151c25; --panel2:#1b2531; --ink:#e6edf4; --mut:#8ea3b8;
+    --line:#2b3a4b; --grid:rgba(73,180,224,.05); --accent:#49b4e0;
+    --prim:#7f93a8; --pres:#8f7fe0; --axiom:#d9a94a; --deriv:#5bbf8a; --guard:#e0a34a;
+    --edge:rgba(142,163,184,.28); --edge-hot:#49b4e0;
+    --primbg:#20272f; --presbg:#221f33; --axiombg:#2b2413; --derivbg:#132318;
+    --meta:#e07a49; --metabg:#2b1a13; --open:#e04949; --openbg:#2b1313;
+    --shadow:0 1px 0 rgba(255,255,255,.03), 0 8px 24px rgba(0,0,0,.35);
+  }
+  @media (prefers-color-scheme: light){
+    :root{
+      --bg:#eef1f4; --panel:#ffffff; --panel2:#f4f7fa; --ink:#16202b; --mut:#556678;
+      --line:#d3dbe4; --grid:rgba(30,90,130,.06); --accent:#1c7fb0;
+      --prim:#5a6b7d; --pres:#6a58c4; --axiom:#a9761a; --deriv:#2f9a63; --guard:#a9701a;
+      --edge:rgba(70,90,110,.30); --edge-hot:#1c7fb0;
+      --primbg:#eef1f4; --presbg:#f0edfa; --axiombg:#faf4e6; --derivbg:#e9f6ee;
+      --meta:#b85a2a; --metabg:#faf0e6; --open:#b83a3a; --openbg:#fae8e8;
+      --shadow:0 1px 2px rgba(20,40,60,.06), 0 6px 18px rgba(20,40,60,.10);
+    }
+  }
+  :root[data-theme="dark"]{
+    --bg:#0e1218; --panel:#151c25; --panel2:#1b2531; --ink:#e6edf4; --mut:#8ea3b8;
+    --line:#2b3a4b; --grid:rgba(73,180,224,.05); --accent:#49b4e0;
+    --prim:#7f93a8; --pres:#8f7fe0; --axiom:#d9a94a; --deriv:#5bbf8a; --guard:#e0a34a;
+    --edge:rgba(142,163,184,.28); --edge-hot:#49b4e0;
+    --meta:#e07a49; --metabg:#2b1a13; --open:#e04949; --openbg:#2b1313;
+  }
+  :root[data-theme="light"]{
+    --bg:#eef1f4; --panel:#ffffff; --panel2:#f4f7fa; --ink:#16202b; --mut:#556678;
+    --line:#d3dbe4; --grid:rgba(30,90,130,.06); --accent:#1c7fb0;
+    --prim:#5a6b7d; --pres:#6a58c4; --axiom:#a9761a; --deriv:#2f9a63; --guard:#a9701a;
+    --edge:rgba(70,90,110,.30); --edge-hot:#1c7fb0;
+    --meta:#b85a2a; --metabg:#faf0e6; --open:#b83a3a; --openbg:#fae8e8;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);
+    font-family:ui-sans-serif,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    background-image:linear-gradient(var(--grid) 1px,transparent 1px),linear-gradient(90deg,var(--grid) 1px,transparent 1px);
+    background-size:26px 26px;}
+  .mono{font-family:ui-monospace,"SF Mono","Cascadia Code",Menlo,Consolas,monospace}
+  header{max-width:1180px;margin:0 auto;padding:34px 24px 8px}
+  .eyebrow{font:600 12px/1 ui-monospace,monospace;letter-spacing:.22em;text-transform:uppercase;color:var(--accent)}
+  h1{font-size:clamp(24px,3.4vw,38px);margin:.35em 0 .2em;letter-spacing:-.01em;text-wrap:balance}
+  .sub{color:var(--mut);max-width:66ch;font-size:15.5px;line-height:1.55}
+  .banner{max-width:1180px;margin:16px auto 0;padding:0 24px}
+  .banner .box{background:var(--panel);border:1px solid var(--line);border-left:3px solid var(--guard);
+    border-radius:8px;padding:12px 16px;color:var(--mut);font-size:13.5px;line-height:1.5}
+  .banner .box b{color:var(--ink)}
+  .legend{max-width:1180px;margin:14px auto 0;padding:0 24px;display:flex;flex-wrap:wrap;gap:8px 18px;align-items:center}
+  .lg{display:inline-flex;align-items:center;gap:7px;font-size:12.5px;color:var(--mut)}
+  .sw{width:13px;height:13px;border-radius:3px;border:1px solid rgba(255,255,255,.15)}
+  .hint{margin-left:auto;font-size:12px;color:var(--mut)}
+  .stage-wrap{max-width:1180px;margin:10px auto 40px;padding:0 24px}
+  .stage{position:relative;overflow:auto;border:1px solid var(--line);border-radius:12px;background:
+    radial-gradient(1200px 500px at 50% -10%,rgba(73,180,224,.06),transparent 60%),var(--panel2);
+    box-shadow:var(--shadow)}
+  .canvas{position:relative;min-width:900px}
+  svg.edges{position:absolute;inset:0;width:100%;height:100%;pointer-events:none;z-index:1}
+  .tier{position:relative;z-index:2;padding:20px 26px}
+  .tier-label{font:600 11px/1 ui-monospace,monospace;letter-spacing:.18em;text-transform:uppercase;
+    color:var(--mut);margin:0 0 12px;display:flex;align-items:center;gap:10px}
+  .tier-label::after{content:"";flex:1;height:1px;background:var(--line)}
+  .row{display:flex;flex-wrap:wrap;gap:12px}
+  .movement{border:1px dashed var(--line);border-radius:10px;padding:10px 10px 12px}
+  .movement .mv{font:600 10.5px/1 ui-monospace,monospace;letter-spacing:.14em;text-transform:uppercase;color:var(--mut);margin:0 0 9px 2px}
+  .mv-row{display:flex;gap:12px;flex-wrap:wrap}
+  .node{position:relative;width:210px;background:var(--panel);border:1px solid var(--line);border-radius:10px;
+    padding:11px 12px 12px;cursor:pointer;transition:transform .12s ease,box-shadow .12s ease,border-color .12s ease,opacity .12s;
+    border-top:3px solid var(--k)}
+  .node:hover{transform:translateY(-2px);box-shadow:var(--shadow);border-color:var(--k)}
+  .node .id{font:700 11px/1 ui-monospace,monospace;color:var(--k);letter-spacing:.04em}
+  .node .title{font-weight:650;font-size:14px;margin:5px 0 3px;letter-spacing:-.01em}
+  .node .claim{font-size:12px;color:var(--mut);line-height:1.42}
+  .node .lean{margin-top:8px;font:600 10.5px/1.3 ui-monospace,monospace;color:var(--ink);
+    background:var(--k-bg);border-radius:5px;padding:5px 7px;display:flex;justify-content:space-between;gap:8px;flex-wrap:wrap}
+  .node .lean .kind{color:var(--k)}
+  .node.contested{box-shadow:0 0 0 1px var(--open),0 0 22px rgba(224,73,73,.18)}
+  .node.contested .id::after{content:" ⚠"}
+  .dim{opacity:.24}
+  .hot{border-color:var(--k);box-shadow:0 0 0 1px var(--k),var(--shadow)}
+  .kx{position:absolute;top:-9px;right:-9px;width:22px;height:22px;border-radius:50%;
+    border:1px solid var(--line);background:var(--panel2);color:var(--mut);font:700 13px/1 ui-monospace,monospace;
+    display:flex;align-items:center;justify-content:center;cursor:pointer;opacity:0;transition:opacity .12s,background .12s,color .12s;z-index:4}
+  .node:hover .kx{opacity:1}
+  .kx:hover{background:#c0433a;color:#fff;border-color:#c0433a}
+  .removed{border-style:dashed!important;border-color:#c0433a!important;opacity:.5;
+    box-shadow:0 0 0 1px #c0433a inset;filter:grayscale(.4)}
+  .removed .title{text-decoration:line-through}
+  .removed .kx{opacity:1;background:#c0433a;color:#fff;border-color:#c0433a}
+  .collapsed{opacity:.4;border-color:#8a3b34!important;filter:grayscale(.7)}
+  .collapsed .title{color:#c8695f}
+  .collapsed::after{content:"orphaned";position:absolute;bottom:-8px;left:10px;font:600 9px/1 ui-monospace,monospace;
+    letter-spacing:.1em;text-transform:uppercase;color:#c8695f;background:var(--panel);padding:2px 5px;border-radius:4px;border:1px solid #8a3b34}
+  .kobanner{max-width:1180px;margin:10px auto 0;padding:0 24px}
+  .kobox{background:var(--panel);border:1px solid var(--line);border-left:3px solid #c0433a;border-radius:8px;
+    padding:11px 15px;font-size:13.5px;color:var(--ink);display:none}
+  .kobox.on{display:block}
+  .kobox b{color:#c8695f}
+  .kobox .rest{display:inline-block;margin-left:10px;cursor:pointer;color:var(--accent);font-weight:600;border-bottom:1px dashed var(--accent)}
+  .k-prim{--k:var(--prim);--k-bg:var(--primbg)}
+  .k-pres{--k:var(--pres);--k-bg:var(--presbg)}
+  .k-axiom{--k:var(--axiom);--k-bg:var(--axiombg)}
+  .k-deriv{--k:var(--deriv);--k-bg:var(--derivbg)}
+  .k-truth{--k:var(--accent);--k-bg:var(--panel2)}
+  .k-meta{--k:var(--meta);--k-bg:var(--metabg)}
+  .k-open{--k:var(--open);--k-bg:var(--openbg)}
+  .truthnode{width:100%;max-width:420px;text-align:center;margin:0 auto}
+  footer{max-width:1180px;margin:0 auto 60px;padding:0 24px;color:var(--mut);font-size:12.5px;line-height:1.6}
+  footer code{background:var(--panel);border:1px solid var(--line);border-radius:4px;padding:1px 5px;font-size:11.5px}
+  @media (prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+
+<header>
+  <div class="eyebrow">Comparative Worldview Stress Test</div>
+  <h1>Panpsychism (IIT) · Axiom-Node Graph</h1>
+  <p class="sub">The strongest modern competitor to Theophysics: consciousness is fundamental, information is primitive, experience pervades all matter. Reconstructed in its <b>steelmanned</b> form — Tononi's Integrated Information Theory plus its philosophical extensions. Same node types, same knockout rules, same standards. <b>⚠ marks contested or open-problem nodes.</b></p>
+</header>
+
+<div class="banner"><div class="box">
+  <b>Steelman notice.</b> This graph reconstructs panpsychism/IIT in its <b>strongest serious form</b>, not as a caricature. Node claims are drawn from Tononi (2004, 2008, 2015), Chalmers (1996, 2015), Koch (2019), and the broader philosophical literature. Where IIT advocates would disagree with this reconstruction, the error is ours — flag it.
+</div></div>
+
+<div class="legend" id="legend">
+  <span class="lg"><span class="sw" style="background:var(--prim)"></span>Primitive term</span>
+  <span class="lg"><span class="sw" style="background:var(--pres)"></span>Presupposition</span>
+  <span class="lg"><span class="sw" style="background:var(--axiom)"></span>Core axiom</span>
+  <span class="lg"><span class="sw" style="background:var(--deriv)"></span>Derived claim</span>
+  <span class="lg"><span class="sw" style="background:var(--meta)"></span>Metaphysical commitment</span>
+  <span class="lg"><span class="sw" style="background:var(--open)"></span>⚠ Open problem</span>
+  <span class="hint">Click a node → trace its chain · hover + <b class="mono">✕</b> to knock it out</span>
+</div>
+
+<div class="banner"><div class="box" style="border-left-color:var(--accent)">
+  <b>Node types follow GPT's neutral schema.</b> Empirical findings, models, metaphysical commitments, and open problems are distinguished. A scientific result (e.g. neural correlates) does not carry the same evidential weight as a metaphysical claim (e.g. consciousness is identical to Φ). The graph makes this visible.
+</div></div>
+
+<div class="kobanner"><div class="kobox" id="kobox"></div></div>
+
+<div class="stage-wrap"><div class="stage" id="stage"><div class="canvas" id="canvas">
+  <svg class="edges" id="edges" xmlns="http://www.w3.org/2000/svg"></svg>
+  <div id="tiers"></div>
+</div></div></div>
+
+<footer id="foot"></footer>
+
+<script>
+const N = [
+  // ground
+  {id:"T0", tier:0, kind:"truth", title:"Truth", lean:"— (pre-systematic)", lk:"ground",
+   claim:"The ground of truth-evaluation. Every proof presupposes it.", deps:[], kill:"Incoherent — denying truth presupposes truth."},
+
+  // primitives
+  {id:"E", tier:1, kind:"prim", title:"Existence", lean:"—", lk:"primitive",
+   claim:"There is something rather than nothing.", deps:["T0"], kill:"Cannot be denied without self-refutation."},
+  {id:"X", tier:1, kind:"prim", title:"Experience", lean:"—", lk:"primitive",
+   claim:"Subjective experience exists — there is something it is like to be a conscious system.", deps:["T0"],
+   kill:"Dennett's eliminativism: experience is a user illusion. IIT treats this as self-refuting (the illusion is itself an experience)."},
+  {id:"D", tier:1, kind:"prim", title:"Distinction", lean:"—", lk:"primitive",
+   claim:"One thing can differ from another. Minimal condition for plurality.", deps:["T0"], kill:"Cannot be denied without using distinctions."},
+
+  // presuppositions
+  {id:"P1", tier:2, kind:"pres", title:"Experience is real", lean:"—", lk:"presupposition",
+   claim:"Consciousness is not eliminable — it is the one thing whose existence is indubitable (Descartes' insight).", deps:["X"],
+   kill:"Requires accepting eliminative materialism, which most philosophers reject."},
+  {id:"P2", tier:2, kind:"pres", title:"Physical reality exists", lean:"—", lk:"presupposition",
+   claim:"There is a mind-independent physical world governed by regularities.", deps:["E","D"],
+   kill:"Solipsism or radical idealism. Panpsychism rejects both."},
+  {id:"P3", tier:2, kind:"pres", title:"Consistent reasoning holds", lean:"—", lk:"presupposition",
+   claim:"Non-contradiction and identity hold. Required for any formal framework.", deps:["T0"],
+   kill:"Cannot be denied without using logic."},
+
+  // IIT axioms — Movement I: Phenomenology
+  {id:"A1", tier:3, mv:"I · Phenomenology", kind:"axiom", title:"Intrinsic Existence", lean:"IIT Axiom 1", lk:"axiom",
+   claim:"Experience exists intrinsically — each experience is actual, not merely potential, and exists from its own intrinsic perspective.", deps:["P1"],
+   kill:"Requires showing experience can be reduced to functional behavior without remainder (hard problem persists)."},
+  {id:"A2", tier:3, mv:"I · Phenomenology", kind:"axiom", title:"Composition", lean:"IIT Axiom 2", lk:"axiom",
+   claim:"Experience is structured — it is composed of distinctions and relations within a unified field.", deps:["A1","D"],
+   kill:"Requires showing experience has no internal structure (contradicts introspection and phenomenology)."},
+  {id:"A3", tier:3, mv:"I · Phenomenology", kind:"axiom", title:"Information", lean:"IIT Axiom 3", lk:"axiom",
+   claim:"Experience is specific — each experience differs from all others by being the particular way it is, carrying specific information.", deps:["A2"],
+   kill:"Requires showing two different experiences can be qualitatively identical despite different content."},
+  {id:"A4", tier:3, mv:"I · Phenomenology", kind:"axiom", title:"Integration", lean:"IIT Axiom 4", lk:"axiom",
+   claim:"Experience is unified — it cannot be reduced to independent components. Consciousness is irreducible.", deps:["A2","A3"],
+   kill:"Split-brain cases: consciousness CAN be divided under surgical intervention. IIT responds: the integrated system changes, producing different conscious entities."},
+  {id:"A5", tier:3, mv:"I · Phenomenology", kind:"axiom", title:"Exclusion", lean:"IIT Axiom 5", lk:"axiom",
+   claim:"Experience is definite — it has specific borders in content, spatial grain, and temporal grain. Only one maximally integrated set exists per conscious entity.", deps:["A4"],
+   kill:"Boundary problem: WHO is conscious? Exclusion is IIT's answer but it generates paradoxes with overlapping systems."},
+
+  // Movement II: The Bridge (phenomenology → physics)
+  {id:"B1", tier:3, mv:"II · The Bridge", kind:"axiom", title:"Identity Postulate", lean:"IIT Central Identity", lk:"postulate", contested:true,
+   claim:"The phenomenological axioms apply to the physical substrate. A system IS conscious to the degree it is integrated information (Φ). This is an identity, not a correlation.", deps:["A1","A2","A3","A4","A5","P2"],
+   kill:"THIS IS THE LOAD-BEARING CONTESTED STEP. The identity of consciousness with Φ is not derived — it is postulated. No experiment can verify an identity claim vs a correlation claim. The explanatory gap remains."},
+  {id:"B2", tier:3, mv:"II · The Bridge", kind:"axiom", title:"Φ (Integrated Information)", lean:"Φ definition", lk:"definition",
+   claim:"Φ measures the amount of integrated information in a system — the difference it makes to itself, above and beyond its parts.", deps:["B1"],
+   kill:"Φ is computationally intractable for systems beyond ~30 elements. Has never been measured for any biological brain. The measure may be unmeasurable in principle."},
+
+  // Movement III: Consequences
+  {id:"C1", tier:3, mv:"III · Consequences", kind:"axiom", title:"Ubiquity of Experience", lean:"—", lk:"consequence",
+   claim:"Since Φ > 0 for any system with integrated information, experience is everywhere — atoms, thermostats, bacteria, storms. Panpsychism follows.", deps:["B1","B2"],
+   kill:"The combination problem: how do micro-experiences combine into macro-experience? No current solution. This is panpsychism's hard problem."},
+  {id:"C2", tier:3, mv:"III · Consequences", kind:"axiom", title:"Gradations of Consciousness", lean:"—", lk:"consequence",
+   claim:"Consciousness varies by degree (Φ level), not by kind. There is no sharp boundary between conscious and non-conscious systems.", deps:["B2","C1"],
+   kill:"Implies a thermostat has experience. Most people find this deeply counterintuitive. Intuition is not proof, but the bullet-biting is real."},
+  {id:"C3", tier:3, mv:"III · Consequences", kind:"axiom", title:"Structure Determines Experience", lean:"—", lk:"consequence",
+   claim:"The specific quality of experience is determined by the informational structure (the shape of the Φ manifold), not the physical substrate.", deps:["B1","A3"],
+   kill:"Substrate independence is controversial. If true, a digital simulation with the right Φ structure would be conscious. But IIT says feedforward architectures have Φ=0 regardless of behavior — so it's anti-functionalist."},
+
+  // metaphysical commitments
+  {id:"M1", tier:4, kind:"meta", title:"No terminal observer", lean:"—", lk:"metaphysical", contested:true,
+   claim:"There is no need for a terminal observer or ground-of-being. Consciousness is an intrinsic property of integrated information itself — it needs no external source or sustainer.", deps:["B1","C1"],
+   kill:"The observer-chain argument (Theophysics A7-A9): if actualization requires observation, who observes the observer? Panpsychism says every system observes itself via Φ. But self-observation may be circular."},
+  {id:"M2", tier:4, kind:"meta", title:"No moral ontology", lean:"—", lk:"metaphysical", contested:true,
+   claim:"IIT provides no moral sign, no conservation of moral value, no concept of sin or grace. Morality is emergent, not fundamental.", deps:["C2"],
+   kill:"If consciousness is fundamental and morality is not, why does moral experience feel categorically different from sensory experience? IIT has no answer. Theophysics: moral conservation follows from Noether + weak force symmetry breaking."},
+  {id:"M3", tier:4, kind:"meta", title:"No teleology", lean:"—", lk:"metaphysical",
+   claim:"The universe has no direction, purpose, or telos. High-Φ structures arise through natural processes without guidance.", deps:["C1","P2"],
+   kill:"Fine-tuning: the physical constants that permit integrated information are extremely constrained. IIT acknowledges this but does not address it."},
+
+  // derived claims
+  {id:"D1", tier:5, kind:"deriv", title:"Consciousness is fundamental", lean:"—", lk:"derived",
+   claim:"Experience is a basic feature of reality, not emergent from non-experiential matter.", deps:["A1","B1","C1"],
+   kill:"If consciousness is fundamental, why does it apparently depend on physical substrate (anesthesia eliminates it)? IIT: anesthesia reduces Φ."},
+  {id:"D2", tier:5, kind:"deriv", title:"The hard problem is dissolved", lean:"—", lk:"derived", contested:true,
+   claim:"By identifying consciousness with Φ, the hard problem becomes a non-problem. Experience doesn't 'emerge' from matter — matter IS experiential at every scale.", deps:["B1","C1"],
+   kill:"The hard problem is not dissolved — it is relocated. Instead of 'how does experience emerge from matter?' it becomes 'why does THIS particular Φ structure feel like THIS?' The explanatory gap persists."},
+  {id:"D3", tier:5, kind:"deriv", title:"AI may not be conscious", lean:"—", lk:"derived",
+   claim:"Current AI architectures (feedforward networks, transformers) have Φ ≈ 0 regardless of behavioral sophistication. They are zombies.", deps:["B2","C3"],
+   kill:"This is actually a strength of IIT — it makes a falsifiable prediction. But it is currently untestable because Φ is uncomputable for real systems."},
+  {id:"D4", tier:5, kind:"deriv", title:"Free will is unclear", lean:"—", lk:"derived", contested:true,
+   claim:"IIT does not address free will directly. High-Φ systems may have causal autonomy, but whether this constitutes genuine agency or libertarian free will is unspecified.", deps:["B1","C2"],
+   kill:"A framework claiming consciousness is fundamental but having nothing to say about agency is incomplete at best."},
+  {id:"D5", tier:5, kind:"deriv", title:"Death is dissolution", lean:"—", lk:"derived",
+   claim:"When the brain's integrated information structure dissolves, that particular conscious experience ceases. Micro-experiences of constituent particles continue but the 'you' does not persist.", deps:["C1","C2","M1"],
+   kill:"Soul persistence cannot be derived. Information is conserved (Landauer) but integration is not — the pattern scatters."},
+
+  // open problems
+  {id:"O1", tier:6, kind:"open", title:"The Combination Problem", lean:"—", lk:"open problem", contested:true,
+   claim:"How do micro-experiences (atom-level Φ) combine into macro-experiences (human consciousness)? This is panpsychism's hard problem and has no accepted solution.", deps:["C1","C2"],
+   kill:"This is a STANDING OPEN PROBLEM. Multiple proposed solutions (Russellian monism, cosmopsychism, quality-space theory) — none widely accepted. Some philosophers consider it fatal."},
+  {id:"O2", tier:6, kind:"open", title:"Φ Is Uncomputable", lean:"—", lk:"open problem", contested:true,
+   claim:"Computing Φ for any biologically realistic system is computationally intractable (super-exponential complexity). The theory's central measure cannot be calculated for the systems it is supposed to explain.", deps:["B2"],
+   kill:"A theory whose central quantity is unmeasurable is unfalsifiable in practice. IIT proponents argue for proxy measures, but no proxy has been validated."},
+  {id:"O3", tier:6, kind:"open", title:"No Moral Framework", lean:"—", lk:"open problem",
+   claim:"IIT provides no basis for ethics, moral realism, or moral obligations. If consciousness is fundamental but morality is not, moral experience has no ontological grounding.", deps:["M2"],
+   kill:"Panpsychism can acknowledge moral experience exists (as a type of Φ-structure) but cannot say why it should be binding or conserved."},
+  {id:"O4", tier:6, kind:"open", title:"No Explanation of Agency", lean:"—", lk:"open problem",
+   claim:"IIT describes what consciousness IS but not what it DOES. Causal efficacy of consciousness (does experience cause anything?) remains unresolved.", deps:["D4"],
+   kill:"If Φ supervenes on physical structure, and physics is causally closed, then consciousness is epiphenomenal. IIT denies this but has not shown how."},
+];
+const BY = Object.fromEntries(N.map(n=>[n.id,n]));
+const kindClass = {prim:"k-prim",pres:"k-pres",axiom:"k-axiom",deriv:"k-deriv",truth:"k-truth",meta:"k-meta",open:"k-open"};
+const TIERS = [
+  {t:0,label:"Pre · Ground of Truth"},
+  {t:1,label:"Level 0 · Primitive Terms"},
+  {t:2,label:"Level 1 · Presuppositions"},
+  {t:3,label:"Level 2 · Core Axioms & Consequences"},
+  {t:4,label:"Level 3 · Metaphysical Commitments"},
+  {t:5,label:"Level 4 · Derived Claims"},
+  {t:6,label:"Level 5 · Open Problems"},
+];
+const tiersEl = document.getElementById('tiers');
+for(const T of TIERS){
+  const wrap=document.createElement('div'); wrap.className='tier';
+  const lab=document.createElement('div'); lab.className='tier-label'; lab.textContent=T.label; wrap.appendChild(lab);
+  const nodes=N.filter(n=>n.tier===T.t);
+  if(T.t===3){
+    const row=document.createElement('div'); row.className='row';
+    const seen={};
+    for(const n of nodes){
+      if(!seen[n.mv]){
+        const m=document.createElement('div'); m.className='movement';
+        const t=document.createElement('div'); t.className='mv'; t.textContent="Movement "+n.mv; m.appendChild(t);
+        const mr=document.createElement('div'); mr.className='mv-row'; m.appendChild(mr);
+        seen[n.mv]=mr; row.appendChild(m);
+      }
+      seen[n.mv].appendChild(mkNode(n));
+    }
+    wrap.appendChild(row);
+  } else {
+    const row=document.createElement('div'); row.className='row';
+    if(T.t===0) row.style.justifyContent='center';
+    for(const n of nodes){ const el=mkNode(n); if(T.t===0) el.classList.add('truthnode'); row.appendChild(el); }
+    wrap.appendChild(row);
+  }
+  tiersEl.appendChild(wrap);
+}
+function mkNode(n){
+  const d=document.createElement('div');
+  d.className='node '+kindClass[n.kind]+(n.contested?' contested':''); d.id='node-'+n.id; d.dataset.id=n.id;
+  d.innerHTML=`<div class="kx" title="Knock this node out">✕</div>
+    <div class="id mono">${n.id}</div><div class="title">${n.title}</div>
+    <div class="claim">${n.claim}</div>
+    <div class="lean mono"><span>${n.lean}</span><span class="kind">${n.lk}</span></div>`;
+  d.querySelector('.kx').addEventListener('click',(e)=>{e.stopPropagation();toggleKnockout(n.id);});
+  d.addEventListener('click',(e)=>{e.stopPropagation();select(n.id);});
+  return d;
+}
+const svg=document.getElementById('edges'), canvas=document.getElementById('canvas');
+function ancestors(id,acc=new Set()){ for(const p of BY[id].deps){ if(!acc.has(p)){acc.add(p); ancestors(p,acc);} } return acc; }
+function draw(hot){
+  const cb=canvas.getBoundingClientRect();
+  svg.setAttribute('viewBox',`0 0 ${canvas.offsetWidth} ${canvas.offsetHeight}`);
+  svg.innerHTML='';
+  const hotSet = hot? ancestors(hot).add(hot):null;
+  for(const n of N){ for(const p of n.deps){
+    const a=document.getElementById('node-'+p), b=document.getElementById('node-'+n.id);
+    if(!a||!b) continue;
+    const ra=a.getBoundingClientRect(), rb=b.getBoundingClientRect();
+    const x1=ra.left+ra.width/2-cb.left, y1=ra.bottom-cb.top;
+    const x2=rb.left+rb.width/2-cb.left, y2=rb.top-cb.top;
+    const my=(y1+y2)/2;
+    const on = hotSet && hotSet.has(p) && hotSet.has(n.id);
+    const dead = removed.has(p)||removed.has(n.id)||aliveMap[p]===false||aliveMap[n.id]===false;
+    const path=document.createElementNS('http://www.w3.org/2000/svg','path');
+    path.setAttribute('d',`M${x1},${y1} C${x1},${my} ${x2},${my} ${x2},${y2}`);
+    path.setAttribute('fill','none');
+    if(!hotSet && dead){
+      path.setAttribute('stroke','#c0433a'); path.setAttribute('stroke-width','1.4');
+      path.setAttribute('opacity','.5'); path.setAttribute('stroke-dasharray','4 4');
+    } else {
+      path.setAttribute('stroke', on?'var(--edge-hot)':'var(--edge)');
+      path.setAttribute('stroke-width', on?2.2:1.2);
+      if(hotSet && !on) path.setAttribute('opacity','.25');
+    }
+    svg.appendChild(path);
+  }}
+}
+function select(id){
+  const keep=ancestors(id); keep.add(id);
+  for(const n of N){ const el=document.getElementById('node-'+n.id);
+    el.classList.toggle('dim', !keep.has(n.id));
+    el.classList.toggle('hot', keep.has(n.id));
+  }
+  draw(id); showInfo(id);
+}
+function reset(){
+  for(const n of N){ const el=document.getElementById('node-'+n.id); el.classList.remove('dim','hot');
+    if(removed.has(n.id)) el.classList.add('removed');
+    else if(aliveMap[n.id]===false) el.classList.add('collapsed');
+  }
+  draw(null); document.getElementById('foot').innerHTML=footBase;
+}
+const removed=new Set(); let aliveMap={};
+function computeAlive(){
+  aliveMap={};
+  const al=id=>{
+    if(id in aliveMap) return aliveMap[id];
+    if(removed.has(id)) return aliveMap[id]=false;
+    let ok=true; for(const p of BY[id].deps){ if(!al(p)){ok=false;break;} }
+    return aliveMap[id]=ok;
+  };
+  for(const n of N) al(n.id);
+}
+function applyKnockout(){
+  computeAlive();
+  for(const n of N){ const el=document.getElementById('node-'+n.id);
+    el.classList.remove('removed','collapsed','dim','hot');
+    if(removed.has(n.id)) el.classList.add('removed');
+    else if(!aliveMap[n.id]) el.classList.add('collapsed');
+  }
+  const rem=[...removed];
+  const collapsed=N.filter(n=>!removed.has(n.id)&&!aliveMap[n.id]).map(n=>n.id);
+  const standing=N.filter(n=>aliveMap[n.id]).length;
+  const box=document.getElementById('kobox');
+  if(rem.length){
+    box.classList.add('on');
+    box.innerHTML=`<b>Removed:</b> ${rem.map(id=>BY[id].title+' ('+id+')').join(', ')}. `+
+      (collapsed.length
+        ? `<b>Collapse cascade — ${collapsed.length} node(s) orphaned:</b> ${collapsed.join(', ')}. `
+        : `Nothing downstream requires it — <b>no cascade.</b> `)+
+      `<b>${standing}</b>/${N.length} still standing.`+
+      `<span class="rest" id="restoreAll">↺ restore all</span>`;
+    document.getElementById('restoreAll').addEventListener('click',e=>{e.stopPropagation();removed.clear();applyKnockout();});
+  } else { box.classList.remove('on'); box.innerHTML=''; }
+  draw(null);
+}
+function toggleKnockout(id){ removed.has(id)?removed.delete(id):removed.add(id); applyKnockout(); }
+const footBase = `<b>How to read it.</b> Edges are dependency: a node is drawn from the nodes below it.
+  <b>⚠ nodes</b> are contested or open problems — the places where this worldview is under active stress.
+  Orange nodes are <b>metaphysical commitments</b> — claims that exceed direct empirical adjudication.
+  Red nodes are <b>open problems</b> with no accepted solution. <b>The combination problem (O1) and Φ uncomputability (O2)
+  are panpsychism's structural equivalents of what Theophysics calls "standing problems."</b>
+  Every kill condition is the strongest available objection — steelmanned, not strawmanned.`;
+document.getElementById('foot').innerHTML=footBase;
+function showInfo(id){
+  const n=BY[id]; const anc=[...ancestors(id)];
+  document.getElementById('foot').innerHTML =
+    `<b>${n.id} · ${n.title}</b> — ${n.claim} <br>
+     Status: <code>${n.lk}</code>.
+     Depends on ${n.deps.length? n.deps.map(d=>`<code>${d}</code>`).join(', '):'nothing (anchor)'}.
+     Full upstream chain: ${anc.length? anc.length+' node(s)':'none'}. <br>
+     <b>Kill condition:</b> ${n.kill||'(none specified)'}`;
+}
+document.getElementById('stage').addEventListener('click',reset);
+addEventListener('resize',()=>draw(null));
+requestAnimationFrame(()=>draw(null));
+setTimeout(()=>draw(null),120);
+</script>

@@ -1,22 +1,21 @@
 ---
 fis_schema: "folder-index.v1"
-folder_id: "FLD-20260723-c57b30ad"
-folder: "GitHub\ai-crew"
+folder_id: "FLD-20260723-aeee6018"
+folder: "Desktop\ai-crew"
 folder_class: "project"
 confidence: 0.6
-dependency_risk: 0.333
+dependency_risk: 0.0
 dominant_family: "text"
-dominant_ratio: 0.889
-file_count: 9
-classified_at: "2026-07-23T09:24:00"
+dominant_ratio: 0.769
+file_count: 13
+classified_at: "2026-07-23T15:58:31"
 allowed_actions: ["index", "rename_internal", "subfolder_sort", "archive_exports"]
 suggested_name: "ai-crew"
-system_markers: ["dir:.git"]
 ---
 
 # FIS Folder Index: ai-crew
 
-**Class**: project  ·  **Confidence**: 60%  ·  **Files**: 9  ·  **Dominant**: text (89%)
+**Class**: project  ·  **Confidence**: 60%  ·  **Files**: 13  ·  **Dominant**: text (77%)
 
 ## Allowed actions
 - index

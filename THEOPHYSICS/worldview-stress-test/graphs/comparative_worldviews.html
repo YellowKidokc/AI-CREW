@@ -1,0 +1,220 @@
+<title>Comparative Worldview Stress-Test Engine</title>
+<style>
+:root{--bg:#0e1218;--panel:#151c25;--panel2:#1b2531;--ink:#e6edf4;--mut:#8ea3b8;--line:#2b3a4b;--grid:rgba(73,180,224,.05);--accent:#49b4e0;--edge:rgba(142,163,184,.18);--edge-hot:#49b4e0;--bad:#c0433a;
+--primitive:#7f93a8;--presupposition:#8f7fe0;--definition:#b98fe0;--empirical:#5bbf8a;--model:#49b4e0;--bridge:#d99a4a;--metaphysical:#e0705a;--open:#c85f8a;--evidence:#e8c34a;--conclusion:#4fb8a8;--shadow:0 8px 24px rgba(0,0,0,.35)}
+@media(prefers-color-scheme:light){:root{--bg:#eef1f4;--panel:#fff;--panel2:#f4f7fa;--ink:#16202b;--mut:#556678;--line:#d3dbe4;--grid:rgba(30,90,130,.06);--accent:#1c7fb0;--edge:rgba(70,90,110,.2);--edge-hot:#1c7fb0;--bad:#c0433a;--primitive:#5a6b7d;--presupposition:#6a58c4;--definition:#8a58c4;--empirical:#2f9a63;--model:#1c7fb0;--bridge:#a9761a;--metaphysical:#c0553a;--open:#a53f6a;--evidence:#a9861a;--conclusion:#2f9a8a;--shadow:0 6px 18px rgba(20,40,60,.1)}}
+:root[data-theme="dark"]{--bg:#0e1218;--panel:#151c25;--panel2:#1b2531;--ink:#e6edf4;--mut:#8ea3b8;--line:#2b3a4b;--grid:rgba(73,180,224,.05);--accent:#49b4e0;--edge:rgba(142,163,184,.18);--edge-hot:#49b4e0;--bad:#c0433a;--primitive:#7f93a8;--presupposition:#8f7fe0;--definition:#b98fe0;--empirical:#5bbf8a;--model:#49b4e0;--bridge:#d99a4a;--metaphysical:#e0705a;--open:#c85f8a;--evidence:#e8c34a;--conclusion:#4fb8a8}
+:root[data-theme="light"]{--bg:#eef1f4;--panel:#fff;--panel2:#f4f7fa;--ink:#16202b;--mut:#556678;--line:#d3dbe4;--grid:rgba(30,90,130,.06);--accent:#1c7fb0;--edge:rgba(70,90,110,.2);--edge-hot:#1c7fb0;--bad:#c0433a;--primitive:#5a6b7d;--presupposition:#6a58c4;--definition:#8a58c4;--empirical:#2f9a63;--model:#1c7fb0;--bridge:#a9761a;--metaphysical:#c0553a;--open:#a53f6a;--evidence:#a9861a;--conclusion:#2f9a8a}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font-family:ui-sans-serif,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;background-image:linear-gradient(var(--grid) 1px,transparent 1px),linear-gradient(90deg,var(--grid) 1px,transparent 1px);background-size:26px 26px}
+.mono{font-family:ui-monospace,"Cascadia Code",Menlo,Consolas,monospace}
+header{max-width:1340px;margin:0 auto;padding:26px 22px 4px}
+.eyebrow{font:600 12px/1 ui-monospace,monospace;letter-spacing:.22em;text-transform:uppercase;color:var(--accent)}
+h1{font-size:clamp(22px,3vw,32px);margin:.3em 0 .12em}.sub{color:var(--mut);max-width:78ch;font-size:14.5px;line-height:1.55}
+.tabs{max-width:1340px;margin:14px auto 0;padding:0 22px;display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+.tab{border:1px solid var(--line);background:var(--panel);color:var(--mut);border-radius:8px;padding:8px 14px;cursor:pointer;font:600 13px/1 ui-sans-serif;display:flex;align-items:center;gap:8px}
+.tab .dot{width:10px;height:10px;border-radius:50%}
+.tab.on{color:#fff;border-color:transparent}
+.tab.on[data-w="EN"]{background:#3a8f6a}.tab.on[data-w="RM"]{background:#3a6f9f}.tab.on[data-w="CT"]{background:#9a7a3a}.tab.on[data-w="TP"]{background:#8a5a9a}.tab.on[data-w="all"]{background:var(--accent)}
+.legend{max-width:1340px;margin:10px auto 0;padding:0 22px;display:flex;flex-wrap:wrap;gap:6px 14px}
+.lg{display:inline-flex;align-items:center;gap:6px;font-size:12px;color:var(--mut)}.sw{width:11px;height:11px;border-radius:3px}
+.score{max-width:1340px;margin:12px auto 0;padding:0 22px;display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:10px}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:12px 14px;border-top:3px solid var(--wc)}
+.card h3{margin:0 0 3px;font-size:14px}.card .wv{font:600 10px/1 ui-monospace,monospace;text-transform:uppercase;letter-spacing:.1em;color:var(--mut)}
+.card .grid{display:grid;grid-template-columns:1fr auto;gap:2px 8px;margin-top:8px;font-size:12px}
+.card .grid b{font-variant-numeric:tabular-nums}
+.card .spof{margin-top:6px;font-size:11.5px;color:#c8695f}
+.kobanner{max-width:1340px;margin:10px auto 0;padding:0 22px}.kobox{background:var(--panel);border:1px solid var(--line);border-left:3px solid var(--bad);border-radius:8px;padding:11px 15px;font-size:13px;display:none}.kobox.on{display:block}.kobox b{color:#c8695f}.kobox .rest{margin-left:10px;cursor:pointer;color:var(--accent);font-weight:600;border-bottom:1px dashed var(--accent)}
+.wrap{max-width:1340px;margin:10px auto 40px;padding:0 22px}
+.stage{position:relative;overflow:auto;border:1px solid var(--line);border-radius:12px;background:var(--panel2);box-shadow:var(--shadow);max-height:84vh}
+.canvas{position:relative;min-width:1150px}svg.edges{position:absolute;inset:0;width:100%;height:100%;pointer-events:none;z-index:1}
+.tier{position:relative;z-index:2;padding:12px 20px;border-bottom:1px dashed var(--line)}
+.tier.shared{background:linear-gradient(0deg,rgba(232,195,74,.06),transparent)}
+.tl{font:600 10.5px/1 ui-monospace,monospace;letter-spacing:.15em;text-transform:uppercase;color:var(--mut);margin:0 0 9px;display:flex;gap:10px;align-items:center}.tl::after{content:"";flex:1;height:1px;background:var(--line)}
+.tl .ev{color:var(--evidence)}
+.row{display:flex;flex-wrap:wrap;gap:9px}
+.node{position:relative;width:198px;background:var(--panel);border:1px solid var(--line);border-radius:9px;padding:9px 10px 10px;cursor:pointer;border-top:3px solid var(--k);transition:transform .1s,box-shadow .1s,opacity .12s}
+.node:hover{transform:translateY(-2px);box-shadow:var(--shadow);border-color:var(--k)}
+.node .id{font:700 10px/1 ui-monospace,monospace;color:var(--k);display:flex;justify-content:space-between;gap:6px}
+.node .wtag{color:var(--mut)}
+.node .title{font-weight:640;font-size:12.5px;margin:4px 0 3px;line-height:1.2}
+.node .claim{font-size:11px;color:var(--mut);line-height:1.35;max-height:3.9em;overflow:hidden}
+.node .tag{margin-top:6px;font:600 9px/1 ui-monospace,monospace;color:var(--k);text-transform:uppercase;letter-spacing:.07em}
+.node.shared{border-style:solid;box-shadow:0 0 0 1px rgba(232,195,74,.25)}
+.dim{opacity:.12}.hot{box-shadow:0 0 0 1px var(--k),var(--shadow)}
+.kx{position:absolute;top:-8px;right:-8px;width:20px;height:20px;border-radius:50%;border:1px solid var(--line);background:var(--panel2);color:var(--mut);font:700 12px/1 ui-monospace,monospace;display:flex;align-items:center;justify-content:center;cursor:pointer;opacity:0;z-index:4}
+.node:hover .kx{opacity:1}.kx:hover{background:var(--bad);color:#fff}
+.removed{border-style:dashed!important;border-color:var(--bad)!important;opacity:.55}.removed .title{text-decoration:line-through}.removed .kx{opacity:1;background:var(--bad);color:#fff}
+.collapsed{opacity:.36;border-color:#8a3b34!important;filter:grayscale(.6)}.collapsed .title{color:#c8695f}
+#backdrop{position:fixed;inset:0;background:rgba(6,10,14,.5);opacity:0;pointer-events:none;transition:opacity .18s;z-index:40}#backdrop.on{opacity:1;pointer-events:auto}
+.drawer{position:fixed;top:0;right:0;height:100%;width:min(460px,94vw);background:var(--panel);border-left:1px solid var(--line);box-shadow:-16px 0 40px rgba(0,0,0,.35);transform:translateX(102%);transition:transform .22s;z-index:50;overflow:auto}.drawer.on{transform:translateX(0)}
+.dh{position:sticky;top:0;background:var(--panel);border-bottom:1px solid var(--line);padding:15px 18px 12px;border-top:4px solid var(--k)}.dh .id{font:700 12px/1 ui-monospace,monospace;color:var(--k)}.dh h2{margin:5px 0 2px;font-size:18px;line-height:1.2}.dh .role{font:600 10px/1 ui-monospace,monospace;text-transform:uppercase;letter-spacing:.1em;color:var(--k)}
+.dclose{position:absolute;top:11px;right:11px;width:25px;height:25px;border:1px solid var(--line);border-radius:6px;background:var(--panel2);color:var(--mut);cursor:pointer}
+.db{padding:14px 18px 40px}.sec{margin:0 0 14px}.sec h3{font:600 10px/1 ui-monospace,monospace;text-transform:uppercase;letter-spacing:.12em;color:var(--mut);margin:0 0 6px}.sec p{margin:0;font-size:13px;line-height:1.5}
+.statement{background:var(--panel2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:13.5px;line-height:1.45}
+.chips{display:flex;flex-wrap:wrap;gap:6px}.chip{font:600 11px/1 ui-monospace,monospace;padding:5px 8px;border-radius:6px;border:1px solid var(--line);background:var(--panel2);color:var(--ink);cursor:pointer}.chip:hover{border-color:var(--accent);color:var(--accent)}.chip.dead{color:#c8695f;border-color:#8a3b34}
+.kill{border-left:3px solid var(--bad);background:rgba(192,67,58,.08);border-radius:0 8px 8px 0;padding:9px 11px;font-size:12.5px;line-height:1.4}
+.statusbadge{display:inline-block;font:600 10px/1 ui-monospace,monospace;text-transform:uppercase;letter-spacing:.08em;padding:4px 7px;border-radius:5px;border:1px solid var(--k);color:var(--k)}
+.kobtn{width:100%;border:1px solid #8a3b34;color:#c8695f;background:none;border-radius:7px;padding:8px;cursor:pointer;font-weight:600;font-size:12.5px;margin-top:6px}.kobtn:hover{background:var(--bad);color:#fff}
+footer{max-width:1340px;margin:0 auto 50px;padding:0 22px;color:var(--mut);font-size:12.5px;line-height:1.6}footer code{background:var(--panel);border:1px solid var(--line);border-radius:4px;padding:1px 5px;font-size:11px}
+@media(prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+<header>
+<div class="eyebrow">Comparative · Same standard for every system</div>
+<h1>Worldview Stress-Test Engine <span style="font-size:15px;color:var(--mut);font-weight:400">— v0 scaffold</span></h1>
+<p class="sub">Major worldviews reconstructed in their <b>strongest serious form</b> and run through one dependency machine. A shared, worldview-neutral <b class="mono" style="color:var(--evidence)">evidence layer</b> sits in the middle; each system points up from the same observations and supplies its own interpretation. Every node carries a neutral role and a kill condition. Knockout is symmetrical — pull a node in any system and watch its cascade. <b>Theophysics is one candidate here, not the only one under the microscope.</b></p>
+</header>
+<div class="tabs" id="tabs">
+<div class="tab on" data-w="all"><span class="dot" style="background:var(--accent)"></span>All systems</div>
+<div class="tab" data-w="EN"><span class="dot" style="background:#3a8f6a"></span>Evolutionary Naturalism</div>
+<div class="tab" data-w="RM"><span class="dot" style="background:#3a6f9f"></span>Reductive Materialism</div>
+<div class="tab" data-w="CT"><span class="dot" style="background:#9a7a3a"></span>Classical Theism</div>
+<div class="tab" data-w="TP"><span class="dot" style="background:#8a5a9a"></span>Theophysics</div>
+</div>
+<div class="legend" id="legend"></div>
+<div class="score" id="score"></div>
+<div class="kobanner"><div class="kobox" id="kobox"></div></div>
+<div class="wrap"><div class="stage" id="stageEl"><div class="canvas" id="canvas">
+<svg class="edges" id="edges" xmlns="http://www.w3.org/2000/svg"></svg><div id="tiers"></div></div></div></div>
+<div id="backdrop"></div><aside class="drawer" id="drawer"></aside>
+<footer id="foot"></footer>
+<script>
+const ROLES=["primitive","presupposition","definition","evidence","empirical","model","bridge","metaphysical","open","conclusion"];
+const ROLEDESC={primitive:"basic ontology posited",presupposition:"required condition for inquiry",definition:"meaning assigned to a term",evidence:"shared observation (worldview-neutral)",empirical:"supported by observation/experiment",model:"explanatory structure fitted to evidence",bridge:"cross-domain interpretation",metaphysical:"claim exceeding direct empirical adjudication",open:"known unresolved problem",conclusion:"worldview's summary claim"};
+const WV={all:"All",shared:"Shared",EN:"Evol. Naturalism",RM:"Reductive Materialism",CT:"Classical Theism",TP:"Theophysics"};
+const LAYER={primitive:0,presupposition:0,definition:1,evidence:2,empirical:3,model:3,bridge:4,metaphysical:4,open:4,conclusion:5};
+// ---- DATA: shared evidence + four worldview spines (strongest serious form) ----
+const N=[
+// SHARED EVIDENCE LAYER (neutral)
+{id:"EV-GEN",w:"shared",role:"evidence",title:"Genetic similarity across species",claim:"DNA/protein homology and nested genetic patterns across living things.",deps:[],kill:"Discovery of pervasive non-nested genetic patterns with no common mechanism."},
+{id:"EV-FOSSIL",w:"shared",role:"evidence",title:"Fossil succession",claim:"Ordered appearance of forms through the geologic column.",deps:[],kill:"Systematic out-of-order fossils (e.g. mammals in Cambrian)."},
+{id:"EV-ADAPT",w:"shared",role:"evidence",title:"Observed adaptation & selection",claim:"Allele frequencies shift under selection in field and lab.",deps:[],kill:"Selection experiments failing to change populations."},
+{id:"EV-SPEC",w:"shared",role:"evidence",title:"Observed speciation",claim:"Reproductive isolation arising in observed lineages.",deps:[],kill:"No reproductive isolation ever forming under divergence."},
+{id:"EV-RADIO",w:"shared",role:"evidence",title:"Radiometric dating / deep time",claim:"Multiple independent isotopic clocks converge on an old Earth/cosmos.",deps:[],kill:"Independent dating methods systematically disagreeing."},
+{id:"EV-COSMO",w:"shared",role:"evidence",title:"Cosmological expansion",claim:"Redshift, CMB, abundances → an expanding universe with a beginning.",deps:[],kill:"A viable eternal-static cosmology fitting all data."},
+{id:"EV-QM",w:"shared",role:"evidence",title:"Quantum measurement",claim:"Superposition, entanglement, measurement-dependent outcomes.",deps:[],kill:"A fully local-realist account reproducing all QM statistics."},
+{id:"EV-NCC",w:"shared",role:"evidence",title:"Neural correlates of consciousness",claim:"Reliable mapping between brain states and conscious reports.",deps:[],kill:"Consciousness with no physical correlate, or vice versa, robustly."},
+{id:"EV-MORAL",w:"shared",role:"evidence",title:"Moral psychology",claim:"Cross-cultural moral intuitions with convergences and variation.",deps:[],kill:"No cross-cultural moral convergence whatsoever."},
+{id:"EV-RELIG",w:"shared",role:"evidence",title:"Religious experience",claim:"Widespread, structured reports of transcendent experience.",deps:[],kill:"Full elimination of the phenomenon under scrutiny (none yet)."},
+{id:"EV-FINE",w:"shared",role:"evidence",title:"Fine-tuning of constants",claim:"Life-permitting constants sit in a narrow band; interpretation disputed.",deps:[],kill:"Showing the constants are forced or the band is wide."},
+{id:"EV-INFO",w:"shared",role:"evidence",title:"Information is physical",claim:"Landauer/no-hiding: information has physical, conserved character.",deps:[],kill:"Demonstrated free erasure / non-conservation of information."},
+// EVOLUTIONARY NATURALISM
+{id:"EN-P1",w:"EN",role:"primitive",title:"Mind-independent physical reality",claim:"A real external world exists independent of observers.",deps:[],kill:"Coherent demonstration that reality is observer-constituted."},
+{id:"EN-PS",w:"EN",role:"presupposition",title:"Methodological naturalism",claim:"Inquiry seeks testable regularities within nature.",deps:[],kill:"— (a method, not a claim; 'defeated' only by abandoning testability)."},
+{id:"EN-VAR",w:"EN",role:"empirical",title:"Heritable variation occurs",claim:"Mutations and recombination generate heritable variation.",deps:["EV-GEN"],kill:"Heritability shown to be illusory."},
+{id:"EN-SEL",w:"EN",role:"model",title:"Selection + drift shape populations",claim:"Differential reproduction + drift change populations over time.",deps:["EV-ADAPT","EV-SPEC","EN-VAR"],kill:"Populations provably immune to selection."},
+{id:"EN-CD",w:"EN",role:"model",title:"Universal common descent",claim:"Living things share ancestry in a branching tree.",deps:["EV-GEN","EV-FOSSIL","EV-RADIO"],kill:"Robust polyphyletic origins with no shared ancestry."},
+{id:"EN-COG",w:"EN",role:"model",title:"Cognition is evolved",claim:"Human cognition is a product of biological evolution.",deps:["EN-SEL","EV-NCC"],kill:"Cognition shown non-biological in origin."},
+{id:"EN-ABIO",w:"EN",role:"open",title:"Abiogenesis",claim:"Life arose from non-living chemistry by natural processes.",deps:["EV-INFO"],kill:"Demonstrated in-principle impossibility of chemical origin.",status:"OPEN PROBLEM"},
+{id:"EN-META",w:"EN",role:"metaphysical",title:"Metaphysical naturalism",claim:"The physical is all that exists (beyond method).",deps:["EN-P1"],kill:"Sound evidence of a non-physical cause/entity.",status:"METAPHYSICAL"},
+{id:"EN-BRIDGE",w:"EN",role:"bridge",title:"Beliefs as adaptations",claim:"Moral/religious beliefs are evolved traits, not truth-trackers.",deps:["EN-COG","EV-MORAL","EV-RELIG"],kill:"Showing these beliefs track mind-independent truth."},
+{id:"EN-REASON",w:"EN",role:"open",title:"Reliability of reason under naturalism",claim:"Whether selection-for-survival yields truth-tracking cognition.",deps:["EN-COG"],kill:"—",status:"OPEN PROBLEM"},
+{id:"EN-CONC",w:"EN",role:"conclusion",title:"No supernatural agency required",claim:"Nature suffices to explain life, mind, and belief.",deps:["EN-META","EN-CD","EN-BRIDGE"],kill:"A phenomenon requiring non-natural explanation."},
+// REDUCTIVE MATERIALISM
+{id:"RM-P1",w:"RM",role:"primitive",title:"Only the physical exists",claim:"All that exists are physical entities and properties.",deps:[],kill:"An irreducible non-physical fact."},
+{id:"RM-DEF",w:"RM",role:"definition",title:"Mental = physical/computational",claim:"Mental states are defined as brain/computational states.",deps:["RM-P1"],kill:"A mental state with no physical realizer."},
+{id:"RM-MIND",w:"RM",role:"model",title:"Mind reduces to brain",claim:"Cognition is fully explained by neural computation.",deps:["EV-NCC","RM-DEF"],kill:"A cognitive capacity irreducible to physical process."},
+{id:"RM-QUALIA",w:"RM",role:"open",title:"Hard problem of consciousness",claim:"Why physical processing is accompanied by experience is unexplained.",deps:["EV-NCC"],kill:"—",status:"OPEN PROBLEM"},
+{id:"RM-REASON",w:"RM",role:"open",title:"Grounding of logic & math",claim:"Status of abstract/normative truths under strict physicalism.",deps:[],kill:"—",status:"OPEN PROBLEM"},
+{id:"RM-META",w:"RM",role:"metaphysical",title:"No irreducible mental/normative facts",claim:"There are no brute mental or moral facts.",deps:["RM-P1"],kill:"A demonstrated irreducible normative fact.",status:"METAPHYSICAL"},
+{id:"RM-CONC",w:"RM",role:"conclusion",title:"Reality is exhaustively physical",claim:"Everything, including mind, is physical through and through.",deps:["RM-META","RM-MIND"],kill:"One well-established non-physical explanandum."},
+// CLASSICAL THEISM
+{id:"CT-P1",w:"CT",role:"primitive",title:"Contingent reality exists",claim:"Things exist that need not have existed.",deps:[],kill:"Showing reality is necessary, not contingent."},
+{id:"CT-PS",w:"CT",role:"presupposition",title:"Reason is truth-tracking",claim:"Rational inquiry can reach truth about reality.",deps:[],kill:"Global defeater for reason (self-undermining)."},
+{id:"CT-COSMO",w:"CT",role:"model",title:"Contingency needs a ground",claim:"Contingent things require a necessary, self-existent ground.",deps:["CT-P1"],kill:"A coherent account of contingency with no ground / brute infinite regress."},
+{id:"CT-FINE",w:"CT",role:"bridge",title:"Fine-tuning favors purpose",claim:"Life-permitting constants are more expected on design than on chance.",deps:["EV-FINE"],kill:"A successful non-design account (forced constants or robust multiverse)."},
+{id:"CT-MORAL",w:"CT",role:"bridge",title:"Objective morality grounded in God",claim:"Binding moral obligations fit a personal ground.",deps:["EV-MORAL"],kill:"An adequate secular grounding of binding obligation."},
+{id:"CT-EVIL",w:"CT",role:"open",title:"Problem of evil",claim:"Reconciling gratuitous suffering with a good God.",deps:[],kill:"—",status:"OPEN PROBLEM"},
+{id:"CT-META",w:"CT",role:"metaphysical",title:"A necessary personal ground (God)",claim:"The ground of contingency is a necessary, personal being.",deps:["CT-COSMO"],kill:"Showing the ground need not be personal.",status:"METAPHYSICAL"},
+{id:"CT-CONC",w:"CT",role:"conclusion",title:"Theism best explains the data",claim:"Contingency + fine-tuning + morality are best explained by God.",deps:["CT-META","CT-FINE","CT-MORAL"],kill:"A rival explaining all three at least as well."},
+// THEOPHYSICS (one candidate; honestly flagged)
+{id:"TP-P1",w:"TP",role:"primitive",title:"Something distinguishable exists",claim:"Existence, Distinction, Information as primitive anchors.",deps:[],kill:"Denial collapses into self-refutation (none succeeds)."},
+{id:"TP-INFO",w:"TP",role:"definition",title:"Information is fundamental",claim:"Distinguishable states = information; matter supervenes on it.",deps:["TP-P1","EV-INFO"],kill:"A property of matter with no informational character."},
+{id:"TP-LOGOS",w:"TP",role:"definition",title:"Logos = self-grounding substrate",claim:"Names the necessary self-grounding informational ground.",deps:["TP-INFO"],kill:"Showing information needs no self-grounding substrate."},
+{id:"TP-CHI",w:"TP",role:"model",title:"χ coherence master-equation",claim:"A coherence measure over the Logos field; collapses if any factor is 0.",deps:["TP-LOGOS"],kill:"χ formalism shown inconsistent or vacuous."},
+{id:"TP-OBS",w:"TP",role:"bridge",title:"Actualization needs an Observer",claim:"Observation chain terminates in an infinite Observer (God).",deps:["EV-QM"],kill:"Actualization without any observer, or no terminal needed."},
+{id:"TP-FINE",w:"TP",role:"bridge",title:"Fine-tuning expected under Logos",claim:"Life-permitting order is expected given an informational ground.",deps:["EV-FINE"],kill:"Fine-tuning better explained without a ground."},
+{id:"TP-MORAL",w:"TP",role:"bridge",title:"Conserved moral sign + grace",claim:"Moral sign is conserved; only external grace flips it.",deps:["EV-MORAL"],kill:"Demonstrated finite self-flip of moral orientation."},
+{id:"TP-META",w:"TP",role:"metaphysical",title:"Reality grounded in Logos/God",claim:"The informational ground is identified with God.",deps:["TP-LOGOS"],kill:"Showing the ground need not be personal/divine.",status:"METAPHYSICAL"},
+{id:"TP-PRED",w:"TP",role:"open",title:"No discriminating prediction yet",claim:"A test separating Theophysics from pattern-matching is not yet built; Lean↔empirics bridge open.",deps:["TP-CHI"],kill:"—",status:"OPEN PROBLEM"},
+{id:"TP-CONC",w:"TP",role:"conclusion",title:"Physics↔theology correspondence",claim:"Structural correspondence, adversarially gated — not empirical proof.",deps:["TP-CHI","TP-OBS","TP-META"],kill:"A gate failing, or the correspondence shown coincidental.",status:"BRIDGE"},
+];
+const BY=Object.fromEntries(N.map(n=>[n.id,n]));
+let active="all";
+// legend
+document.getElementById('legend').innerHTML=ROLES.map(r=>`<span class="lg"><span class="sw" style="background:var(--${r})"></span>${r}</span>`).join('');
+// tiers by LAYER, with shared evidence its own band
+const tiersEl=document.getElementById('tiers');
+const layerNames=["Primitives & presuppositions","Definitions","◆ SHARED EVIDENCE LAYER (worldview-neutral)","Empirical findings & models","Interpretation · bridges · metaphysical · open problems","Worldview conclusions"];
+const layers=[0,1,2,3,4,5];
+for(const L of layers){
+  const w=document.createElement('div');w.className='tier'+(L===2?' shared':'');
+  const l=document.createElement('div');l.className='tl'+(L===2?'':'');l.innerHTML=L===2?'<span class="ev">'+layerNames[L]+'</span>':layerNames[L];w.appendChild(l);
+  const r=document.createElement('div');r.className='row';r.dataset.layer=L;
+  for(const n of N.filter(x=>LAYER[x.role]===L))r.appendChild(mkNode(n));
+  w.appendChild(r);tiersEl.appendChild(w);
+}
+function esc(s){return(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');}
+function mkNode(n){const d=document.createElement('div');d.className='node k-'+n.role+(n.w==='shared'?' shared':'');d.id='node-'+n.id;d.style.setProperty('--k','var(--'+n.role+')');
+  d.innerHTML='<div class="kx" title="knock out">✕</div><div class="id mono"><span>'+n.id+'</span><span class="wtag">'+(n.w==='shared'?'◆':WV[n.w].split(' ').map(x=>x[0]).join(''))+'</span></div>'+
+    '<div class="title">'+esc(n.title)+'</div><div class="claim">'+esc(n.claim)+'</div><div class="tag">'+n.role+(n.status?' · '+n.status.split(' ')[0].toLowerCase():'')+'</div>';
+  d.querySelector('.kx').addEventListener('click',e=>{e.stopPropagation();toggleKO(n.id);});
+  d.addEventListener('click',e=>{e.stopPropagation();select(n.id);openDrawer(n.id);});
+  return d;}
+const svg=document.getElementById('edges'),canvas=document.getElementById('canvas');
+function anc(id,a=new Set()){for(const p of(BY[id]?BY[id].deps:[])){if(!a.has(p)){a.add(p);anc(p,a);}}return a;}
+const removed=new Set();let alive={};
+function computeAlive(){alive={};const al=id=>{if(id in alive)return alive[id];if(removed.has(id))return alive[id]=false;let ok=true;for(const p of BY[id].deps){if(!al(p)){ok=false;break;}}return alive[id]=ok;};for(const n of N)al(n.id);}
+function visible(n){return active==='all'||n.w===active||n.w==='shared';}
+function draw(hot){const cb=canvas.getBoundingClientRect();svg.setAttribute('viewBox','0 0 '+canvas.offsetWidth+' '+canvas.offsetHeight);let s='';const hs=hot?anc(hot).add(hot):null;
+  for(const n of N){if(!visible(n))continue;for(const p of n.deps){if(!visible(BY[p]))continue;const a=document.getElementById('node-'+p),b=document.getElementById('node-'+n.id);if(!a||!b)continue;
+    const ra=a.getBoundingClientRect(),rb=b.getBoundingClientRect();const x1=ra.left+ra.width/2-cb.left,y1=ra.bottom-cb.top,x2=rb.left+rb.width/2-cb.left,y2=rb.top-cb.top,my=(y1+y2)/2;
+    const on=hs&&hs.has(p)&&hs.has(n.id);const dead=removed.has(p)||removed.has(n.id)||alive[p]===false||alive[n.id]===false;
+    let col='var(--edge)',wd=1,op=1,da='';if(!hs&&dead){col='var(--bad)';wd=1.2;op=.5;da='4 4';}else if(on){col='var(--edge-hot)';wd=2;}else if(hs){op=.14;}
+    s+='<path d="M'+x1+','+y1+' C'+x1+','+my+' '+x2+','+my+' '+x2+','+y2+'" fill="none" stroke="'+col+'" stroke-width="'+wd+'" opacity="'+op+'"'+(da?' stroke-dasharray="'+da+'"':'')+'/>';}}
+  svg.innerHTML=s;}
+function applyFilter(){for(const n of N){const el=document.getElementById('node-'+n.id);el.style.display=visible(n)?'':'none';}draw(null);renderScore();}
+function select(id){const keep=anc(id);keep.add(id);for(const n of N){const el=document.getElementById('node-'+n.id);if(el.style.display==='none')continue;el.classList.toggle('dim',!keep.has(n.id));el.classList.toggle('hot',keep.has(n.id));}draw(id);}
+const drawer=document.getElementById('drawer'),backdrop=document.getElementById('backdrop');
+function openDrawer(id){const n=BY[id];if(!n)return;computeAlive();const kids=N.filter(x=>x.deps.includes(id));
+  const dc=n.deps.length?n.deps.map(d=>`<span class="chip${alive[d]===false||removed.has(d)?' dead':''}" data-go="${d}">${d}</span>`).join(''):'<span class="chip" style="cursor:default">— none (anchor)</span>';
+  const fc=kids.length?kids.map(k=>`<span class="chip" data-go="${k.id}">${k.id}</span>`).join(''):'<span class="chip" style="cursor:default">— terminal</span>';
+  drawer.className='drawer on k-'+n.role;drawer.style.setProperty('--k','var(--'+n.role+')');
+  drawer.innerHTML=`<div class="dh"><button class="dclose" id="dc">✕</button><div class="id mono">${id} · ${esc(WV[n.w])}</div>
+    <h2>${esc(n.title)}</h2><div class="role">${n.role} — ${ROLEDESC[n.role]}</div></div>
+    <div class="db">
+      ${n.status?`<div class="sec"><span class="statusbadge">${esc(n.status)}</span></div>`:''}
+      <div class="sec"><h3>Claim</h3><div class="statement">${esc(n.claim)}</div></div>
+      <div class="sec"><h3>Depends on (${n.deps.length})</h3><div class="chips">${dc}</div></div>
+      <div class="sec"><h3>Feeds into (${kids.length})</h3><div class="chips">${fc}</div></div>
+      <div class="sec"><h3>Kill condition — what would seriously damage it</h3><div class="kill">${esc(n.kill||'—')}</div></div>
+      <button class="kobtn" id="dko">${removed.has(id)?'↺ restore this node':'✕ knock this node out'}</button>
+    </div>`;
+  backdrop.classList.add('on');document.getElementById('dc').onclick=closeDrawer;
+  document.getElementById('dko').onclick=()=>{toggleKO(id);openDrawer(id);};
+  drawer.querySelectorAll('.chip[data-go]').forEach(c=>c.onclick=()=>{const g=c.dataset.go;select(g);openDrawer(g);});}
+function closeDrawer(){drawer.className='drawer';backdrop.classList.remove('on');}
+backdrop.addEventListener('click',closeDrawer);addEventListener('keydown',e=>{if(e.key==='Escape')closeDrawer();});
+function applyKO(){computeAlive();for(const n of N){const el=document.getElementById('node-'+n.id);el.classList.remove('removed','collapsed');if(removed.has(n.id))el.classList.add('removed');else if(!alive[n.id])el.classList.add('collapsed');}
+  const rem=[...removed],col=N.filter(n=>!removed.has(n.id)&&!alive[n.id]&&visible(n)),b=document.getElementById('kobox');
+  if(rem.length){b.classList.add('on');b.innerHTML='<b>Removed:</b> '+rem.map(id=>esc(BY[id].title)+' ('+id+')').join(', ')+'. '+(col.length?'<b>Cascade — '+col.length+' visible node(s) orphaned.</b> ':'No visible node requires it — <b>no cascade.</b> ')+'<span class="rest" id="ra">↺ restore all</span>';document.getElementById('ra').onclick=e=>{e.stopPropagation();removed.clear();applyKO();};}else{b.classList.remove('on');}draw(null);renderScore();}
+function toggleKO(id){removed.has(id)?removed.delete(id):removed.add(id);applyKO();}
+function spofOf(w){let best=0,bi='';for(const n of N.filter(x=>x.w===w)){const save=new Set(removed);removed.clear();removed.add(n.id);computeAlive();const fall=N.filter(x=>x.w===w&&!alive[x.id]&&x.id!==n.id).length;if(fall>best){best=fall;bi=n.id;}removed.clear();save.forEach(s=>removed.add(s));}computeAlive();return{best,bi};}
+function renderScore(){const box=document.getElementById('score');const ws=active==='all'?["EN","RM","CT","TP"]:[active].filter(w=>w!=='all'&&w!=='shared');
+  if(active==='all'){box.style.display='grid';}box.innerHTML='';
+  const list=active==='all'?["EN","RM","CT","TP"]:(active==='shared'?[]:[active]);
+  for(const w of (active==='all'?["EN","RM","CT","TP"]:[active])){
+    if(w==='all')continue;const ns=N.filter(x=>x.w===w);if(!ns.length)continue;
+    const c=r=>ns.filter(x=>x.role===r).length;const meta=c('metaphysical'),open=c('open'),emp=c('empirical'),shared=[...new Set(ns.flatMap(x=>x.deps).filter(d=>BY[d]&&BY[d].w==='shared'))].length;
+    const sp=spofOf(w);const col={EN:'#3a8f6a',RM:'#3a6f9f',CT:'#9a7a3a',TP:'#8a5a9a'}[w];
+    const d=document.createElement('div');d.className='card';d.style.setProperty('--wc',col);
+    d.innerHTML=`<div class="wv">${w}</div><h3>${esc(WV[w])}</h3>
+      <div class="grid"><span>nodes</span><b>${ns.length}</b><span>empirical findings</span><b>${emp}</b><span>metaphysical commitments</span><b>${meta}</b><span>open problems</span><b>${open}</b><span>shared-evidence anchors</span><b>${shared}</b></div>
+      <div class="spof">worst single point of failure: ${sp.bi||'—'} → ${sp.best} fall</div>`;
+    box.appendChild(d);}
+}
+document.getElementById('tabs').addEventListener('click',e=>{const t=e.target.closest('.tab');if(!t)return;document.querySelectorAll('.tab').forEach(x=>x.classList.remove('on'));t.classList.add('on');active=t.dataset.w;applyFilter();});
+const footBase='<b>How to use it.</b> Pick a system up top, or view All. The gold band is the <b>shared evidence</b> every worldview must answer to. Click any node for its role, dependencies, and <b>kill condition</b>. Knockout is symmetrical: e.g. remove <code>EN-META</code> (metaphysical naturalism) and evolutionary biology <i>survives</i> — showing the biology doesn\'t depend on the metaphysics. Remove <code>EN-CD</code> (common descent) and much of evolutionary history falls, but selection/genetics remain. This is a <b>v0 scaffold</b> — each worldview is data; add nodes or new systems (idealism, panpsychism, secular humanism…) by extending the array.';
+document.getElementById('foot').innerHTML=footBase;
+document.getElementById('stageEl').addEventListener('click',()=>{for(const n of N){const el=document.getElementById('node-'+n.id);el.classList.remove('dim','hot');}draw(null);document.getElementById('foot').innerHTML=footBase;});
+addEventListener('resize',()=>draw(null));applyFilter();renderScore();requestAnimationFrame(()=>draw(null));setTimeout(()=>draw(null),150);
+</script>

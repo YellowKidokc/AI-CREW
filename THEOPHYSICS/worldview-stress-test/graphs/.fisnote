@@ -1,0 +1,28 @@
+---
+fis_schema: "folder-index.v1"
+folder_id: "FLD-20260723-f209084c"
+folder: "Desktop 2\Master HTMl\02-GTQ-Series"
+folder_class: "project"
+confidence: 0.6
+dependency_risk: 0.0
+dominant_family: "code"
+dominant_ratio: 0.976
+file_count: 42
+classified_at: "2026-07-23T17:55:45"
+allowed_actions: ["index", "rename_internal", "subfolder_sort", "archive_exports"]
+suggested_name: "02-gtq-series"
+---
+
+# FIS Folder Index: 02-GTQ-Series
+
+**Class**: project  ·  **Confidence**: 60%  ·  **Files**: 42  ·  **Dominant**: code (98%)
+
+## Allowed actions
+- index
+- rename_internal
+- subfolder_sort
+- archive_exports
+
+**Suggested name**: `02-gtq-series`  (not applied — review before use)
+
+<!-- FIS folder-index.v1: parseable note; safe to regenerate. -->

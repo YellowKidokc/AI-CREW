@@ -1,21 +1,21 @@
 ---
 fis_schema: "folder-index.v1"
-folder_id: "FLD-20260723-3b6d5088"
-folder: "GitHub\ai-crew\THEOPHYSICS"
+folder_id: "FLD-20260723-565aaf21"
+folder: "Desktop\ai-crew\THEOPHYSICS"
 folder_class: "project"
 confidence: 0.6
 dependency_risk: 0.0
 dominant_family: "text"
-dominant_ratio: 0.857
-file_count: 7
-classified_at: "2026-07-23T09:24:00"
+dominant_ratio: 1.0
+file_count: 6
+classified_at: "2026-07-23T15:58:31"
 allowed_actions: ["index", "rename_internal", "subfolder_sort", "archive_exports"]
 suggested_name: "theophysics"
 ---
 
 # FIS Folder Index: THEOPHYSICS
 
-**Class**: project  ·  **Confidence**: 60%  ·  **Files**: 7  ·  **Dominant**: text (86%)
+**Class**: project  ·  **Confidence**: 60%  ·  **Files**: 6  ·  **Dominant**: text (100%)
 
 ## Allowed actions
 - index
