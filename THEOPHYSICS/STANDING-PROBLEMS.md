@@ -41,6 +41,33 @@ The atom repository defines the 14-stage workbench, route profiles, claim burden
 Source of truth: `YellowKidokc/Faith-through-physics-atoms`, branch `OBS-Plugin-Final-Claude`.
 Coordination state: `THEOPHYSICS/topics/atom-system-architecture.md`.
 
+### SP-08: Axiom-set version drift (multiple divergent saves, not one canon)
+tags: #axioms #canon #drift #do-axioms-right
+There are ≥4 axiom "sets" in play — `D:\01_Axioms` (April), `O:\_Theophysics_v5\00_AXIOMS` (July, 208
+files), the lean-canon v3 CSV, and the org-narrative folder. These are **saves of ONE set that drifted**,
+not different theories. Fix = confirm the single canonical set (source-pointer →
+`\\192.168.2.50\h_hp\Desktop\Kimi_Agent_Faith Physic\_ORGANIZED_BY_15_BUCKET_NARRATIVE`), dedup the rest
+as history. Also blocking a clean floor count: **6 broken dependency links** (ID-scheme mismatch:
+E6.1/E14.1/A14.2/META-2 cite short-ids that don't resolve) + the P0/A1.1 Existence duplicate. See
+[[axiom-system]]. NO_DRIFT protocol: `D:\00_CANON_REFERENCE\04_SOURCE_POINTERS\`.
+
+### SP-09: The is→ought jump in the Descent chain
+tags: #descent #is-ought #morality #honesty
+The flagship "Descent" derivation (being → … → the Cross) has ONE hard deductive crack: step 7
+"relation reveals value" — the Hume is→ought gap (normative words "honored/violated" leak in one step
+early). Everything moral downstream (justice, mercy, grace) hangs on this single abductive leap. Plus
+Perfect Justice / Perfect Mercy / the Enemy / Grace / Christ are **placed premises / identifications**,
+not derivations. Fix = drop "no premise smuggled," name the ~3 visible premises + mark the identifications.
+Strongest step: "Justice+Mercy require a cost-bearer beyond the damaged order" (the incompleteness move
+that earns the Cross). NOT a defeater — a labeling honesty fix.
+
+### SP-10: Graph-claimed vs Lean-verified dependencies (Logos minimality)
+tags: #lean4 #logos #knockout #verification
+Knockout on the graph shows Logos load-bearing (reach 145 of 191). But that is the *authored dependency
+map* (intent), NOT Lean-verified. The **minimality** question — can the theorems be derived from a WEAKER
+substrate than Logos? — is a Lane-4 (Lean) substitution test, still open. Load-bearing: shown. Minimal:
+untested. See [[lean4-verification]], [[node-graph-system]].
+
 ---
 
 ## Solved
