@@ -19,6 +19,8 @@ Site shell deployed on Cloudflare Workers + R2. HTML articles scattered across D
 
 - Codex (this session): JOB-06 coordination/recovered-note pass. Cooms/Mattermost connector unavailable on 2026-07-25; endpoint returned 404, so no live cross-agent check was possible.
 - Codex (this session): JOB-08 E/NAS availability verification completed. Found active-looking JOB-01 staging inventory at `E:\Site\_staging\JOB-01-html-aggregation-20260726\inventory\html-paths.txt`; did not modify it.
+- Codex (this session): Wrote clean AI Hub handoff at `\\192.168.2.50\h_hp\Desktop\AI HUB DAVID\FAITHTHRUPHYSICS_HTML_HANDOFF_2026-07-26.md`.
+- Codex (this session): Wrote lossless daily archive summary at `D:\GitHub\ai-crew\ARCHIVE\2026-07\daily\DAILY_2026-07-26.md`.
 
 ## Known Issues
 
@@ -33,20 +35,20 @@ Site shell deployed on Cloudflare Workers + R2. HTML articles scattered across D
 **Rule: Always keep jobs here. When one finishes, add another. There should always be busy work ready for idle agents.**
 
 ### JOB-01: HTML Aggregation
-**Status:** OPEN
+**Status:** DONE
 **Priority:** HIGH
 **Description:** Scan D drive, E drive, H:\Desktop, and recycle bins for all HTML files related to faiththruphysics. Collect every HTML article into one staging folder. Log where each file was found. Do not delete originals — copy only.
-**Output:** Inventory of all HTML files with source paths, plus copies in a single staging location.
-**Note:** Active-looking inventory already exists at `E:\Site\_staging\JOB-01-html-aggregation-20260726\inventory\html-paths.txt` with 258,495 lines as of 2026-07-25 19:30 local. It appears broad, including recycle-bin and general Desktop HTML, so a faiththruphysics-focused filtered inventory is still needed.
+**Output:** See `JOB-01_HTML_AGGREGATION_REPORT.md`. Clean inventory: `E:\Site\_staging\JOB-01-html-aggregation-20260726\inventory\html-inventory-clean.csv`. Staged copies: `E:\Site\_staging\JOB-01-html-aggregation-20260726\copies`.
+**Note:** Raw scan found 258,495 HTML/HTM paths. Filtered candidate set staged 47,259 unique source rows and 46,706 copied files. Review `candidate-paths-not-in-clean-inventory.txt` for the 315 candidate paths that did not land in the clean inventory.
 
 ### JOB-02: Series Assembly
-**Status:** OPEN (blocked by JOB-01)
+**Status:** OPEN
 **Priority:** HIGH
 **Description:** Take the aggregated HTML files and organize into coherent series (GTQ, Convergence, standalone). Identify which articles belong to which series, determine correct ordering, flag gaps or duplicates.
 **Output:** Series map document showing each series, article order, and any missing entries.
 
 ### JOB-03: Asset Inventory Excel
-**Status:** OPEN (blocked by JOB-01)
+**Status:** OPEN
 **Priority:** HIGH
 **Description:** Create an Excel checklist for every article across all series. Columns: Article title, Series, Order, HTML (Y/N), Audio (Y/N), Video (Y/N), Images (Y/N), Markdown source (Y/N), Deployed (Y/N), Notes.
 **Output:** Master checklist spreadsheet.
@@ -58,7 +60,7 @@ Site shell deployed on Cloudflare Workers + R2. HTML articles scattered across D
 **Output:** Markdown inventory with file paths and matched HTML counterparts.
 
 ### JOB-05: Canonical Folder Consolidation
-**Status:** OPEN (blocked by JOB-01, JOB-02, JOB-03)
+**Status:** OPEN (blocked by JOB-02, JOB-03)
 **Priority:** MEDIUM
 **Description:** Once inventory and series assembly are complete, consolidate everything into the canonical site-data folder on E drive. Structure: one folder per series, each containing HTML versions, audio, video, images, and markdown source. Move, don't delete.
 **Output:** Clean canonical folder with everything in place.
@@ -87,10 +89,23 @@ Site shell deployed on Cloudflare Workers + R2. HTML articles scattered across D
 **Output:** See `NAS_E_DRIVE_AVAILABILITY_REPORT.md`. Key result: `\\192.168.2.50\h_hp\Desktop\Folders\Master HTML` exists and contains 32,244 HTML files; `E:\Faith Through Physics` exists and contains 1,218 HTML plus 11,116 markdown files; `E:\Faith Through Physics MD` exists and contains 4,904 markdown files; `E:\Faith Through Physics SITE Audio` exists and contains audio/video staging material. `E:\HTML`, `E:\Audio`, `E:\Video`, and `E:\Images` are currently empty placeholders.
 
 ### JOB-09: Filter JOB-01 HTML Inventory to Faith Through Physics Candidates
-**Status:** OPEN
+**Status:** DONE
 **Priority:** HIGH
 **Description:** Use the existing broad inventory at `E:\Site\_staging\JOB-01-html-aggregation-20260726\inventory\html-paths.txt` and produce a smaller candidate list focused on faiththruphysics/theophysics article content. Include positive path/title heuristics, exclude obvious app/tool/recycle-bin noise unless content appears relevant, and preserve original source paths.
-**Output:** Filtered candidate inventory plus reject/noise summary, saved beside the existing JOB-01 inventory without overwriting it.
+**Output:** Filtered candidate inventory saved at `E:\Site\_staging\JOB-01-html-aggregation-20260726\inventory\html-candidate-paths.txt`; final clean staged inventory saved at `E:\Site\_staging\JOB-01-html-aggregation-20260726\inventory\html-inventory-clean.csv`.
+
+### JOB-10: HTML Dedup And Canonical Candidate Selection
+**Status:** OPEN
+**Priority:** HIGH
+**Description:** Use `html-inventory-clean.csv` and `duplicate-hash-summary.csv` from JOB-01 to collapse exact duplicates, then identify likely canonical versions by source priority (`site-live`, `site-data`, recovered Master HTML, `site-v2`, GTQ standalone, E/NAS). Preserve all alternates in the map; do not delete staged copies or originals.
+**Output:** Dedup map with one canonical candidate per hash/title/series cluster, alternates listed with source paths, and unresolved conflicts flagged for human review.
+**Note:** FIS priority-source pass completed; see `FIS_DEDUP_PRIORITY_PASS_REPORT.md` and `E:\Site\_staging\JOB-01-html-aggregation-20260726\fis_neardup_priority_sources`.
+
+### JOB-11: Generic FIS Batch/Profile Runner
+**Status:** OPEN
+**Priority:** MEDIUM
+**Description:** Harden the reusable File Intelligence System for large mixed corpora without adding site-specific logic. Add or wire a generic batch/profile runner that accepts roots or inventory CSVs, processes large corpora in chunks, writes a run ledger, and lets project-specific source priority live in external config/report files.
+**Output:** Generic FIS batch runner or documented command profile, plus a test run against one staged corpus batch.
 
 ### JOB-07: MDA tanh Phase-Transition Fit Test (THEOPHYSICS crossover)
 **Status:** OPEN
@@ -106,3 +121,5 @@ Site shell deployed on Cloudflare Workers + R2. HTML articles scattered across D
 |------|--------|-------|
 | 2026-07-21 | Six-agent session — CSS CDN remediation, MTL fixes, labeler audit (103K issues) | Multi-agent |
 | 2026-07-24 | Job board created with 6 initial jobs for HTML/asset consolidation pipeline | Claude Opus 4.6 |
+| 2026-07-26 | Completed JOB-01/JOB-09 HTML aggregation: 47,259 unique candidate source rows inventoried, 46,706 files staged under `E:\Site\_staging\JOB-01-html-aggregation-20260726`, duplicate hash summary generated | Codex |
+| 2026-07-26 | Ran generic FIS near-duplicate pass on priority staged sources: 9,137 files scanned, 8,668 fingerprinted, 882 exact groups, 957 near-duplicate clusters, 1,496 family groups | Codex |

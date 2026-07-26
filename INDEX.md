@@ -20,6 +20,7 @@ The foundation. Read these first, in order.
 | [01-WHO-WE-ARE.md](01-WHO-WE-ARE.md) | The contract between David and the AI collaborator — challenge beats agreement, truth tiers (T1–T5), AI failure modes to watch for |
 | [02-HOW-WE-WORK.md](02-HOW-WE-WORK.md) | Core commands (/PROBE, /DEEPER, /EAST, /NORTH, /CONNECT, /CHAIN, /BLINDSPOT), the WHY layer, recursive coherence testing, the 7-Question Scientific Method |
 | [03-BOUNDARIES.md](03-BOUNDARIES.md) | Formally proven constraints (LOCKED T5) — Trinity isomorphism, free will as necessary variable, God-as-axiom requirement. Do not push past these. |
+| [04-AGENT-ROUTINE.md](04-AGENT-ROUTINE.md) | Default session routine — orient, pick up the duty, work, challenge when needed, and record durable memory |
 
 ## Reference Files
 
@@ -113,7 +114,7 @@ Full registry with repo paths and verification status: [PROJECTS/_registry.md](P
 
 ## Quick Navigation
 
-**New agent?** → _READ_ME_FIRST → 99-README → 00-LIVING-CHARTER → 01-WHO-WE-ARE → 02-HOW-WE-WORK → 03-BOUNDARIES
+**New agent?** → _READ_ME_FIRST → 99-README → 00-LIVING-CHARTER → 01-WHO-WE-ARE → 02-HOW-WE-WORK → 03-BOUNDARIES → 04-AGENT-ROUTINE
 
 **Codex?** → 00-CODEX-START-HERE → CODERS/README → relevant lane file → project STATUS.md
 

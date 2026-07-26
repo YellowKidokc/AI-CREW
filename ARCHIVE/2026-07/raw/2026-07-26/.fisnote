@@ -1,22 +1,21 @@
 ---
 fis_schema: "folder-index.v1"
-folder_id: "FLD-20260726-c57b30ad"
-folder: "GitHub\ai-crew"
+folder_id: "FLD-20260726-64272e50"
+folder: "GitHub\ai-crew\ARCHIVE\2026-07\raw\2026-07-26"
 folder_class: "project"
 confidence: 0.6
-dependency_risk: 0.333
+dependency_risk: 0.0
 dominant_family: "text"
-dominant_ratio: 0.818
-file_count: 22
+dominant_ratio: 1.0
+file_count: 2
 classified_at: "2026-07-26T08:52:18"
 allowed_actions: ["index", "rename_internal", "subfolder_sort", "archive_exports"]
-suggested_name: "ai-crew"
-system_markers: ["dir:.git"]
+suggested_name: "2026-07-26"
 ---
 
-# FIS Folder Index: ai-crew
+# FIS Folder Index: 2026-07-26
 
-**Class**: project  ·  **Confidence**: 60%  ·  **Files**: 22  ·  **Dominant**: text (82%)
+**Class**: project  ·  **Confidence**: 60%  ·  **Files**: 2  ·  **Dominant**: text (100%)
 
 ## Allowed actions
 - index
@@ -24,6 +23,6 @@ system_markers: ["dir:.git"]
 - subfolder_sort
 - archive_exports
 
-**Suggested name**: `ai-crew`  (not applied — review before use)
+**Suggested name**: `2026-07-26`  (not applied — review before use)
 
 <!-- FIS folder-index.v1: parseable note; safe to regenerate. -->

@@ -196,6 +196,117 @@ Equation class: overdamped Langevin dynamics; stochastic gradient flow; simulate
 
 ---
 
+---
+
+## 11. UPDATE 2026-07-26 — Cold review against v3.1 canon (Claude Opus 5)
+
+Read cold: v3.1 source-of-truth, the no-drift canon, the Lean 4 canonical ledger,
+and both Fabel session captures. Four items change this document's status.
+
+### 11.1 §1's premise is false as written — canon already has dynamics
+
+§1 opens "The Master Equation as canonized is a statics." It is not. v3.1 lists
+**four** forms, two of which are equations of motion:
+
+- **Form 3 (Engine):** `dχ/dt = G − S + Γ`
+- **Form 4 (Field):** `□χ + V'(χ) + J_grace = 0`
+
+Both predate this candidate by a month or more. This document is therefore the
+**third** equation of motion for χ, and it cites neither of the other two.
+
+Form 3 is first-order in time; Form 4 is second-order in spacetime. Both claim to
+govern χ. By the test Fabel applied to the Lagrangians on 2026-07-24 — *"if two
+govern the same object differently, that is not two sectors, that is a fork"* —
+this is a fork and it belongs in the Registry of Drift. Either one is a limit of
+the other and nobody has written the limit, or they disagree.
+
+**Action:** reconcile Forms 3, 4, and §2 before any of the fifteen bulletin tests
+are run. Those tests currently do not know which object they are testing.
+
+### 11.2 Kill condition §7.6 is LIVE, not hypothetical
+
+§1 lists "which form is canon" as an open item. **v3.1 resolves it:**
+
+> "C is not a tenth factor multiplied into the product. C is χ … Coherence wraps
+> the integral; it does not sit inside it."
+> `χ(W) = C_W[ ∭(G · M · E · S · T · K · R · Q · F) dx dy dt ]`
+
+Nine variables inside, C as an external functional. So §7.6's antecedent is
+confirmed true. Every §3.1 result — complementarity, zero-veto, bottleneck
+sensitivity, the additive log form — was computed for a ten-way plain product
+that canon says is not the form. **They must be re-derived under C_W or they do
+not carry.**
+
+### 11.3 The dimensional test (bulletin test 7) is not yet a well-posed question
+
+Run cold, §6's declaration does not close the units:
+
+- Ten quantities at bits/s multiplied give **(bits/s)¹⁰** — χ is not an
+  information rate, so it is not in the unit system §6 declares for it.
+- Closing the equation forces **W ~ bits⁻⁸·s⁷**, whose dimensions change if the
+  number of laws changes. A constant whose units depend on how many terms you
+  included is a correction factor, not a coupling constant.
+- The equation requires **η in bits/s²**; §6 identifies it as an information
+  injection *rate*, which is bits/s. Off by one factor of time — directly under
+  the works/grace resolution.
+
+A repair exists — replace the plain product with the **geometric mean**
+`χ = (∏X_i)^(1/10)`. Units become bits/s; zero-veto survives; complementarity
+survives; and the bottleneck result *strengthens* — the gradient on a dying
+channel goes as `X_k^(−9/10)`, which diverges, where the plain product stays
+finite. §3.1(c) currently understates itself.
+
+**But this repair cannot be adopted**, because §11.2 says the object is
+`C_W[∭∏(9)]`, not any ten-way product. An unspecified functional has unspecified
+dimensions. **Test 7 cannot be run until C_W is written down.** Record it as
+blocked, not failed.
+
+### 11.4 §7 is missing its upstream kill condition
+
+`OPEN_PROBLEM_001_LAGRANGIAN_TO_PRODUCT_FORM` (Lean 4 canonical ledger, row 14,
+Critical, March 2026) states the gap between the χ-field Lagrangian and the
+ten-variable product, with the guard: *"Product form remains conditional /
+postulated until bridge is closed."*
+
+Everything in §3.1 is the calculus of that product. §7 lists six kill conditions
+and OPEN_PROBLEM_001 is not among them. The honest status of this candidate is
+one rung lower than stated — not *derived from canon*, but **derived from a
+postulate canon itself flags as unbridged.**
+
+**Proposed §7.7:** *If the Lagrangian → product-form bridge is never closed, or
+closes on a form other than a product, §3 is conditional on an unproven postulate
+and cannot be cited as derived.*
+
+### 11.5 Unretrieved prior work — highest-value open item
+
+The 2026-07-24 Fabel capture records: **"Jim solved the dimension problem and
+didn't announce it."** Nobody retrieved it. The framework then adopted the
+Shannon-capacity declaration (§6) as the dimensional fix, and §11.3 shows that
+declaration is incomplete.
+
+There may be two different solutions to the same problem — Jim's, unknown, and
+Fabel's, adopted and incomplete. **Retrieve Jim's before building further on §6.**
+If they agree, that is decorrelated convergence on the single most load-bearing
+unit decision in the framework. If they disagree, the wrong one was adopted
+because the right one died in a context window — the exact failure the immersion
+SOP was built one week earlier to prevent.
+
+### 11.6 Revised confidence
+
+| Claim | Was | Now | Why |
+|---|---|---|---|
+| Annealing theorem | 95+ | 95+ | unchanged, established mathematics |
+| §3.1 product-gradient results | 90 | **conditional** | computed for the wrong form per §11.2 |
+| Equation form is right dynamics | 70 | **50** | two prior forms exist, unreconciled (§11.1) |
+| Scalar vs field adequate | 60 | 60 | unchanged |
+| Works/grace resolution as framed | 50–60 | 50–60 | unchanged; still one hot pass |
+| §6 unit declaration closes dimensions | (implied yes) | **no** | §11.3 |
+
+Status remains **CANDIDATE — NOT CANON**. Nothing above kills it. Everything
+above must be answered before it is promoted.
+
+---
+
 *Candidate document. Not canon. Not beta. A fixed target so that independent reviews measure the idea, not the retelling. If it survives the knives, the Lean wall is next. If it dies, the trench report says where the body is.*
 
-*POF 2828 | 2026-07-24*
+*POF 2828 | 2026-07-24 · updated 2026-07-26*

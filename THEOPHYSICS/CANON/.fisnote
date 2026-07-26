@@ -1,21 +1,21 @@
 ---
 fis_schema: "folder-index.v1"
-folder_id: "FLD-20260723-6ad29296"
-folder: "Desktop\ai-crew\THEOPHYSICS\CANON"
+folder_id: "FLD-20260726-1fccad8f"
+folder: "GitHub\ai-crew\THEOPHYSICS\CANON"
 folder_class: "project"
 confidence: 0.6
 dependency_risk: 0.0
 dominant_family: "text"
-dominant_ratio: 1.0
-file_count: 4
-classified_at: "2026-07-23T15:58:31"
+dominant_ratio: 0.8
+file_count: 10
+classified_at: "2026-07-26T08:52:19"
 allowed_actions: ["index", "rename_internal", "subfolder_sort", "archive_exports"]
 suggested_name: "canon"
 ---
 
 # FIS Folder Index: CANON
 
-**Class**: project  ·  **Confidence**: 60%  ·  **Files**: 4  ·  **Dominant**: text (100%)
+**Class**: project  ·  **Confidence**: 60%  ·  **Files**: 10  ·  **Dominant**: text (80%)
 
 ## Allowed actions
 - index

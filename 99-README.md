@@ -1,6 +1,8 @@
 # 99 — START HERE
 
-**If you're a new agent, read this first. Then read 00-LIVING-CHARTER.md. Then read 01-WHO-WE-ARE.md.**
+**⛔ FIRST: read `_READ_ME_FIRST.md`. It is the front door and Canon — this week's active bulletins, the standing Conciliatory Rule you must act on, the things-we-don't-do, and the program links. This README and everything else in the folder are reference.**
+
+**After `_READ_ME_FIRST.md`: read 00-LIVING-CHARTER.md, then 01-WHO-WE-ARE.md.**
 
 ---
 

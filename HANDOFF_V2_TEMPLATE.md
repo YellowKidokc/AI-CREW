@@ -173,9 +173,9 @@
 ## PART 4: CLAIMS & BREAKTHROUGHS
 
 ### 4.1 Claim Ledger
-| Claim (1-2 sentences) | Tier (T1-T5) | Kill condition | Evidence added today | Backing artifact |
-|------------------------|--------------|----------------|---------------------|------------------|
-| | | | | |
+| Claim (1-2 sentences) | Tier (T1-T5) | Depends on (weakest upstream + its tier) | Kill condition | Evidence added today | Backing artifact |
+|------------------------|--------------|------------------------------------------|----------------|---------------------|------------------|
+| | | | | | |
 
 ### 4.2 Breakthrough Check
 Was there a breakthrough today? **YES / NO**
@@ -184,6 +184,41 @@ If yes — one paragraph, plain words. What is it, why does it matter, what does
 
 ### 4.3 Claims Weakened or Killed
 -
+
+### 4.4 Status Promotions — The Monotone Gate
+<!--
+  4.3 logs claims going DOWN. This logs claims going UP.
+  Up is the direction drift travels, and until now nothing caught it.
+
+  THE RULE: A claim's status can never exceed the weakest status it
+  depends on. Restating, summarizing, citing, or compressing a claim
+  NEVER strengthens it. Status rises ONLY through a re-derivation
+  event with a named artifact.
+
+  This is not an admin convention. It is the data processing inequality
+  (Law 6 / Shannon): truth -> source -> summary is a Markov chain, and
+  post-processing cannot increase information about the source. The
+  re-derivation exception is exactly the case where the Markov property
+  breaks — the agent went and looked at the thing itself.
+
+  WHAT COUNTS AS A PROMOTION (log all of these):
+  - You raised a tier.
+  - You wrote a summary that drops a confidence number, hedge, or
+    "candidate/unverified" marker that was in the source. That IS a
+    promotion, even though it looks like editing.
+  - You cited something as settled that its own file marks as open.
+
+  Known instance of the failure this section exists to catch:
+  candidate equation-of-motion (70%, form untested) -> _READ_ME_FIRST
+  bulletin (stated flat) -> 15 tests generated off the flattened version.
+-->
+| Claim | Was | Now | Weakest upstream dep | Re-derivation artifact | Earned? Y/N |
+|-------|-----|-----|---------------------|------------------------|-------------|
+| | | | | | |
+
+**Unearned promotions spotted in EXISTING documents** (not yours — anything you noticed while reading):
+-
+
 
 ---
 

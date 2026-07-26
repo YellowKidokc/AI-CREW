@@ -1,21 +1,21 @@
 ---
 fis_schema: "folder-index.v1"
-folder_id: "FLD-20260726-3b6d5088"
-folder: "GitHub\ai-crew\THEOPHYSICS"
+folder_id: "FLD-20260726-98d98c48"
+folder: "GitHub\ai-crew\THEOPHYSICS\worldview-stress-test"
 folder_class: "project"
 confidence: 0.6
 dependency_risk: 0.0
 dominant_family: "text"
-dominant_ratio: 0.889
-file_count: 9
+dominant_ratio: 1.0
+file_count: 2
 classified_at: "2026-07-26T08:52:19"
 allowed_actions: ["index", "rename_internal", "subfolder_sort", "archive_exports"]
-suggested_name: "theophysics"
+suggested_name: "worldview-stress-test"
 ---
 
-# FIS Folder Index: THEOPHYSICS
+# FIS Folder Index: worldview-stress-test
 
-**Class**: project  ·  **Confidence**: 60%  ·  **Files**: 9  ·  **Dominant**: text (89%)
+**Class**: project  ·  **Confidence**: 60%  ·  **Files**: 2  ·  **Dominant**: text (100%)
 
 ## Allowed actions
 - index
@@ -23,6 +23,6 @@ suggested_name: "theophysics"
 - subfolder_sort
 - archive_exports
 
-**Suggested name**: `theophysics`  (not applied — review before use)
+**Suggested name**: `worldview-stress-test`  (not applied — review before use)
 
 <!-- FIS folder-index.v1: parseable note; safe to regenerate. -->

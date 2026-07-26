@@ -28,16 +28,17 @@ Before doing ANY work, every AI agent runs this checklist:
 10. Any project-level `RULINGS.md` or latest trench report
 11. `GLOBAL-RULINGS/RULINGS.md`
 
-### Step 4: Corpus Rotation Read
+### Step 4: Corpus Rotation Read (OPT-IN)
+If time permits and David hasn't arrived with a task:
 12. Check `ROTATION_STATE.md` for current assignment
 13. Read the assigned section (5-10 files minimum)
-14. Note your findings — they go in your handoff under Corpus Scan 
-    and/or the Corpus Rotation Report section of the daily summary
+14. Note your findings — they go in your sign-off under Corpus Scan
+
+If David arrives with a task, skip this step. The task is the work.
 
 ### Step 5: Announce
 Tell David:
 - "I've read [list what you read]"
-- "Current rotation assignment: [slot] — [what it covers]"
 - "Here's what I noticed: [any immediate findings]"
 - "Ready to work on [the session's actual task]"
 
@@ -60,8 +61,7 @@ produce gold.
 ## Time Budget
 
 - Steps 1-3: ~2-3 minutes (skip step 1 if recent)
-- Step 4: ~5-10 minutes
+- Step 4: ~5-10 minutes (opt-in — skip if David has a task)
 - Step 5: ~1 minute
 
-Total: under 15 minutes. Non-negotiable. The session's actual 
-work starts after this.
+Total: 3-15 minutes depending on whether rotation read happens.

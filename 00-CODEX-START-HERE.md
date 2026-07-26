@@ -12,20 +12,23 @@ Your job is not only to complete the immediate task. Your job is also to preserv
 
 ## First Read
 
-Before making changes, read:
+**Read `_READ_ME_FIRST.md` before anything else — it is the front door and Canon. It carries this week's active bulletins, the standing rulings you must act on (the Conciliatory Rule), the things-we-don't-do, and the program links. Everything below is reference you dive into as needed.**
+
+Then, before making changes, read:
 
 1. `99-README.md`
 2. `00-LIVING-CHARTER.md`
 3. `01-WHO-WE-ARE.md`
 4. `02-HOW-WE-WORK.md`
 5. `03-BOUNDARIES.md`
-6. `INFRASTRUCTURE.md`
-7. `PROJECTS/_registry.md`
-8. `CODERS/README.md` when doing code work
-9. The relevant project's `STATUS.md`
-10. `GLOBAL-RULINGS/RULINGS.md`
-11. Latest relevant file in `SIGN-OFFS/`
-12. Any project-level `RULINGS.md`, `DECISIONS.md`, or latest trench report
+6. `04-AGENT-ROUTINE.md`
+7. `INFRASTRUCTURE.md`
+8. `PROJECTS/_registry.md`
+9. `CODERS/README.md` when doing code work
+10. The relevant project's `STATUS.md`
+11. `GLOBAL-RULINGS/RULINGS.md`
+12. Latest relevant file in `SIGN-OFFS/`
+13. Any project-level `RULINGS.md`, `DECISIONS.md`, or latest trench report
 
 ## Operating Rules
 
