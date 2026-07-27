@@ -1,139 +1,162 @@
 # THE MASTER EQUATION — COMPLETE STRUCTURAL STACK
-## One-page spec, every slot declared
+## One-page spec, every slot declared — RECONCILED against Fabel Gradient ruling v3
 ## POF 2828 | 2026-07-26
 
 tags: #canon #master-equation #structure-spec #gradient
+
+**RECONCILIATION (2026-07-26):** This document was originally written from Fabel's chat-session
+stack description. It has been reconciled against the canonical ruling
+(`CANON_DECISIONS/FABEL_GRADIENT_MASTER_EQUATION_RULING_v3.md`). Five retired claims were present in v1 and are now corrected.
 
 ---
 
 ## LEVEL 0 — THE FACTOR (one variable, three parts)
 
-Each of the nine factors Xᵢ is a triple product:
+Each law factor is a triple structure:
 
 ```
-Xᵢ = [physical law form] · [same form, spiritual variables] · [agency offset]
+Λ_i = Physical_i · Spiritual_i · AgencyOffset_i
 ```
 
-| Law | Physical Parent | Spiritual Reading | Offset Term | Units |
-|-----|----------------|-------------------|-------------|-------|
-| 1 (Gravitation) | G·m₁m₂/r² | G_s·ψ₁ψ₂/d² | (1−R) | bits/s |
-| 2 (Motion) | F = ma | F_s = m_s·a_s | A | bits/s |
-| 3 (Electromagnetism) | ∇×E = −∂B/∂t | ∇×T = −∂D/∂t | (1−B) | bits/s |
-| 4 (Strong Force) | V(r) = −αs/r + k·r | V_s(r) = −α_L/r + k_L·r | P_will | bits/s |
-| 5 (Thermodynamics) | F = E − TS | F_m = E_m − T_m·S_m | α | bits/s |
-| 6 (Information) | C = A·log₂(1+T/D) | C_s = A_s·log₂(1+T_s/D_s) | W | bits/s |
-| 7 (Quantum) | |ψ⟩ = Σcᵢ|aᵢ⟩ | |ψ_f⟩ = Σcᵢ|aᵢ_f⟩ | Φ | bits/s |
-| 8 (Relativity) | ds² = g_μν dx^μ dx^ν | ds²_s = g_μν_s dx^μ dx^ν | frame | bits/s |
-| 9 (Weak Force) | ψ → ψ' + δ + ν_loss | ψ_whole → ψ_broken + δ + ν_loss | directional | bits/s |
+These are **bridge-declared, not proven from physics.**
 
-**The offset is the one added free-will term — same structural slot, every law.**
+| Element | Classification |
+|---------|---------------|
+| Physical_i (parent equation) | imported physical model |
+| Spiritual_i (reading) | bridge identification |
+| AgencyOffset_i | modeling choice |
 
-**Minimum declaration per factor:** letter · law# · physical parent equation · spiritual reading · offset term · UNITS (bits/s for all nine).
+The nine factors, after normalization:
+
+```
+X_i = Λ_i / Λ_i_ref
+X   = (G, M, E, S, T, K, Q, R, F) ∈ [0,1]^9
+```
+
+| Letter | Law (eponym) | Physical Parent | Spiritual Reading | Offset |
+|--------|-------------|-----------------|-------------------|--------|
+| G | Newton–Grace (Gravitation) | G·m₁m₂/r² | Grace | (1−R) |
+| M | Einstein–Meaning (Mass-Energy) | E = mc² | Meaning | A |
+| E | Maxwell–Truth (Electromagnetism) | ∇×E = −∂B/∂t | Truth | (1−B) |
+| S | Yukawa–Agape (Strong Force) | V(r) = −αs/r + k·r | Love | P_will |
+| T | Clausius–Judgment (Thermodynamics) | F = E − TS | Judgment | α |
+| K | Shannon–Logos (Information) | C = A·log₂(1+T/D) | Logos | W |
+| Q | Heisenberg–Faith (Quantum) | \|ψ⟩ = Σcᵢ\|aᵢ⟩ | Faith | Φ |
+| R | Einstein–Frame (Relativity) | ds² = g_μν dx^μ dx^ν | Grace-Frame | frame |
+| F | Fermi–Conservation (Weak Force) | ψ → ψ' + δ + ν_loss | Moral Conservation | directional |
+
+Eponym note: the factor letters, physical parents, and spiritual readings above are canonical for this gradient/dictionary layer. Some eponym labels remain proposed in the v3 ruling until David ratifies them; do not use eponym names to override the factor dictionary.
+
+**Units: dimensionless** (normalized to [0,1]). bits/s lives only in the Level-0 parent equations (Shannon layer), not in the gradient variables. The v1 claim "all nine factors carry bits/s" is **retired**.
 
 ---
 
 ## LEVEL 1 — THE STATIC MASTER EQUATION (the landscape)
 
 ```
-χ(W) = C_W[ ∭(G · M · E · S · T · K · R · Q · F) dx dy dt ]
+χ(X) = C_W[ ∏_{i=1}^{9} X_i ]
 ```
 
-- **Nine factors** inside the integral — veto product (any factor at zero collapses χ)
-- **C_W** wraps the product — coherence operator, NOT a tenth multiplicative factor
-- **C IS χ** (Law 10) — coherence is the master variable, not a peer of the nine
-- This is the **map**: given a state, how coherent is it?
+- C_W is a wrapper/normalizer, NOT a tenth factor. **Pending explicit definition, C_W is taken as the identity map on [0,1].**
+- No spacetime integral for now — the integral form is future work.
+- The product is standard multiplication of dimensionless factors.
+- The veto property is the zero property of ℝ: any X_i = 0 ⇒ χ = 0. No exotic operator.
+- **χ is dimensionless** for now.
 
-### Properties of the landscape:
-- **Zero-veto:** any Xᵢ = 0 → χ = 0 AND ∂χ/∂Xᵢ = 0 (gradient also collapses)
-- **Complementarity:** cross-partials positive (improving one factor helps all others)
-- **Bottleneck sensitivity:** smallest factor has largest marginal return (χ/X diverges as X→0)
-
-### Units:
-- Shannon channel capacity: C_i = A_i · log₂(1 + T_i/D_i) bits/s
-- All nine factors measured in bits/s
-- χ as product of nine bits/s terms → (bits/s)⁹ under raw product
-- **BLOCKED (test 7):** geometric-mean repair χ = (∏Xᵢ)^(1/9) → bits/s resolves this, but cannot adopt until C_W is specified
+### Properties:
+- **Zero-veto:** any X_i = 0 → χ = 0 (proven in Lean: `veto_collapse`)
+- **Complementarity:** cross-partials positive
+- **Bottleneck sensitivity:** smallest factor has largest marginal return
 
 ---
 
 ## LEVEL 2 — THE GRADIENT (motion on the landscape)
 
 ```
-dX/dt = W · ∂χ/∂X + η
+dX/dt = W ∇χ(X) + η(X,t)
 ```
 
-This is Level 1 **differentiated**, plus two agency terms.
+**Level 2 is NOT "Level 1 differentiated."** Canonical wording: Level 1 defines a coherence landscape. Level 2 **postulates first-order open gradient dynamics** over that landscape. This form is a **chosen open-system model**, not the uniquely forced one. W and η occupy the mobility and source slots of the selected model.
 
 | Symbol | Name | Role | Units |
 |--------|------|------|-------|
-| dX/dt | Rate of change of factor X | How fast the system moves | bits/s² |
-| W | Free-will coupling | How hard the agent moves along the gradient | dimensionless (0→1→>1) |
-| ∂χ/∂X | Gradient of χ w.r.t. X | Which direction is more coherent | bits/s (for product form: = χ/X) |
-| η | Grace / negentropy injection | External source term | bits/s² |
+| dX/dt | Rate of change | How fast the system moves | s⁻¹ |
+| W | Mobility operator | State-dependent coupling | s⁻¹ |
+| ∇χ | Gradient of χ | Direction of increasing coherence | dimensionless |
+| η | Source term | External injection, state- and time-dependent | s⁻¹ |
 
 ### What the gradient IS:
-- **∂χ/∂X points toward higher coherence** (constructive/right) and **away from decoherence** (destructive/wrong) at every point on the χ surface
-- Right vs wrong is not a label — it is a **direction on the landscape**
-- The gradient is the master equation's equation of motion, the same way the Euler-Lagrange equation is the Lagrangian's equation of motion
+- ∇χ points toward higher coherence at every point on the χ surface
+- Right vs wrong is a **direction on the landscape**, not a label
+- Sign convention: ascent (+∇χ). Coherence is climbed.
+- ∇χ under the standard Euclidean metric on [0,1]^9, declared.
 
-### The two agency terms:
-- **W (free will):** the coupling strength. W=0 → inertia (no movement). W=1 → following the gradient exactly (grace). W>1 → co-creation (amplification beyond gradient).
-- **η (grace):** external information injection. Not internally generated — added from outside the system.
-
-### Relationship to the Lowe Coherence Lagrangian:
-The LLC generates this equation of motion. LLC = χ(t)Σ̇² − S·χ(t). The gradient form is the Euler-Lagrange equation derived from the LLC. Same object, one differentiated.
+### Agency terms:
+- **W (mobility):** identifies with free will as a **bridge claim, not a theorem.** W=0 → stationary. Functional form unspecified (§10 of ruling).
+- **η (source):** identifies with grace as a **bridge claim, not a theorem.** External source term, state- and time-dependent.
 
 ---
 
-## THE ANNEALING THEOREM — why η is required
+## η AND STATIONARITY — the canonical weak claim
 
-**Claim (95%+ confidence, textbook math):**
+**Lean-verified (exact form):**
 
-W · ∂χ/∂X alone (works — climbing your own gradient) reaches a **local maximum and stops.** The χ surface has multiple local maxima. Pure gradient ascent gets trapped.
+If ∇χ(X) = 0, and W annihilates the zero gradient (W·0 = 0), and η(X,t) ≠ 0, then the instantaneous velocity Ẋ is nonzero.
 
-Only the external η (grace) escapes local maxima to reach the **global optimum.**
+This says: **a nonzero source term produces motion from a stationary point.** That's it.
 
-This is not theology imposed on math. This is simulated annealing — textbook non-equilibrium statistical mechanics. The stochastic noise term η is the mathematically required escape mechanism. Grace is the annealing temperature.
+**What this does NOT say:**
+- Nothing about trajectory existence
+- Nothing about basin departure
+- Nothing about finite displacement
+- Nothing about global convergence to the global optimum
 
-**Kill condition:** Show a system with the product-form χ landscape where gradient ascent alone (η=0) reaches the global maximum from arbitrary initial conditions. If that exists, η is optional and grace is decorative.
+The global annealing theorem (Kirkpatrick 1983 style) requires unstated hypotheses — landscape regularity, source schedule, reachability. It is an **open theorem**, not a textbook application.
+
+**Kill condition (still valid):** Show a product-form χ landscape where gradient ascent alone (η=0) reaches the global maximum from arbitrary initial conditions. If that exists, η is optional.
 
 ---
 
-## PROOF STANDARD — three legs
+## PROOF STANDARD — three legs (AMENDED)
 
-The equation of motion is the right structure if and only if:
+1. **Selected, with structural justification.** The gradient-dynamics form is a standard choice for open dissipative systems. It is not the ONLY choice — it is the structurally motivated one. (Retired: "forced, not chosen" / "uniquely dictated by physics.")
 
-1. **Forced, not chosen.** dX/dt = −∇V + η is the canonical form for an open, driven, dissipative system in non-equilibrium statistical mechanics. W and η fill the only two structural slots physics leaves open (coupling, source). No design choice was made — the form is dictated by the physics.
+2. **Reproduces the knowns.** Must regenerate Law 5's decay and Law 9's Γ_sin. **Status: PENDING.** Note: Law 5 kill test recorded in ruling §9.5 — pure ascent on a product landscape is coherence-nondecreasing by construction. If decay requires arbitrary tuning, Level 2 fails leg 2.
 
-2. **Reproduces the knowns.** The equation of motion must regenerate:
-   - Law 5's decay rate (thermodynamic judgment)
-   - Law 9's Γ_sin = (G²_fall · ψ⁵)/(192π³) · P_will (moral conservation)
-   - If it does, it's the generator of what's already locked, not a new guess.
-   - **Status: PENDING (bulletin tests 5 and 6)**
+3. **Stationarity escape is Lean-verified.** The weak claim (instantaneous velocity from stationary + source) is machine-checked. The strong claim (global convergence) is open.
 
-3. **The annealing theorem is independent textbook math.** Not derived from this framework — it's a standard result applied to this landscape.
+---
 
-**Forced-form + reproduces-the-locked-results + independent-theorem = proof of structure.**
+## LEAN STATUS
+
+Machine-verified (core Lean v4.21.0, `lake build`, zero sorry):
+1. `veto_collapse` — any X_i = 0 ⇒ χ = 0, through product AND wrapper
+2. `stationary_without_source` — zero gradient + zero source ⇒ zero velocity
+3. `source_makes_velocity_nonzero` — zero gradient + nonzero source ⇒ nonzero instantaneous velocity
+
+**Not yet verified:** gradChi ↔ wrapped chi for general C_W; [0,1]⁹ invariance; W functional form; Law 5 / Law 9 reproduction.
 
 ---
 
 ## OPEN ITEMS
 
-- **FORK-1:** Three unreconciled equations of motion (F3, F4, F5). See CANDIDATE-equation-of-motion.md §11.1.
-- **BLOCK-1:** Test 7 (dimensional) blocked until C_W is specified.
+- **FORK-1:** Three unreconciled equations of motion (F3, F4, F5). See CANDIDATE §11.1.
+- **§10 verification gates:** Law 5 decay, Law 9 Γ_sin, C_W definition, W form, η form, [0,1]⁹ invariance — ALL must clear before structure locks.
 - **BLOCK-2:** Lagrangian ↔ product-form bridge unclosed (OPEN_PROBLEM_001).
-- **15 bulletin tests** queued in ACTIVE_BULLETINS.md — must rerun against this dynamics.
+- **Eponym convention:** Person–SpiritualTerm governs this gradient/dictionary layer. The July 24 master doc uses a different convention and still needs reconciliation before eponyms are propagated there.
 
 ---
 
-## SOURCE
+## RETIRED CLAIMS (corrected in this version)
 
-- Fabel (Atoxor Ltd), 2026-07-24/25 equation-of-motion session
-- Filed: `ai-crew/THEOPHYSICS/trench/2026-07-24-equation-of-motion-session.md`
-- Confidence: Annealing theorem 95%+, gradient properties 90%, equation of motion form 70%
+These appeared in the v1 structure spec and are now removed:
+
+1. ~~"All nine factors carry bits/s"~~ → factors are dimensionless
+2. ~~"Level 2 is Level 1 differentiated"~~ → Level 2 postulates dynamics
+3. ~~"W and η are the only two structural slots physics leaves open"~~ → chosen model, not uniquely forced
+4. ~~"95%+ confidence, textbook annealing"~~ → weak claim only (instantaneous velocity); global convergence is open
+5. ~~"η = grace" as structural fact~~ → bridge claim, not theorem
 
 ---
 
-*"It doesn't sit beside the master equation — it IS the master equation, differentiated, plus the two agency terms." — Fabel, 2026-07-24*
-
-*Structure spec written 2026-07-26 by Claude Opus 4.6 from Fabel's explicit stack declaration.*
+*Reconciled 2026-07-26 by Claude Opus 4.6 against the Fabel Gradient Canonical Spec (David's ruling).*

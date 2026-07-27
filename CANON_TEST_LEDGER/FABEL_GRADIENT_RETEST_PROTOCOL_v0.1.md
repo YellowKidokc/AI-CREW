@@ -336,6 +336,70 @@ Use: "The theological identification is an explicit bridge claim carried by the 
 ## 14. One-Sentence Operating Rule
 Preserve every old result as historical evidence, rerun every load-bearing result against v3, compare the gradient equation against the Lagrangian stack and controls, and only promote claims after the evidence dossier shows what was defined, tested, reproduced, and still left open.
 
+## 15. Change-Control Rule
+
+The v3 ruling is now the test baseline. Do not casually change the equation, variable dictionary, units, wrapper placement, or evidence standard. A change is treated by class:
+
+| Class | What changed | Required action |
+|---|---|---|
+| C0 | Wording, labels, sign-off notes, provenance | No retest. Record the edit. |
+| C1 | Taxonomy around the equation, e.g. selection rule vs theorem candidate | Targeted review only. No full rerun unless couplings or variables change. |
+| C2 | Test harness, tolerances, controls, or evidence dossier fields | Rerun affected tests and mark old rows as historical/needs migration. |
+| C3 | Dictionary, units, `C_W` wrapper behavior, `W`, `eta`, boundary conditions, or `chi` definition | Breaking change. Run Module 0 version-drift intake and rerun every affected load-bearing result. |
+| C4 | Core equation form, number of factors, Law 5/Law 9 target equations, or `L_D` definition once introduced | New baseline candidate. Freeze claims until retested against controls. |
+
+Current edits from David's 2026-07-26 Fabel note are C1 unless they later define `L_D` mathematically:
+
+```text
+Adversarial Selection Rule = taxonomy over allowed couplings, not a new equation term.
+L_D eigenmode route = missing-object work order, not a change to v3 dynamics yet.
+```
+
+This matters because the project already has a large prior test burden. Do not force a full rerun for naming/provenance improvements. Do force a rerun when a change affects what the tests actually computed.
+
+## 16. Python/Colab Equation-Slot Migration Rule
+
+Old Python and Colab tests should not be discarded merely because they used an older equation. Most of their value is in the harness: seeds, regimes, controls, stress sweeps, plots, tolerances, output tables, and failure reporting.
+
+GitHub/Colab publication workflow:
+
+```text
+CANON_TEST_LEDGER/V3_GITHUB_TEST_MIGRATION_RUNBOOK.md
+```
+
+Migration pattern:
+
+```text
+1. Mark the old local equation block as HISTORICAL_EQUATION_SLOT.
+2. Add a V3_CANONICAL_EQUATION_SLOT adapter beside it.
+3. Keep all non-equation harness code unchanged where possible.
+4. Rerun the same tests with the v3 slot.
+5. Mark old outputs as historical and new outputs as v3 reruns.
+```
+
+Canonical adapter contract:
+
+```text
+X = (G, M, E, S, T, K, Q, R, F) in [0,1]^9
+chi(X) = C_W[prod_i X_i]
+dX/dt = W grad chi(X) + eta(X,t)
+```
+
+Pilot file marked 2026-07-27:
+
+```text
+\\192.168.2.50\h_hp\Desktop 2\Lagrangian\TESTS\lagrangian_workbench.py
+```
+
+That file now contains:
+
+```text
+V3_CANONICAL_EQUATION_SLOT
+HISTORICAL_EQUATION_SLOT
+```
+
+Do not overwrite historical equations silently. Label them, then swap the adapter in the rerun branch so old evidence remains traceable.
+
 ---
 
 ## CREW SIGN-OFF (append your line)
@@ -345,6 +409,7 @@ Read the protocol + the v3 ruling it depends on, then sign. If you object, say w
 | AI | Date | SIGN-OFF (agree / changes) | Notes |
 |---|---|---|---|
 | Claude Opus 4.8 (1M) | 2026-07-26 | AGREE (filed; consistent with v3 ruling — bits/s retired, C_W wrapper, July dictionary) | See precision note below |
+| Codex GPT-5 | 2026-07-26 | AGREE | Read protocol plus v3 ruling/dictionary. Protocol is aligned with the ruling: classify version drift first, keep old Lagrangian results as historical evidence, retest v3 with controls, and separate formal/numerical/empirical/bridge evidence. I recommend starting with algebra/unit gates before Law 5/Law 9 reproduction. |
 | | | | |
 
 *Opus 4.8 note:* one thing to confirm during Module 0 — the July dictionary in this protocol (S=Strong/Love, T=Thermo/Judgment, F=Weak/Moral-Conservation) matches David's v3 ruling §2. My earlier `DICTIONARY_RULING_OP12.md` has been reconciled to that ruling (E=Energy, R=Grace-Frame, F=Moral-Conservation). Any artifact using the old letters is `do not cite for v3`.

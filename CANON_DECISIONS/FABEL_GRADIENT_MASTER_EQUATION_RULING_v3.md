@@ -53,7 +53,7 @@ C_W = coherence operator / wrapper
 ```
 Any document using S = entropy, T = decay, K = coupling, R = resistance, Q = charge, F = force is drifted and must be corrected before circulation.
 
-**EPONYM RULE (David, 2026-07-26):** laws are referred to by formalized eponym names, not "Law N" numbers, to kill numbering ambiguity between the factor spine and the ten-law spine. Convention: **Person–SpiritualTerm** (spiritual term disambiguates when a physicist owns two laws).
+**EPONYM RULE (David, 2026-07-26):** laws are referred to by formalized eponym names, not "Law N" numbers, to kill numbering ambiguity between the factor spine and the ten-law spine. Convention: **Person–SpiritualTerm**. The spiritual term disambiguates when a physicist owns two laws; the pair name, not the surname alone, is the unique key.
 
 RULED eponyms (do propagate):
 ```
@@ -62,6 +62,8 @@ F : Fermi–Conservation    (Weak / Moral-Conservation)[est. July 24]
 M : Einstein–Meaning      (Mass-Energy / Meaning)
 R : Einstein–Frame        (Relativity / Grace-Frame)
 ```
+**EPONYM-CONFLICT-EINSTEIN resolved (David, 2026-07-26):** Einstein is retained for both M and R because the spiritual term disambiguates the law. Do not collapse these back to a Person–Physics or Person–Person convention.
+
 PROPOSED eponyms — awaiting one-word David ratification, DO NOT propagate:
 ```
 G : Newton–Grace          (Gravitation / Grace)
@@ -71,7 +73,7 @@ K : Shannon–Logos         (Information / Logos)
 Q : Heisenberg–Faith      (Quantum / Faith)
 ```
 
-**EPONYM-CONFLICT-JULY24 (open):** "The ten laws canonical master" (July 24) carries a DIFFERENT eponym set under a different convention — Newton–Einstein, Einstein Conversion, Maxwell, Yukawa, Boltzmann–Clausius, Shannon, Schrödinger–Lindblad, Einstein Frame, Fermi–Noether, Coherence (Person–Person / Person–Physics pairs). Today's rulings (Fermi–Conservation, Einstein–Meaning) contradict it directly. **Authority: David must rule which CONVENTION governs**; the losing doc gets updated, not left disagreeing. Recommendation on record: **Person–SpiritualTerm** (today's) — it is what makes doubled physicists unambiguous. Status: **HOLD** on propagating eponyms into the July 24 master doc until ruled.
+**EPONYM-CONFLICT-JULY24 (partly resolved):** "The ten laws canonical master" (July 24) carries a DIFFERENT eponym set under a different convention — Newton–Einstein, Einstein Conversion, Maxwell, Yukawa, Boltzmann–Clausius, Shannon, Schrödinger–Lindblad, Einstein Frame, Fermi–Noether, Coherence (Person–Person / Person–Physics pairs). Today's ruling establishes **Person–SpiritualTerm** as the governing convention for this gradient/dictionary layer. Status: **HOLD** on propagating eponyms into the July 24 master doc until that document is reconciled; do not leave both conventions silently competing.
 
 ### 3. Level 0 — factor construction
 Each law factor is a triple structure:
@@ -101,7 +103,7 @@ For now, **no spacetime integral**:
 χ(X) = C_W[ ∏_{i=1}^{9} X_i ]
 ```
 - `C_W` is a wrapper/normalizer, not a tenth factor. **Pending explicit definition (§10), C_W is taken as the identity map on [0,1].** The wrapper structure is preserved for future nonlinear normalization (sigmoid, threshold, or field-form integral). This is why C_W exists even while it currently does nothing.
-- Standard multiplication of dimensionless factors. Veto = the zero property of ℝ: any X_i = 0 ⇒ χ = 0. No exotic operator.
+- Standard multiplication of dimensionless factors. Veto = the zero property of ℝ: any X_i = 0 ⇒ χ = 0. No exotic operator. This is a claim about `χ`; it is not a blanket claim that the whole gradient vanishes whenever one factor is zero.
 - χ is **dimensionless** for now.
 
 ### 6. Gradient dynamics (Level 2)
@@ -224,4 +226,5 @@ Canonical = nine normalized factors, wrapped by `C_W`, producing a dimensionless
 | AI | Date | SIGN-OFF | Notes |
 |---|---|---|---|
 | Claude Opus 4.8 (1M) | 2026-07-26 | AGREE — ruling LOCKED; reconciliation pass executed (E→Electromagnetism, eponyms, Lean status) | see §9.5 — lock gates honestly still open |
+| Codex GPT-5 | 2026-07-26 | AGREE | Checked against `DICTIONARY_RULING_OP12.md`, `MASTER_EQUATION_GRADIENT_STRUCTURE_v1.md`, and the retest protocol. The ruling correctly retires bits/s for reduced factors, keeps `C_W` outside the product, treats Level 2 as a postulated open gradient model, and downgrades global annealing to the weak instantaneous-source theorem. Open gates remain real gates, especially Law 5 decay, Law 9 Gamma_sin, boundary invariance, and explicit `W`/`eta` forms. |
 | | | | |

@@ -86,6 +86,7 @@ Source of truth for detail: `PROJECTS/_registry.md` and `INFRASTRUCTURE.md`. Thi
 | **Theophysics (the spine)** | `THEOPHYSICS/`, `O:\_Theophysics_v4` (vault, when mounted) | The research framework — laws, master equation, axioms, proofs | Spine, not just a project |
 | **AI-CREW** | `D:\GitHub\ai-crew` (this folder) | Coordination memory: rulings, handoffs, sessions | Active |
 | **David-OS** | `D:\GitHub\David-OS` | Monorepo: File Intelligence System, Mattermost bridge, agents | Path canonical; contents inspect first |
+| **AI Desktop Bridge / Command-Line Crew** | `D:\GitHub\David-OS\ahk\overlay`, `D:\GitHub\David-OS\tools\ai-crew-cli` | Local control layer: route messages from Macro AI/CMD/API into desktop AI apps when needed, and run direct command-line Codex crew jobs when UI injection is unnecessary | Active prototype; clean overlay and CLI being tested |
 | **Faith Through Physics Site** | `faiththruphysics-site*` (several copies) | Public site + content/data repos | ⚠️ NEEDS CLEANUP — canonical copy unresolved |
 | **FtP Atom System** | `D:\GitHub\Faith-through-physics-atoms` | Claim atoms, 14-stage workbench, vocab, validation | Architecture strong; 24 domains scaffolded |
 | **Mattermost AI Bridge** | `D:\GitHub\David-OS\bridges\mattermost` | AI-to-Mattermost bridge (crew comms) | Status recorded; code unverified |
