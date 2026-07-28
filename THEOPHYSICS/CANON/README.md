@@ -2,6 +2,14 @@
 
 tags: #canon #core #do-not-edit
 
+**FIRST PAGE:** `00-START-HERE-CANON-AI-SIGNOFF-2026-07-28.md`
+
+This is the current top-level canon intake page for the July 28, 2026 Theophysics mother-load review. It does not copy the whole review packet into canon. It points to the active packet location, names the AI signoff lane, and states the promotion rule before any reader touches the deeper files.
+
+**AI reviewer statement shelf:** `D:\DONT TOUCH HTML\_best_html\AI CREW`
+
+This shelf collects AI statements, signoff reflections, reviewer cautions, and future work-order notes. These statements are context and review pressure, not proof.
+
 **These documents are the canonical reference. All other documents must agree with these. When in conflict, THESE WIN.**
 
 **Gate tool:** `D:\GitHub\David-OS\000_TOOLS\canon_gate_v2.py` — run against any folder to check compliance.

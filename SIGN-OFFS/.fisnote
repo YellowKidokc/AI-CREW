@@ -1,21 +1,21 @@
 ---
 fis_schema: "folder-index.v1"
-folder_id: "FLD-20260726-2c47406f"
+folder_id: "FLD-20260727-2c47406f"
 folder: "GitHub\ai-crew\SIGN-OFFS"
 folder_class: "project"
 confidence: 0.6
 dependency_risk: 0.0
 dominant_family: "text"
-dominant_ratio: 0.923
-file_count: 13
-classified_at: "2026-07-26T08:52:19"
+dominant_ratio: 0.95
+file_count: 20
+classified_at: "2026-07-27T19:35:49"
 allowed_actions: ["index", "rename_internal", "subfolder_sort", "archive_exports"]
 suggested_name: "sign-offs"
 ---
 
 # FIS Folder Index: SIGN-OFFS
 
-**Class**: project  ·  **Confidence**: 60%  ·  **Files**: 13  ·  **Dominant**: text (92%)
+**Class**: project  ·  **Confidence**: 60%  ·  **Files**: 20  ·  **Dominant**: text (95%)
 
 ## Allowed actions
 - index
