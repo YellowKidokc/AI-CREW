@@ -47,6 +47,38 @@ This page does not copy the whole review packet into canon.
 
 It is a canon-facing pointer and signoff gate. The working packet stays on `H:\Desktop 2`; this page tells every AI/reviewer exactly where to start, what to inspect, and what not to overclaim.
 
+## File Search And Script Rule
+
+If an AI is looking for files, trying to locate specific claims, sorting a corpus, finding duplicates, matching cross-domain structures, or scanning for bridges, start from the existing Unification/FIS tooling before making a one-off search.
+
+Primary working folder:
+
+```text
+C:\theophysics\UNIFICATION
+```
+
+Important script/tool lanes:
+
+```text
+C:\theophysics\UNIFICATION\26_API_MEMORY_LEDGER
+C:\theophysics\UNIFICATION\27_PER_PAPER_TRIAL_MODES
+C:\theophysics\UNIFICATION\28_LOCAL_TRIAGE_FUNNEL
+C:\theophysics\UNIFICATION\29_API_LINKED_KEEPERS
+C:\theophysics\UNIFICATION\30_STRUCTURAL_FINGERPRINTS
+C:\theophysics\UNIFICATION\31_SEMANTIC_EVENT_FRAMES
+D:\GitHub\David-OS\file-intelligence-system
+D:\GitHub\David-OS\agents\labelers\semantic_addressing
+```
+
+Use these scripts as the default rails. If the existing tool is close but not exact, add the new behavior as a switchable mode, prompt, config, or small wrapper that can be turned on or off. Do not scatter untracked one-use scripts when the improvement belongs in the shared tooling.
+
+Standing improvement rule:
+
+```text
+Every search/sort/fingerprint pass should leave the machine better than it found it:
+reusable script, named mode, manifest, readout, and clear limits.
+```
+
 ## Current Canon Gate
 
 Before anything is promoted, every reviewer should preserve this rule:
@@ -146,6 +178,16 @@ H:\Desktop 2\NEWLY_TESTED_THEOPHYSICS_REVIEW_2026-07-28\RELATIONAL_REGISTRATION_
 ```text
 H:\Desktop 2\NEWLY_TESTED_THEOPHYSICS_REVIEW_2026-07-28\M_SERIES_MORAL_FIRST_POSTULATE_STACK_2026-07-28.md
 D:\DONT TOUCH HTML\_best_html\AI CREW\2026-07-28_M_SERIES_MORAL_FIRST_POSTULATE_STACK.md
+```
+
+13. Unification search, API memory, and semantic event-frame tooling:
+
+```text
+C:\theophysics\UNIFICATION\26_API_MEMORY_LEDGER\BATCH50_READOUT_2026-07-28.md
+C:\theophysics\UNIFICATION\27_PER_PAPER_TRIAL_MODES\HOMOMORPHISM_RERUN_READOUT_2026-07-28.md
+C:\theophysics\UNIFICATION\29_API_LINKED_KEEPERS\API_LINKED_KEEPERS_READOUT.md
+C:\theophysics\UNIFICATION\30_STRUCTURAL_FINGERPRINTS\open_problem_001_product_form_CROSS_DOMAIN_SUMMARY.md
+C:\theophysics\UNIFICATION\31_SEMANTIC_EVENT_FRAMES\SEMANTIC_EVENT_FRAME_FINGERPRINT_PLAN_2026-07-28.md
 ```
 
 ## What Is Already Real

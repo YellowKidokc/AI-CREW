@@ -10,6 +10,8 @@ This is the current top-level canon intake page for the July 28, 2026 Theophysic
 
 This shelf collects AI statements, signoff reflections, reviewer cautions, and future work-order notes. These statements are context and review pressure, not proof.
 
+**Search/tooling rule:** if an AI is looking for files, sorting material, deduping, or searching for cross-domain bridges, start with the reusable tooling under `C:\theophysics\UNIFICATION` and `D:\GitHub\David-OS\file-intelligence-system`. If the tool is close but not exact, add a switchable mode or wrapper and leave a manifest/readout.
+
 **These documents are the canonical reference. All other documents must agree with these. When in conflict, THESE WIN.**
 
 **Gate tool:** `D:\GitHub\David-OS\000_TOOLS\canon_gate_v2.py` — run against any folder to check compliance.
