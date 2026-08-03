@@ -14,6 +14,7 @@ tags: #shift-change #master-equation #chi #coherence #derivation #unverified
 - Filed a detailed task handoff.
 - Preserved provenance across David, Claude Opus, and GPT/Codex.
 - Recorded David's line: “It’s not to fragment intellect. It’s to simplify with wisdom.”
+- Created a separate T2 candidate connecting wisdom, meaning-preserving compression, the Pharisee Function, and behavioral AI research without making a consciousness claim.
 
 ## Ranked findings
 
@@ -31,6 +32,7 @@ tags: #shift-change #master-equation #chi #coherence #derivation #unverified
 | `THEOPHYSICS/STANDING-PROBLEMS.md` | Added SP-11 |
 | `handoffs/HANDOFF_2026-08-03_CAPABILITY_BASIS_IRREDUNDANT_CONSTRAINTS.md` | Created |
 | `SIGN-OFFS/2026-08-03-codex-capability-basis.md` | Created |
+| `THEOPHYSICS/CANDIDATE-wisdom-as-meaning-preserving-simplification.md` | Created |
 
 ## What did not change
 
