@@ -97,22 +97,42 @@ Product, minimum, geometric mean, weighted product, and other conjunction rules 
 
 ---
 
-## 4. K / Information is reopened
+## 4. R-1 and K witness status
+
+### R-1 — closed for the witness program
+
+Use the newest ruled physical dictionary:
+
+\[
+M=\text{Mass-energy}.
+\]
+
+M supplies physical content, inertia, and capacity for work. Motion belongs to lawful evolution and resulting history, including the Level-2 dynamics; it is not a second capability bundled into M. The older Motion / Mass-energy ambiguity and the later “dynamical actualization” bundle are not used in the nine-witness run.
+
+This is application of the existing dictionary, not a canon change.
+
+### K — provisional survivor
 
 The earlier ruling that K must be removed as a derived readout was made under the wrong criterion and is withdrawn at candidate level.
 
-K survives if a near-miss world can satisfy all other requirements while failing to create durable, publicly recoverable records. A candidate witness is a world with adequate content, binding, mediation, transformation, thermodynamic direction, and frame structure, but with environmental dynamics that prevent stable, redundantly accessible records.
+The K witness exposed a required semantic split:
 
-This is the territory of the Watcher / record program and quantum-Darwinism-style redundancy. It is **not yet a completed physical witness**.
+- \(K_{\mathrm{raw}}\): distinguishability, Shannon information, and information formalism. This is probably substrate/formalism, not an irredundant peer.
+- \(K_{\mathrm{record}}\): capacity for durable, redundant, independently recoverable public records. This is the candidate axis.
 
-K is redundant only if:
+A March 2026 solvable monitored-dynamics model distinguishes an apparatus phase from a scrambler phase. Approximate decoherent histories occur in both, but quantum-Darwinist objectivity appears only in the apparatus phase. This supplies the physical seam for a near-miss world: the other eight sectors remain active while record-bearing environmental dynamics occupy the scrambler phase.
 
-```text
-intersection_(j != K) V_j  subset_of  V_K
-```
+Detailed construction:
 
-That entailment has not been established.
+- [WITNESS 01 — K / Publicly Recoverable Record Capacity](WITNESS-01-K-PUBLIC-RECORD-CAPACITY.md)
 
+Verdict:
+
+- \(K_{\mathrm{raw}}\) as a peer: **FAIL**.
+- \(K_{\mathrm{record}}\): **PROVISIONAL PASS — conceptual witness constructed**.
+- Full world-scale embedding, numerical margins, and \(\tau\)-robustness: **not yet completed**.
+
+This is not a promotion of K. It is permission for K to remain in the survivor set while the other eight witnesses are constructed.
 ---
 
 ## 5. Irredundancy is not global minimality
@@ -208,19 +228,16 @@ The qualitative dependency audit remains useful as a hypothesis generator, not a
 
 ## 9. Current test program
 
-1. Define ambient candidate-world space `Omega`.
-2. Define `W_phys` without theology and without building the nine answers into its wording.
-3. Define nine operational adequacy functions `X_i`.
-4. Use dimensionless physical parameters and explicit scales.
-5. Anchor thresholds externally where possible; otherwise declare ranges.
-6. Construct nine robust leave-one-out witnesses.
-7. Build the K failed-record witness first.
-8. Test the revised M axis: separate physical content from dynamical actualization/response.
-9. Define admissible atomic requirements before returning to `|B| >= 9`.
-10. Separate nearest-boundary margin `rho` from integrated coherence `chi`.
-11. Compare aggregation rules against an external outcome.
-12. Add pair and triple causal-interaction tests.
-13. Update Lean only after the mathematical object and claim are ruled.
+1. Keep the leave-one-out criterion fixed; do not solicit a fifth methodology.
+2. Use the ruled M = Mass-energy dictionary; keep Motion in dynamics/history.
+3. Treat K as public-record capacity for the witness program; keep raw Shannon information at the formal/substrate layer.
+4. K witness: constructed provisionally; world-scale embedding and `tau)-robustness remain pending.
+5. Construct the other eight leave-one-out witnesses, one world and one verdict each.
+6. Apply `tau)-robustness only to witnesses that survive construction.
+7. Keep the global `|B| >= 9` target shelved until the geometry and atomic-requirement grammar are funded and characterized.
+8. Separate nearest-boundary margin `rho` from integrated coherence `chi`.
+9. Compare aggregation rules only after the survivor set is known.
+10. Update Lean only after the mathematical object and claim are ruled.
 
 ---
 
@@ -247,7 +264,7 @@ No one step is recorded as an independent discovery. The result emerged through 
 - No nine operational adequacy functions were defined.
 - No physical Jacobian or Hessian was calculated.
 - No robust threshold bands were established.
-- No K failed-record world was physically completed.
+- A conceptual K failed-record construction was completed using the apparatus-versus-scrambler distinction; full world-scale embedding, numerical margins, and threshold robustness were not completed.
 - No Aczel-type aggregation characterization was proved.
 - No Lean file was changed or rerun.
 - No canonical factor was added, removed, or renamed.
