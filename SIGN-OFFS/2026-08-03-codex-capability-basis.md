@@ -14,7 +14,9 @@ tags: #shift-change #master-equation #chi #coherence #derivation #unverified
 - Filed a detailed task handoff.
 - Preserved provenance across David, Claude Opus, and GPT/Codex.
 - Recorded David's line: “It’s not to fragment intellect. It’s to simplify with wisdom.”
-- Created a separate T2 candidate connecting wisdom, meaning-preserving compression, the Pharisee Function, and behavioral AI research without making a consciousness claim.
+- Created a separate T2 candidate connecting wisdom, meaning-preserving simplification, the Pharisee Function, and behavioral AI research without making a consciousness claim.
+- Preserved the original Pharisee Function source in the repository.
+- Corrected the candidate after direct comparison: compression is a safeguard, while knowledge–truth decoupling through possession, identity, and gatekeeping is the source's actual decay mechanism.
 
 ## Ranked findings
 
@@ -32,7 +34,8 @@ tags: #shift-change #master-equation #chi #coherence #derivation #unverified
 | `THEOPHYSICS/STANDING-PROBLEMS.md` | Added SP-11 |
 | `handoffs/HANDOFF_2026-08-03_CAPABILITY_BASIS_IRREDUNDANT_CONSTRAINTS.md` | Created |
 | `SIGN-OFFS/2026-08-03-codex-capability-basis.md` | Created |
-| `THEOPHYSICS/CANDIDATE-wisdom-as-meaning-preserving-simplification.md` | Created |
+| `THEOPHYSICS/CANDIDATE-wisdom-as-meaning-preserving-simplification.md` | Created and corrected against source |
+| `THEOPHYSICS/sources/The_Pharisee_Function.md` | Preserved original author source |
 
 ## What did not change
 
@@ -51,7 +54,9 @@ tags: #shift-change #master-equation #chi #coherence #derivation #unverified
 - No external aggregator comparison.
 - No proof that nine is minimal.
 - No repository CI was available or required for Markdown-only additions.
+- The source's 45-domain, psychological, institutional, and biblical claims were not independently verified.
+- The source Wisdom equation remains qualitative and underdefined, as the source audit itself acknowledges.
 
 ## Next action
 
-Start with the candidate file and construct the K leave-one-out witness over an explicit ambient domain. Require positive margins for the other eight requirements. Keep the wisdom/Pharisee Function connection as a separate candidate thread.
+Start with the candidate file and construct the K leave-one-out witness over an explicit ambient domain. Require positive margins for the other eight requirements. Keep the wisdom/Pharisee Function connection as a separate candidate thread. Treat meaning-preserving compression as necessary but insufficient; the next review should operationalize truth-coupling and the possession-to-gatekeeping transition.
