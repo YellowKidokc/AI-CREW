@@ -25,7 +25,7 @@ tags: #shift-change #master-equation #chi #coherence #derivation #unverified
 2. **T3 methodology correction:** basis membership requires robust leave-one-out failure witnesses over an ambient candidate domain, not 36 pairwise tests.
 3. **T2 candidate:** K may remain irredundant as durable/public record capacity.
 4. **T2 candidate:** nearest-boundary margin and integrated coherence should be separate quantities.
-5. **T2 witness result:** K_raw fails as a peer; K_record provisionally survives via an apparatus-versus-scrambler construction.
+5. **T2 witness build:** K is redefined around above-noise persistence and redundant recoverability; the opaque-world E/K seam remains open.
 6. **T1/open:** product aggregation remains unselected.
 
 ## What changed
@@ -38,7 +38,7 @@ tags: #shift-change #master-equation #chi #coherence #derivation #unverified
 | `SIGN-OFFS/2026-08-03-codex-capability-basis.md` | Created |
 | `THEOPHYSICS/CANDIDATE-wisdom-as-meaning-preserving-simplification.md` | Created and corrected against source |
 | `THEOPHYSICS/sources/The_Pharisee_Function.md` | Preserved original author source |
-| `THEOPHYSICS/WITNESS-01-K-PUBLIC-RECORD-CAPACITY.md` | Constructed first leave-one-out witness |
+| `THEOPHYSICS/WITNESS-01-K-PUBLIC-RECORD-CAPACITY.md` | Created opaque-world witness build and pass/fail rule |
 
 ## What did not change
 
@@ -52,7 +52,7 @@ tags: #shift-change #master-equation #chi #coherence #derivation #unverified
 ## Not verified
 
 - No operational adequacy functions or thresholds.
-- K now has a conceptual, literature-backed witness; no full cosmological embedding, numerical margins, or threshold band.
+- K Witness A is not passed. The E/mediation versus K/persistence-and-redundancy separation remains to be defended.
 - No calculated Jacobian or causal-interaction matrix.
 - No external aggregator comparison.
 - No proof that nine is minimal.
@@ -62,4 +62,4 @@ tags: #shift-change #master-equation #chi #coherence #derivation #unverified
 
 ## Next action
 
-Start with `THEOPHYSICS/WITNESS-01-K-PUBLIC-RECORD-CAPACITY.md` and construct the M / Mass-energy witness next. Keep the criterion fixed, test one failure at a time, and defer aggregator and global minimality work. Treat meaning-preserving compression as necessary but insufficient; the next review should operationalize truth-coupling and the possession-to-gatekeeping transition.
+Finish the opaque-world K construction and issue one binary verdict. Then build the M content/response witness. Keep the criterion fixed and defer aggregator and global minimality work. Treat meaning-preserving compression as necessary but insufficient; the next review should operationalize truth-coupling and the possession-to-gatekeeping transition.
