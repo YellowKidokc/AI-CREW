@@ -18,9 +18,10 @@ tags: #shift-change #master-equation #chi #coherence #derivation #unverified
 - Separated physical tuning dimensions from world requirements.
 - Reframed the basis as irredundant adequacy constraints over a shared parameter space.
 - Reopened K after its removal was shown to depend on the wrong criterion.
-- Closed R-1 for the witness program using the newest ruled dictionary: M = Mass-energy; Motion remains in dynamics/history.
-- Constructed the first leave-one-out witness: K as durable, redundant, publicly recoverable record capacity.
-- Located the physical seam in the apparatus-versus-scrambler phase distinction: decoherent histories can persist without quantum-Darwinist objectivity.
+- Recorded R-1 correctly: one M-axis carries physical content and lawful response; Motion is the resulting history, not a separate tenth factor. The M witness decides whether the combined constraint splits.
+- Specified the first leave-one-out build: K as above-noise, persistent, redundantly recoverable record capacity.
+- Made the opaque-world construction primary and demoted the apparatus-versus-scrambler phase distinction to supporting system-level evidence.
+- Removed record/history clauses from the domain: bare Theta is the domain; the nine V_i constraints define W*.
 - Separated nearest-boundary margin from integrated coherence.
 - Preserved the result as CANDIDATE; canon and Lean were not modified.
 - Ingested the original Pharisee Function source and corrected the wisdom candidate against it.
@@ -95,8 +96,8 @@ Status: T2. Filed separately at `THEOPHYSICS/CANDIDATE-wisdom-as-meaning-preserv
 - No operational adequacy maps or threshold provenance.
 - No distinction in canon between resilience margin and integrated coherence.
 - No causal-interaction matrix for factor pairs/triples.
-- K's record requirement now has a conceptual near-miss witness; full cosmological embedding and threshold robustness remain open.
-- R-1 is closed for this program as M = Mass-energy; the bundled revised-M proposal is retired from the witness run.
+- K Witness A is specified but not passed; the E/mediation versus K/recoverability seam is decisive.
+- R-1 is written as one content-and-response axis; its possible split is assigned to the M leave-one-out construction.
 
 ### Things that almost broke
 
@@ -107,7 +108,7 @@ Status: T2. Filed separately at `THEOPHYSICS/CANDIDATE-wisdom-as-meaning-preserv
 
 ### The thing I am not sure about
 
-Whether the apparatus-versus-scrambler construction can be embedded in a full finite world with explicit positive margins for M, S, G, Q, F, T, E, and R. The system-level physical separation is real; the full-world embedding is not yet calculated.
+Whether the opaque world can retain E as adequate mediation while preventing distinctions from becoming persistent, redundant, independently recoverable records. If E requires transparent fragmenting channels, K is entailed and the witness fails.
 
 ---
 
@@ -134,7 +135,7 @@ Read:
 
 Then do one bounded job:
 
-> Construct the M / Mass-energy leave-one-out witness next: one near-miss world, eight threshold checks, one failure, one verdict. Do not change criterion, canon, aggregator, or Lean.
+> Finish K Witness A first: defend all eight positive thresholds, especially E, then record one binary verdict. Do not change criterion, canon, aggregator, or Lean.
 
 ---
 
