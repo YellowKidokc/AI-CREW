@@ -1,0 +1,21 @@
+instance_id,instance,grade,role_1,role_2,role_3,irreducible_roles,functional_dependence,mediation_or_record,asymmetry,formal_visibility,overclaim_risk,recommended_use
+SCI-01,Shannon Communication,A,source,channel,receiver,1,1,1,1,1,low,primary
+SCI-02,Quantum Measurement,A,system,measurement context,outcome,1,1,1,1,1,medium,primary
+SCI-03,Decoherence / Einselection,A,system,environment interaction,pointer states,1,1,1,1,1,low,primary
+SCI-04,Quantum Darwinism,A-/B+,system,environment,many witnesses / redundant records,1,1,1,1,1,medium,strong but guarded
+SCI-05,Open Quantum Systems,A,system,bath,coupling,1,1,1,1,1,low,primary
+SCI-06,Noether Theorem,A,symmetry/law,transformation,conserved quantity,1,1,1,1,1,low,primary
+SCI-07,Gauge Theory,B+,field,local symmetry,connection/gauge compensation,1,1,1,1,1,medium,strong but technical
+SCI-08,CPT,B,charge/parity/time transforms,combined operation,protected invariance,1,1,1,0,1,high,guarded only
+SCI-09,Thermodynamics,B,system,boundary,environment,1,1,1,1,1,low,primary
+SCI-10,Landauer Principle,B+,information,operation/erasure,heat sink / physical implementation,1,1,1,1,1,medium,strong but guarded
+SCI-11,Feedback Control,B,plant,sensor/reference error,controller,1,1,1,1,1,low,primary
+SCI-12,Error Correction,A-/B+,data,check/syndrome,recovery,1,1,1,1,1,low,primary
+SCI-13,Variational Principle,B,configuration space,action functional,extremal path,1,1,1,1,1,medium,secondary
+SCI-14,General Relativity,B-/C+,geometry,matter/stress-energy,field equation coupling,1,1,1,1,1,medium,secondary
+SCI-15,Standard Model,C+,particles,fields,symmetry structure,1,1,0,0,1,high,background only
+SCI-16,Symmetry Breaking,B,symmetric law,selecting condition,broken phase,1,1,1,1,1,medium,secondary
+SCI-17,Phase Transitions,B,order parameter,control parameter,critical point,1,1,1,1,1,medium,secondary
+SCI-18,Relational Quantum Mechanics,B,system,other system,information relation,1,1,1,1,1,high,interpretation-dependent
+SCI-19,Wigner's Friend,B-/C,system,friend,outside observer,1,1,1,1,1,high,not load-bearing
+SCI-20,Classical Observation,B,object,light/interaction,detector,1,1,1,1,1,low,secondary
