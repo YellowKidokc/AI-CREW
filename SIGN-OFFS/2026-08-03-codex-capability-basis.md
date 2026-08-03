@@ -16,7 +16,8 @@ tags: #shift-change #master-equation #chi #coherence #derivation #unverified
 - Recorded David's line: “It’s not to fragment intellect. It’s to simplify with wisdom.”
 - Created a separate T2 candidate connecting wisdom, meaning-preserving simplification, the Pharisee Function, and behavioral AI research without making a consciousness claim.
 - Preserved the original Pharisee Function source in the repository.
-- Corrected the candidate after direct comparison: compression is a safeguard, while knowledge–truth decoupling through possession, identity, and gatekeeping is the source's actual decay mechanism.
+- Corrected the candidate after direct comparison, then corrected it again after David's clarification: wisdom-bearing simplification is the positive breakthrough thesis; knowledge–truth decoupling through possession, identity, and gatekeeping is the related Pharisee decay mechanism. The claims connect but must not be collapsed.
+- Removed an over-personalized reading and centered the epistemic problem: locally successful expert models can remain mutually incompatible because no shared representation adjudicates among them.
 
 ## Ranked findings
 
