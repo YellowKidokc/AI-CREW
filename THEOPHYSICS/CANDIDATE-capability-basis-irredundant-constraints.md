@@ -37,9 +37,9 @@ There is one physical knob and two competing adequacy requirements. Different si
 
 ## 2. Candidate formalization
 
-Let `Omega` be an ambient class of candidate physical worlds. It must be broad enough to contain near-miss worlds; it must **not** already require every property of `W_phys`, or leave-one-out failure witnesses become impossible by definition.
+Let `Theta` be the bare physical parameter / model space. It contains no viability requirement: no persistence, embodiment, observer, record, arrow, or public-history clause. Those clauses are the constraints under test and may not be smuggled into the domain.
 
-Let `theta` be a dimensionless physical parameter vector and let each requirement have a separately defined adequacy function:
+Let `theta in Theta` be a dimensionless physical parameter vector and let each requirement have a separately defined adequacy function:
 
 ```text
 X_i(theta) = A_i(theta; requirement_i)
@@ -49,7 +49,7 @@ For threshold `tau_i`:
 
 ```text
 V_i(tau_i) = { theta in Omega | X_i(theta) >= tau_i }
-W_phys(tau) = intersection_i V_i(tau_i)
+W*(tau) = intersection_i V_i(tau_i)
 ```
 
 The factors are provisionally interpreted as candidate **adequacy constraints**, not independent coupling constants.
@@ -99,40 +99,50 @@ Product, minimum, geometric mean, weighted product, and other conjunction rules 
 
 ## 4. R-1 and K witness status
 
-### R-1 — closed for the witness program
+### R-1 — one axis carrying content and lawful response
 
-Use the newest ruled physical dictionary:
+David's rulings converge on one M-axis carrying both sides:
 
 \[
-M=\text{Mass-energy}.
+M = \text{physical content and lawful response}.
 \]
 
-M supplies physical content, inertia, and capacity for work. Motion belongs to lawful evolution and resulting history, including the Level-2 dynamics; it is not a second capability bundled into M. The older Motion / Mass-energy ambiguity and the later “dynamical actualization” bundle are not used in the nine-witness run.
+Mass-energy supplies what is physically there; inertia supplies resistance; force, curvature, and the action govern response; motion is the resulting history. The axis is not Mass-energy alone, and Motion is not a separate tenth factor.
 
-This is application of the existing dictionary, not a canon change.
+The open issue is now constructive rather than verbal:
 
-### K — provisional survivor
+- Can a world meet the other eight thresholds while containing physical content with no lawful response?
+- Can a world meet the other eight thresholds while exhibiting lawful response with no physical content?
 
-The earlier ruling that K must be removed as a derived readout was made under the wrong criterion and is withdrawn at candidate level.
+If either half can fail independently while the other remains adequate, M splits. If neither construction is coherent, the single combined constraint survives. R-1's vocabulary is settled; its irreducibility is assigned to the M witness.
 
-The K witness exposed a required semantic split:
+### K — witness build in progress
 
-- \(K_{\mathrm{raw}}\): distinguishability, Shannon information, and information formalism. This is probably substrate/formalism, not an irredundant peer.
-- \(K_{\mathrm{record}}\): capacity for durable, redundant, independently recoverable public records. This is the candidate axis.
+The earlier ruling that K must be removed as a derived readout was made under the wrong criterion and remains withdrawn at candidate level.
 
-A March 2026 solvable monitored-dynamics model distinguishes an apparatus phase from a scrambler phase. Approximate decoherent histories occur in both, but quantum-Darwinist objectivity appears only in the apparatus phase. This supplies the physical seam for a near-miss world: the other eight sectors remain active while record-bearing environmental dynamics occupy the scrambler phase.
+K adequacy has four layers:
 
-Detailed construction:
+1. distinguishable states exist;
+2. distinctions remain above the relevant noise floor;
+3. distinctions persist over the relevant timescale;
+4. distinctions are redundantly imprinted and independently recoverable.
+
+Layer 1 is universal to structured physics and cannot carry K's irredundancy. K's candidate content is layers 2–4.
+
+The primary construction is now **Witness A — the opaque world**: mediation exists, but the environment couples collectively rather than fragmenting into many independently accessible carriers, so no event becomes redundantly public. The March 2026 apparatus-versus-scrambler result is supporting system-level evidence, not by itself a completed world witness.
+
+The required seam is explicit:
+
+- E: a mediating interaction and signal propagation exist.
+- K: distinctions survive that mediation and become multiply recoverable.
+
+If E adequacy cannot be retained under opacity, the witness fails and K is likely entailed/readout. If all eight other thresholds hold, K is irredundant.
+
+Build file:
 
 - [WITNESS 01 — K / Publicly Recoverable Record Capacity](WITNESS-01-K-PUBLIC-RECORD-CAPACITY.md)
 
-Verdict:
-
-- \(K_{\mathrm{raw}}\) as a peer: **FAIL**.
-- \(K_{\mathrm{record}}\): **PROVISIONAL PASS — conceptual witness constructed**.
-- Full world-scale embedding, numerical margins, and \(\tau\)-robustness: **not yet completed**.
-
-This is not a promotion of K. It is permission for K to remain in the survivor set while the other eight witnesses are constructed.
+Current verdict: **OPEN — build authorized; no pass until the eight-threshold table is defended under the opaque-world construction.**
 ---
 
 ## 5. Irredundancy is not global minimality
@@ -264,7 +274,7 @@ No one step is recorded as an independent discovery. The result emerged through 
 - No nine operational adequacy functions were defined.
 - No physical Jacobian or Hessian was calculated.
 - No robust threshold bands were established.
-- A conceptual K failed-record construction was completed using the apparatus-versus-scrambler distinction; full world-scale embedding, numerical margins, and threshold robustness were not completed.
+- K Witness A is specified but not passed. The apparatus-versus-scrambler distinction supports the record/objectivity seam; the opaque-world eight-threshold construction remains to be defended.
 - No Aczel-type aggregation characterization was proved.
 - No Lean file was changed or rerun.
 - No canonical factor was added, removed, or renamed.
