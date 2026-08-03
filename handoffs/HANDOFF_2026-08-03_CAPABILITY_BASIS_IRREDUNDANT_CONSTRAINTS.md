@@ -20,6 +20,8 @@ tags: #shift-change #master-equation #chi #coherence #derivation #unverified
 - Reopened K after its removal was shown to depend on the wrong criterion.
 - Separated nearest-boundary margin from integrated coherence.
 - Preserved the result as CANDIDATE; canon and Lean were not modified.
+- Ingested the original Pharisee Function source and corrected the wisdom candidate against it.
+- Demoted compression from the engine of the Pharisee Function to a structural safeguard; restored knowledge–truth decoupling, possession, identity, institutional gatekeeping, humility, and continued correction as the source mechanism.
 
 ### Verified versus unverified
 
@@ -58,7 +60,8 @@ tags: #shift-change #master-equation #chi #coherence #derivation #unverified
 | Updated | `THEOPHYSICS/STANDING-PROBLEMS.md` | Added SP-11 |
 | Created | `handoffs/HANDOFF_2026-08-03_CAPABILITY_BASIS_IRREDUNDANT_CONSTRAINTS.md` | This continuation record |
 | Created | `SIGN-OFFS/2026-08-03-codex-capability-basis.md` | Session closeout |
-| Created | `THEOPHYSICS/CANDIDATE-wisdom-as-meaning-preserving-simplification.md` | Separate T2 candidate; preserves the Pharisee Function / wisdom thread |
+| Created, then revised | `THEOPHYSICS/CANDIDATE-wisdom-as-meaning-preserving-simplification.md` | Separate T2 candidate corrected against the original source |
+| Preserved | `THEOPHYSICS/sources/The_Pharisee_Function.md` | Uploaded author source, not automatically canon |
 
 ---
 
@@ -77,9 +80,9 @@ tags: #shift-change #master-equation #chi #coherence #derivation #unverified
 
 Candidate formulation:
 
-> Wisdom simplifies without severing the relations that make knowledge true.
+> Wisdom simplifies without severing the relations that make knowledge true, and remains coupled to the truth from which the knowledge came.
 
-Status: T2. Filed separately at `THEOPHYSICS/CANDIDATE-wisdom-as-meaning-preserving-simplification.md`; not added to capability-basis canon.
+Status: T2. Filed separately at `THEOPHYSICS/CANDIDATE-wisdom-as-meaning-preserving-simplification.md`; source preserved at `THEOPHYSICS/sources/The_Pharisee_Function.md`; not added to capability-basis canon. Formal invariant preservation is necessary but insufficient under the source account.
 
 ### Framework gaps exposed
 
@@ -136,4 +139,6 @@ Then do one bounded job:
 - Integrate build spec v1.3 into one contradiction-free document; do not append another amendment layer.
 - Replace dimensionful tuning handles with dimensionless parameter combinations before any real Jacobian run.
 - Decide whether `chi` means integrated adequacy, resilience margin, or a declared pair of metrics.
-- Build the Pharisee Function / wisdom-as-simplification thread separately.
+- Audit the Pharisee Function's historical, psychological, and institutional claims against primary sources.
+- Operationalize the possession → identity → gatekeeping transition without turning the Function into a label for disagreement.
+- Test meaning-preserving simplification as a structural safeguard while retaining the source's warning that no protocol guarantees wisdom.
