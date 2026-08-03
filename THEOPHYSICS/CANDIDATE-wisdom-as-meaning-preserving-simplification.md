@@ -26,9 +26,23 @@ That is necessary, but not sufficient. Formal preservation alone does not make a
 
 ---
 
-## 2. Correction after reading the original Pharisee Function
+## 2. Two connected claims that must not be collapsed
 
-The first version of this candidate made compression and fragmentation too central. The original Pharisee Function identifies a deeper dynamic:
+David's clarification separates two claims.
+
+### Claim A — the positive breakthrough thesis
+
+Academic and technical knowledge can become so specialized that one reality is represented by many locally sophisticated but mutually incompatible languages. Increasing detail inside each language does not necessarily create a shared way to adjudicate among them.
+
+The proposed corrective is not anti-intellectualism, popularization, or deleting difficulty:
+
+> **Simplify through wisdom until the common load-bearing structure becomes visible.**
+
+The goal is a representation simple enough to cross domains but strong enough to preserve evidence, distinctions, causal direction, counterfactuals, and falsifiers. If successful, the simplification does more than summarize existing schools. It explains why their local models work where they do, why they disagree where they do, and what observation could discriminate among them.
+
+### Claim B — the Pharisee decay mechanism
+
+The original Pharisee Function identifies a related danger, but it is not the whole positive thesis. Its deeper dynamic is:
 
 1. truth is revealed as living and relational;
 2. truth is encoded into knowledge;
@@ -47,6 +61,8 @@ The engine is therefore not complexity by itself. It is **decoupling**:
 Fragmentation, jargon, institutional self-protection, and information trapping are downstream forms of that process.
 
 Meaning-preserving simplification can interrupt the process because it can reopen access to the governing truth. It does not interrupt the process merely by being shorter.
+
+The claims connect because accumulated specialization can become a gate around local vocabularies. They remain distinct because academic fragmentation can occur without bad motives, identity capture, or deliberate gatekeeping. Experts may be honest and rigorous while lacking a shared representation capable of integrating their results.
 
 ---
 
@@ -82,6 +98,34 @@ This connects several existing programs:
 - **Watcher / record work:** information that cannot be integrated into a recoverable history does not function as public knowledge.
 
 The shared structural object is **truth-preserving transformation**. The additional theological claim in the Pharisee Function is that truth preservation cannot be reduced to an information operation: continued coupling to Logos, humility, relationship, and grace remain load-bearing.
+
+### Academic-fragmentation formulation
+
+Let (M_1,ldots,M_n) be mature local models of one subject, each carrying evidence, useful distinctions, and domain-specific success. A proposed synthesis (z) earns the name wisdom-bearing only if it:
+
+1. preserves the verified successes of the local models;
+2. translates their incompatible terms into a shared structure without pretending they are identical;
+3. exposes which assumptions generate their disagreements;
+4. retains their failure conditions and counterfactual consequences;
+5. produces at least one new adjudicating test, prediction, or constraint.
+
+A short slogan that cannot do those things is merely compression. A complex synthesis that cannot be used to adjudicate among the local models has not yet overcome fragmentation.
+
+The candidate breakthrough criterion is therefore:
+
+[
+	ext{Breakthrough}
+=
+	ext{lower descriptive complexity}
++
+	ext{cross-model preservation}
++
+	ext{new discriminating power}.
+]
+
+The plus signs are conceptual. This is not a validated equation.
+
+The broad statement that academia “has resolved nothing” is not adopted literally: many local technical problems have been resolved. The narrower candidate claim is that specialization often resolves problems **inside** a model without resolving the conflicts **among** models, disciplines, or governing assumptions. That is the opening wisdom-bearing simplification is meant to address.
 
 ---
 
@@ -249,7 +293,7 @@ Technical integration without truth orientation and humility may be the Pharisee
 
 ## 8. Why this matters to AI-CREW
 
-Multi-agent research creates a predictable risk: each agent preserves a technically correct fragment while the shared framework loses the whole. A second risk is more serious: the crew may preserve the whole accurately but begin treating the preserved framework as possession, status, identity, or a gate over the truth it was meant to serve.
+Multi-agent research creates a predictable risk: each agent may preserve a technically correct local model while no shared representation adjudicates among them. The immediate problem is epistemic fragmentation, not a claim about any person's motives or authority.
 
 Every compression, handoff, canon promotion, and public explanation should therefore be tested at two levels.
 
@@ -307,9 +351,10 @@ David supplied the central statement and the connection to fragmented intellect,
 
 After the original [Pharisee Function source](sources/The_Pharisee_Function.md) was supplied, the first reconstruction was corrected in four material ways:
 
-1. **Compression was demoted from engine to safeguard.**
+1. **Two claims were separated:** wisdom-bearing simplification remains the positive breakthrough proposal; compression is not the engine of the Pharisee decay process.
 2. **Knowledge–truth decoupling, possession, identity, and institutional gatekeeping were restored as the actual decay mechanism.**
 3. **Formal preservation was marked necessary but insufficient; humility, relationship, correction, and grace cannot be replaced by an optimization routine.**
 4. **The original Wisdom equation was preserved with its own honesty label rather than silently replaced by the newer formalism.**
+5. **David's later clarification removed an over-personalized reading:** the primary claim concerns fragmentation across expert models and languages, not a dispute about personal authority, motives, or relationship.
 
 No empirical test was performed during this session. No consciousness claim was established. The original article's historical, psychological, institutional, and biblical claims remain claims of mixed evidential status and require separate review before public or canonical promotion.
