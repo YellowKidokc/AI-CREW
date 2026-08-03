@@ -18,6 +18,9 @@ tags: #shift-change #master-equation #chi #coherence #derivation #unverified
 - Separated physical tuning dimensions from world requirements.
 - Reframed the basis as irredundant adequacy constraints over a shared parameter space.
 - Reopened K after its removal was shown to depend on the wrong criterion.
+- Closed R-1 for the witness program using the newest ruled dictionary: M = Mass-energy; Motion remains in dynamics/history.
+- Constructed the first leave-one-out witness: K as durable, redundant, publicly recoverable record capacity.
+- Located the physical seam in the apparatus-versus-scrambler phase distinction: decoherent histories can persist without quantum-Darwinist objectivity.
 - Separated nearest-boundary margin from integrated coherence.
 - Preserved the result as CANDIDATE; canon and Lean were not modified.
 - Ingested the original Pharisee Function source and corrected the wisdom candidate against it.
@@ -92,8 +95,8 @@ Status: T2. Filed separately at `THEOPHYSICS/CANDIDATE-wisdom-as-meaning-preserv
 - No operational adequacy maps or threshold provenance.
 - No distinction in canon between resilience margin and integrated coherence.
 - No causal-interaction matrix for factor pairs/triples.
-- K's record requirement lacks a completed near-miss witness.
-- Revised M has not been tested.
+- K's record requirement now has a conceptual near-miss witness; full cosmological embedding and threshold robustness remain open.
+- R-1 is closed for this program as M = Mass-energy; the bundled revised-M proposal is retired from the witness run.
 
 ### Things that almost broke
 
@@ -104,7 +107,7 @@ Status: T2. Filed separately at `THEOPHYSICS/CANDIDATE-wisdom-as-meaning-preserv
 
 ### The thing I am not sure about
 
-Whether K's failed-record witness can satisfy all eight other requirements with a positive margin once those requirements are operationalized. Quantum-Darwinism-style record redundancy is a plausible route, not a completed countermodel.
+Whether the apparatus-versus-scrambler construction can be embedded in a full finite world with explicit positive margins for M, S, G, Q, F, T, E, and R. The system-level physical separation is real; the full-world embedding is not yet calculated.
 
 ---
 
@@ -131,7 +134,7 @@ Read:
 
 Then do one bounded job:
 
-> Define the ambient candidate-world class Omega and draft the K leave-one-out witness with explicit positive margins for the other eight requirements. Do not change canon or Lean.
+> Construct the M / Mass-energy leave-one-out witness next: one near-miss world, eight threshold checks, one failure, one verdict. Do not change criterion, canon, aggregator, or Lean.
 
 ---
 
