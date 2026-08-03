@@ -57,7 +57,8 @@ tags: #shift-change #master-equation #chi #coherence #derivation #unverified
 | Created | `THEOPHYSICS/CANDIDATE-capability-basis-irredundant-constraints.md` | Consolidated candidate and test program |
 | Updated | `THEOPHYSICS/STANDING-PROBLEMS.md` | Added SP-11 |
 | Created | `handoffs/HANDOFF_2026-08-03_CAPABILITY_BASIS_IRREDUNDANT_CONSTRAINTS.md` | This continuation record |
-| Planned | `SIGN-OFFS/2026-08-03-codex-capability-basis.md` | Session closeout |
+| Created | `SIGN-OFFS/2026-08-03-codex-capability-basis.md` | Session closeout |
+| Created | `THEOPHYSICS/CANDIDATE-wisdom-as-meaning-preserving-simplification.md` | Separate T2 candidate; preserves the Pharisee Function / wisdom thread |
 
 ---
 
@@ -78,7 +79,7 @@ Candidate formulation:
 
 > Wisdom simplifies without severing the relations that make knowledge true.
 
-Status: T2. Separate thread; not added to capability-basis canon.
+Status: T2. Filed separately at `THEOPHYSICS/CANDIDATE-wisdom-as-meaning-preserving-simplification.md`; not added to capability-basis canon.
 
 ### Framework gaps exposed
 
