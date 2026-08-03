@@ -21,7 +21,8 @@ tags: #shift-change #master-equation #chi #coherence #derivation #unverified
 - Separated nearest-boundary margin from integrated coherence.
 - Preserved the result as CANDIDATE; canon and Lean were not modified.
 - Ingested the original Pharisee Function source and corrected the wisdom candidate against it.
-- Demoted compression from the engine of the Pharisee Function to a structural safeguard; restored knowledge–truth decoupling, possession, identity, institutional gatekeeping, humility, and continued correction as the source mechanism.
+- Separated two claims that had been conflated: wisdom-bearing simplification as a positive route through fragmented expert models, and knowledge–truth decoupling as the Pharisee Function's decay mechanism.
+- Removed an over-personalized reading. The primary clarification concerns epistemic fragmentation across specialist languages, not David's authority, motives, or relationship with an AI.
 
 ### Verified versus unverified
 
