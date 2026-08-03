@@ -1,284 +1,313 @@
 # WITNESS 01 — K / Publicly Recoverable Record Capacity
 
-> **Information can exist and histories can decohere without becoming durable, redundant, publicly recoverable records.**
+> **A world may contain real distinctions and real interactions while failing to preserve those distinctions above noise, through time, and in enough independent copies to become public history.**
 
 tags: #master-equation #information #record #watcher #quantum-darwinism #witness #unverified
 
 **POF 2828 | 2026-08-03**  
-**Status:** CANDIDATE WITNESS — conceptual physical construction; quantitative embedding and threshold robustness pending  
+**Status:** OPEN WITNESS BUILD — primary opaque-world construction authorized; not yet passed  
 **Method:** Robust leave-one-out adequacy-constraint witness  
 **Canon protection:** This file does not alter the canonical nine-factor equation, factor dictionary, \(C_W\), or any Lean theorem.
 
 ---
 
-## 0. Stop rule
+## 0. Fixed method and stopping rule
 
-This witness uses the already selected criterion:
+The domain is the bare physical model / parameter space \(\Theta\). It contains no viability clauses.
+
+Each clause of the target world specification is represented by a constraint:
 
 \[
-\exists W_K\in\Omega:
+V_i(\tau_i)=\{\theta\in\Theta:X_i(\theta)\ge\tau_i\},
+\qquad
+W^*(\tau)=\bigcap_{i=1}^{9}V_i(\tau_i).
+\]
+
+K is irredundant only if:
+
+\[
+\exists\theta_K\in\Theta:
 \quad
-X_K(W_K)<\tau_K
+X_K(\theta_K)<\tau_K
 \quad\land\quad
-X_j(W_K)>\tau_j
+X_j(\theta_K)>\tau_j
 \ \text{for every }j\neq K.
 \]
 
-No fifth criterion is introduced here.
+Nothing about public history, observers, records, persistence, or embodiment may be placed into \(\Theta\). Those are candidate constraints, and putting them in the domain would make the test circular.
 
-Out of scope until the nine constructions are attempted:
-
-- product versus minimum versus margin;
-- a proof that every basis has at least nine members;
-- a new pairwise-separability run;
-- Lean modification;
-- theological translation.
+No fifth criterion will be introduced. Aggregation and global minimum-basis work remain downstream.
 
 ---
 
-## 1. R-1 closed for this witness program
+## 1. R-1 — one M-axis carrying both sides
 
-The newest ruled physical dictionary uses:
+The M ruling used by this program is:
 
 \[
-M=\text{Mass-energy},
+M=\text{physical content and lawful response}.
 \]
 
-with the dual-register pairing Mass-energy / Meaning.
+Mass-energy supplies what is physically there. Inertia supplies resistance. Force, curvature, and the action govern response. Motion is the resulting history.
 
-For the nine-witness program:
+R-1 therefore does not reduce M to Mass-energy alone, and it does not add Motion as a tenth factor. Whether the combined axis is irreducible is assigned to the M leave-one-out construction:
 
-> **M supplies physical content, inertia, and capacity for work. Motion is the resulting lawful history, not a separate factor and not a second capability hidden inside M.**
+- content with no lawful response;
+- lawful response with no content.
 
-Motion remains available in the Level-2 dynamics,
+That construction, not another verbal ruling, decides whether M remains one constraint or splits.
+
+---
+
+## 2. What K must measure
+
+Information adequacy has four layers:
+
+1. **Distinction:** distinguishable states exist.
+2. **Signal:** distinctions remain above the relevant noise floor.
+3. **Persistence:** distinctions survive for the timescale that matters.
+4. **Redundancy:** distinctions are imprinted in multiple independently accessible carriers.
+
+Layer 1 is universal to structured physics. It is why earlier tests made K look entailed by everything.
+
+K's candidate irreducible content is layers 2–4:
 
 \[
-\frac{dX}{dt}=W\nabla\chi(X)+\eta,
+K_{\mathrm{axis}}
+=
+\text{above-noise, persistent, redundantly recoverable distinction}.
 \]
 
-and in ordinary equations of motion. The witness program does not use the older Motion / Mass-energy ambiguity or the later bundled “dynamical actualization” proposal.
+The plus-like composition is conceptual, not an aggregator selection.
 
-This is a program ruling based on the existing canonical dictionary, not a new canon edit.
+### Raw information remains separate
+
+Shannon information, distinguishability, mutual information, and channel mathematics remain useful across every law. That universal formalism is not counted again merely because it applies everywhere.
+
+The axis under test is the physical capacity for information to become durable public evidence.
 
 ---
 
-## 2. The definition that K must carry
+## 3. The E/K surgical boundary
 
-Two senses of information have repeatedly been assigned to the same letter.
+This distinction is load-bearing.
 
-### \(K_{\mathrm{raw}}\): information as distinguishability or formalism
+### E — mediation
 
-This includes state distinguishability, Shannon information, mutual information, and channel mathematics. It can operate beneath every physical law.
+E passes when a physical mediating interaction exists and can propagate influence or a signal.
 
-As a peer world requirement, \(K_{\mathrm{raw}}\) is probably redundant: any structured physical state already contains distinctions. A leave-one-out world with stable composite states but literally no distinguishability is incoherent.
+### K — survival and public recoverability
 
-### \(K_{\mathrm{record}}\): public-record capacity
+K passes when distinctions carried through physical interactions:
 
-This is the world's capacity to turn an event into evidence that is:
+- remain above noise;
+- persist;
+- are copied into disjoint carriers;
+- can be recovered independently by more than one observer or probe.
 
-1. physically encoded;
-2. retained for a nontrivial interval;
-3. copied into multiple disjoint carriers;
-4. independently accessible;
-5. recoverable with bounded error.
-
-This is the K tested here.
-
-The distinction is not cosmetic:
+Therefore:
 
 \[
-\text{information somewhere}
-\neq
-\text{durable public record}.
+\text{mediation}
+\not\Rightarrow
+\text{durable redundant record}.
 \]
 
-A globally unitary state may retain information in inaccessible correlations while no local observer can reconstruct a stable public history.
+If a defensible E threshold already requires transparent, fragmenting, persistent, multiply recoverable signaling, then K has been built into E and the K witness fails. The opaque-world construction must retain mediation while removing redundant recoverability.
 
 ---
 
-## 3. Operational success and failure conditions
+## 4. Witness A — the opaque world
 
-For an observable \(A\), environment fragments \(F_1,\ldots,F_n\), tolerated information deficit \(\delta\), and retention interval \(\Delta t\), define a record as public when at least \(r_0\ge 2\) disjoint fragments each carry nearly all classically accessible information about \(A\):
+### Construction
+
+Take a finite physical world with:
+
+- nonzero mass-energy and lawful dynamical response;
+- stable composite binding;
+- large-scale aggregation and geometry;
+- quantum state structure;
+- type-changing interactions;
+- thermodynamic gradients and an arrow;
+- a mediating field;
+- invariant causal / frame structure.
+
+Change the environment's coupling architecture.
+
+Instead of many weakly coupled, independently accessible fragments—such as a transparent photon environment carrying many copies—the environment couples to relevant structures collectively. Information about an event is absorbed into a shared, strongly mixing environmental mode rather than proliferated into separable fragments.
+
+A probe may interact with an object and obtain a transient result. That interaction disturbs or consumes the available correlation. A second independent probe cannot recover the same fact from another environmental fragment.
+
+The world is not interactionless and not signal-free. It is **opaque to redundant environmental witnessing**.
+
+### Physical signature
+
+For macroscopic observable \(A\), fragments \(F_k\), and tolerated deficit \(\delta\), the world fails to produce \(r_0\ge2\) disjoint fragments satisfying:
 
 \[
-I(A:F_k)\ge (1-\delta)H(A)
+I(A:F_k)\ge(1-\delta)H(A).
 \]
 
-for at least \(r_0\) independently accessible fragments, and the condition persists for at least \(\Delta t\).
-
-The K requirement passes only when such records can be produced for a nontrivial family of macroscopic observables.
-
-The K requirement fails when:
-
-- local correlations form but do not persist;
-- information is rapidly scrambled into nonlocal many-body correlations;
-- no observable leaves multiple independently accessible imprints;
-- separate probes cannot reconstruct a common past with bounded error.
-
-No product, minimum, or scalar \(X_K\) formula is selected here. These are direct threshold conditions for the witness.
-
----
-
-## 4. Candidate near-miss world \(W_K^{\mathrm{scr}}\)
-
-Construct a finite, causally connected quantum world with the following sectors:
-
-1. nonzero stress-energy and stable mass gaps;
-2. a confining interaction supporting persistent composites;
-3. gravitating geometry and large-scale aggregation;
-4. quantum state spaces and lawful unitary microscopic evolution;
-5. nonzero weak type-changing processes;
-6. electromagnetic mediation and finite-speed signaling;
-7. thermodynamic gradients and coarse-grained entropy production;
-8. Lorentz-covariant frame translation;
-9. an environment / monitoring sector in a **scrambler phase rather than an apparatus phase**.
-
-In the scrambler phase, interactions still produce approximate decoherent histories, but would-be records are mixed into delocalized correlations rather than amplified into redundant, locally accessible pointer-state imprints.
-
-The crucial condition is:
+Equivalently, quantum-Darwinist redundancy remains below the public-record threshold:
 
 \[
-R_\delta(A,t)<r_0
+R_\delta(A,t)<r_0.
 \]
 
-for every candidate macroscopic record observable \(A\) throughout the required retention interval, even though coarse-grained histories decohere and entropy increases.
-
-### Why this is physically motivated
-
-A 2026 solvable monitored-dynamics model exhibits a phase transition between:
-
-- an **apparatus phase**, with nonergodic histories correlated to a measured qubit and quantum-Darwinist objectivity; and
-- a **scrambler phase**, in which approximate decoherent histories still occur but that objectivity-producing structure is absent.
-
-That is the exact logical separation this witness needs: decoherent event structure does not by itself entail redundant public record.
-
-This corrects the earlier loose phrase “decoherence fast enough.” Decoherence is not the K failure. **Failure of stable redundant amplification is.**
+Distinctions may exist globally and transiently. They do not become independently recoverable public facts.
 
 ---
 
-## 5. Eight-threshold check
+## 5. Eight-threshold burden
 
-| Axis | Requirement retained in \(W_K^{\mathrm{scr}}\) | Why the K failure does not remove it | Status |
-|---|---|---|---|
-| **M — Mass-energy** | Nonzero stress-energy, inertia, stable mass gaps, work capacity | Scrambling changes accessibility of correlations, not the existence of physical content | MEETS conceptually |
-| **S — Strong** | Confinement and stable composite nuclei | Bound-state integrity can persist while macroscopic record correlations scramble | MEETS conceptually |
-| **G — Gravitation** | Curved geometry, attraction, aggregation | The apparatus/scrambler distinction does not require \(G_N=0\) or remove geometry | MEETS conceptually |
-| **Q — Quantum** | Hilbert-state structure, superposition, entanglement, lawful dynamics | The witness is itself a quantum many-body construction | MEETS directly |
-| **F — Weak** | Type-changing processes and beta-like decay channels | Record amplification is not required for a weak transition to occur | MEETS conceptually |
-| **T — Thermodynamics** | Entropy production and an irreversible coarse-grained direction | Scrambling and thermalization can strengthen T while destroying accessible records | MEETS directly |
-| **E — Electromagnetism** | Charge interaction, radiation, mediation, finite-speed signaling | Transmission can occur without long-lived redundant storage | MEETS conceptually |
-| **R — Relativity** | Lorentz-covariant laws, invariant causal cones, frame translation | A comparison rule can exist even when no durable comparison record survives | MEETS conceptually |
-| **K — Public record** | Durable, redundant, independently recoverable imprints | Scrambler dynamics prevents stable redundant amplification | FAILS by construction |
+Every row must survive without quietly reopening transparency.
 
-### Definition guard on R
+| Axis | Reason it can remain above threshold in the opaque world | Burden / failure point |
+|---|---|---|
+| **M — content and response** | Nonzero stress-energy, inertia, work capacity, and lawful equations of motion remain | Show collective environmental coupling does not freeze or erase lawful response |
+| **S — Strong** | Confinement and stable composite nuclei do not require environmental record redundancy | Show bound states remain persistent under the medium |
+| **G — Gravitation** | Geometry and aggregation remain operative | Show the opaque medium does not prevent global structure |
+| **Q — Quantum** | Hilbert-state structure, entanglement, and lawful microscopic evolution remain; the witness is quantum | Directly satisfied by the construction |
+| **F — Weak** | Type-changing processes can occur without their outcomes being redundantly recorded | Show decay channels remain nonzero |
+| **T — Thermodynamics** | Mixing, dissipation, and entropy production remain and may be strong | Distinguish thermodynamic arrow from public memory |
+| **E — Electromagnetism / mediation** | A mediating interaction still propagates influence through the collective medium | **Critical seam:** E must not be defined as transparent independent broadcasting |
+| **R — Relativity / frame structure** | Invariant causal cones and frame-translation rules remain | Do not define R as an already recorded public comparison |
+| **K — public record** | No persistent, above-noise, redundant environmental imprints form | Fails by construction if the E seam holds |
 
-R must mean invariant frame translation / causal structure, not “a public record already exists.” If public record is built into R's definition, K is redundant by wording rather than physics. The witness therefore uses the special-relativistic capability already proposed in the basis work.
+### Current assessment
+
+Seven positive rows are conceptually straightforward. E is decisive.
+
+- If mediation remains adequate while transparency and independent fragmentation fail, Witness A passes.
+- If E adequacy necessarily restores independently accessible fragments, Witness A fails and K is probably entailed by E.
+
+No pass is recorded before that seam is defended.
 
 ---
 
-## 6. Nearest competitors and the residue they cannot cover
+## 6. Witness B — flattened barrier hierarchy
+
+This is an independent secondary construction aimed at persistence rather than redundancy.
+
+A durable record needs distinguishable configurations separated by a barrier large compared with thermal noise over the required retention interval. Flatten the hierarchy of chemistry-scale barriers—candidate handle: weaken \(\alpha\)—while keeping nuclear binding and gravitational aggregation well above their thresholds.
+
+Target behavior:
+
+- structures exist;
+- mediation exists;
+- thermodynamic direction exists;
+- distinctions can be written;
+- distinctions decay back through shallow barriers almost as quickly as they are written.
+
+Symbolically, if the retention time has Arrhenius form,
+
+\[
+t_{\mathrm{ret}}\sim t_0 e^{\Delta E/kT},
+\]
+
+then reduce the relevant \(\Delta E/kT\) below the record threshold while other binding scales remain adequate.
+
+### Why Witness B is not yet a pass
+
+Changing \(\alpha\) also changes E-sector adequacy and chemistry. The construction is valuable precisely because one physical cause can move two distinct requirement windows, but it must demonstrate an open region where:
+
+\[
+X_E>\tau_E
+\quad\text{and}\quad
+X_K<\tau_K.
+\]
+
+Until that window is shown, Witness B is corroborating strategy, not evidence.
+
+---
+
+## 7. System-level support — apparatus versus scrambler
+
+The earlier scrambler construction is demoted from full witness to supporting evidence.
+
+A 2026 solvable monitored-dynamics model exhibits:
+
+- an apparatus phase with nonergodic histories, correlation with the measured qubit, and quantum-Darwinist objectivity;
+- a scrambler phase in which approximate decoherent histories still emerge but the objectivity-producing apparatus structure does not.
+
+This supports the exact conceptual seam needed here:
+
+\[
+\text{decoherent history}
+\not\Rightarrow
+\text{redundantly objective public history}.
+\]
+
+It does not by itself establish a complete world satisfying the other eight thresholds.
+
+---
+
+## 8. Nearest competitors
 
 ### T is not K
 
-Thermodynamic irreversibility can erase or scramble records. An entropy arrow tells us that consequences accumulate; it does not guarantee that multiple observers can recover the same consequence.
+An entropy arrow can erase and scramble records. Irreversible consequence does not guarantee independently recoverable evidence.
 
 ### E is not K
 
-Electromagnetism can mediate a signal. A transient signal is not a retained, redundantly encoded, independently recoverable record.
+A mediator can carry a transient influence without storing multiple durable copies.
 
 ### Q is not K
 
-Quantum structure supplies distinguishability, entanglement, and possible correlations. Generic quantum states need not store information redundantly. Redundancy is an additional structure.
+Quantum structure supplies distinctions and correlations. Generic quantum states do not store selected information redundantly.
 
 ### R is not K
 
-Relativity supplies a rule for translating observations among frames. It does not manufacture an observation, retain it, or copy it into independently accessible carriers.
+Frame transformation supplies a comparison rule. It does not create or preserve the records to be compared.
 
-Therefore none of the nearest competitors supplies the missing residue:
+The residue K must carry is:
+
+- above-noise distinction;
+- persistence;
+- independent redundancy.
+
+---
+
+## 9. Pass/fail rule
+
+### PASS
+
+Witness A passes if one coherent opaque-world description keeps M, S, G, Q, F, T, E, and R above their stated thresholds while \(R_\delta<r_0\) and record persistence remains below \(\tau_K\).
+
+Then K is irredundant and remains in the survivor set.
+
+### FAIL
+
+Witness A fails if adequacy of any other required axis—most likely E—necessarily produces independently accessible environmental fragments and stable records.
+
+Then:
 
 \[
-\text{durability}
-+
-\text{redundancy}
-+
-\text{independent recoverability}.
+\bigcap_{j\neq K}V_j\subseteq V_K,
 \]
 
-The plus signs are conceptual, not an aggregation formula.
+K is entailed, and the basis falls to eight unless K is relocated outside the peer set.
+
+### Current verdict
+
+**OPEN. GO BUILD WITNESS A.**
+
+No K pass is recorded yet.
 
 ---
 
-## 7. Collapse produced by K failure
+## 10. Order after Witness A
 
-The witness world can contain physical events and irreversible local consequences, but it cannot sustain a **public history**.
-
-What fails downstream:
-
-- stable memory;
-- independent agreement about past events;
-- cumulative empirical correction;
-- science as a cross-observer activity;
-- long-horizon adaptive agency that depends on retained records;
-- the Watcher transition from private interaction to publicly recoverable outcome.
-
-An event may leave delocalized information in the total quantum state while leaving no usable evidence accessible to multiple embodied investigators.
+1. Record a binary K verdict.
+2. Build the M content/response leave-one-out construction.
+3. Construct the other seven witnesses.
+4. Apply \(\tau\)-robustness only to survivors.
+5. Address aggregation last.
+6. Keep \(|B|\ge9\) shelved as the funded research question.
 
 ---
 
-## 8. Verdict
-
-### \(K_{\mathrm{raw}}\) as one peer among nine
-
-**FAIL.** No clean leave-one-out witness is available. Stable structured states already entail distinctions and therefore raw information. Shannon mathematics should remain a formal layer, not be counted again merely because it applies everywhere.
-
-### \(K_{\mathrm{record}}\) as public-record capacity
-
-**PROVISIONAL PASS — WITNESS CONSTRUCTED.**
-
-The apparatus-versus-scrambler phase distinction supplies a physically serious construction in which decoherent histories and thermodynamic direction survive while redundant objective records fail.
-
-What this verdict does establish:
-
-- K is not automatically entailed by Q, T, E, or R when K means public-record capacity.
-- The prior removal of K as “just a readout” was premature.
-- The leave-one-out method can return a discriminating result rather than automatically preserving every factor.
-
-What it does not yet establish:
-
-- a full cosmological Hamiltonian realizing all eight positive margins;
-- numerical adequacy functions;
-- an open \(\tau\)-band;
-- global minimality of a nine-element basis;
-- product aggregation.
-
-K remains in the survivor set and proceeds to robustness hardening only after the other eight witness constructions are attempted.
-
----
-
-## 9. Next bounded action
-
-Construct the remaining eight leave-one-out worlds in this order:
-
-1. M — Mass-energy;
-2. S — Strong;
-3. G — Gravitation;
-4. Q — Quantum;
-5. F — Weak;
-6. T — Thermodynamics;
-7. E — Electromagnetism;
-8. R — Relativity.
-
-For each: one world, eight threshold checks, one failure, one verdict.
-
-After all nine:
-
-1. apply \(\tau\)-robustness only to survivors;
-2. leave the aggregator until the survivor set is fixed;
-3. keep the global \(|B|\ge 9\) target shelved as the funded research question.
-
----
-
-## 10. Primary physics sources
+## 11. Primary physics sources
 
 - B. Ferté, D. Farci, and X. Cao, “Decoherent Histories with(out) Objectivity in a (Broken) Apparatus,” *Physical Review Letters* 136, 090404 (2026): https://doi.org/10.1103/8qzx-xpfz
 - H. Ollivier, D. Poulin, and W. H. Zurek, “Environment as a Witness: Selective Proliferation of Information and Emergence of Objectivity in a Quantum Universe,” *Physical Review A* 72, 042113 (2005): https://doi.org/10.1103/PhysRevA.72.042113
