@@ -1,0 +1,14 @@
+{
+  "axioms": 0,
+  "constants": 0,
+  "exit_code": 0,
+  "file": "C:\\Users\\David\\Documents\\Codex\\2026-08-03\\hey-buddy-can-we-4\\work\\logos_closure_codex\\LogosClosurePrinciple_CODEX.lean",
+  "lean_version": "Lean (version 4.30.0, x86_64-w64-windows-gnu, commit d024af099ca4bf2c86f649261ebf59565dc8c622, Release)",
+  "sha256": "708fa9fd3645da21a1b5f5ba033c16274a37aa6772bdc997a5cd3d78f4502e9c",
+  "sorries_or_admits": 0,
+  "status": "pass",
+  "stderr": "",
+  "stdout": "",
+  "theorems": 17,
+  "timestamp_utc": "2026-08-04T23:42:53.663026+00:00"
+}
