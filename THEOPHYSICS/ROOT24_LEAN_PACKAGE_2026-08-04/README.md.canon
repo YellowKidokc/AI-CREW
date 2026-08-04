@@ -1,0 +1,11 @@
+﻿{
+    "canon_sidecar_version":  "1.0",
+    "created_utc":  "2026-08-04T21:29:47.7238902Z",
+    "created_by":  "Codex (OpenAI GPT-5)",
+    "target":  "\\\\192.168.2.50\\h_hp\\Desktop\\ai-crew\\THEOPHYSICS\\ROOT24_LEAN_PACKAGE_2026-08-04\\README.md",
+    "kind":  "file",
+    "status":  "canon-lean-readme",
+    "sha256":  "e852693b21ab185317c55c626b30387468c7a61539a603a95ae4faeb7fee7b03",
+    "reason":  "Index for ROOT24 Lean package and current pass status.",
+    "boundary":  "Package index."
+}

@@ -1,0 +1,11 @@
+﻿{
+    "canon_sidecar_version":  "1.0",
+    "created_utc":  "2026-08-04T21:29:47.7238902Z",
+    "created_by":  "Codex (OpenAI GPT-5)",
+    "target":  "\\\\192.168.2.50\\h_hp\\Desktop\\ai-crew\\THEOPHYSICS\\ROOT24_LEAN_PACKAGE_2026-08-04\\lean\\Root24SemanticBridgeSkeleton.lean",
+    "kind":  "file",
+    "status":  "canon-lean-source",
+    "sha256":  "58d047b6e0ff112cea5fcd52d05c4230514fd2bf9fa2baf25d68ee84c5b88c05",
+    "reason":  "Compiled Lean semantic bridge skeleton and relabel rejection gate.",
+    "boundary":  "Skeleton only; real domain adequacy witnesses remain pending."
+}

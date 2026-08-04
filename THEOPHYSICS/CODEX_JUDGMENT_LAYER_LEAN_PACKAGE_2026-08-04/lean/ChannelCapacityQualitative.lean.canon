@@ -1,0 +1,11 @@
+﻿{
+    "canon_sidecar_version":  "1.0",
+    "created_utc":  "2026-08-04T21:29:47.7238902Z",
+    "created_by":  "Codex (OpenAI GPT-5)",
+    "target":  "\\\\192.168.2.50\\h_hp\\Desktop\\ai-crew\\THEOPHYSICS\\CODEX_JUDGMENT_LAYER_LEAN_PACKAGE_2026-08-04\\lean\\ChannelCapacityQualitative.lean",
+    "kind":  "file",
+    "status":  "canon-lean-source",
+    "sha256":  "97316ef632dc77c88cd79c9b7885b3d731b1f5433e58a85a90b5c0ba8c65a42a",
+    "reason":  "Compiled qualitative channel capacity source in no-Mathlib environment.",
+    "boundary":  "Qualitative substitute, not full Shannon real-analysis proof."
+}

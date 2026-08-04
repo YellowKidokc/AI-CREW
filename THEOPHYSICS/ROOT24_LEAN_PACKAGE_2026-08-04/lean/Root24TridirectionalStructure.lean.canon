@@ -1,0 +1,11 @@
+﻿{
+    "canon_sidecar_version":  "1.0",
+    "created_utc":  "2026-08-04T21:29:47.7238902Z",
+    "created_by":  "Codex (OpenAI GPT-5)",
+    "target":  "\\\\192.168.2.50\\h_hp\\Desktop\\ai-crew\\THEOPHYSICS\\ROOT24_LEAN_PACKAGE_2026-08-04\\lean\\Root24TridirectionalStructure.lean",
+    "kind":  "file",
+    "status":  "canon-lean-source",
+    "sha256":  "a94588cca1f3936ec21bdf5ba01ec00d2f26c9f54ecc892455f8019f8789bbd6",
+    "reason":  "Compiled Lean source for ROOT24 structural gate and ablations.",
+    "boundary":  "Encoded structural facts, not semantic proof of God/math/cosmos assignments."
+}

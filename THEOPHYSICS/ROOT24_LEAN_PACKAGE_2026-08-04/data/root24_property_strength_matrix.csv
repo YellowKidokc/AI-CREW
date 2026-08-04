@@ -1,0 +1,25 @@
+id,property,role,structural_grade,god_claim_grade,math_claim_grade,cosmos_claim_grade,lean_status,semantic_status,blast_radius,next_formal_move
+1,Necessary,primitive_core,strong,mapped,strong,partial,passes_structural_gate,needs_modal_physics_care,local_fixable_if_cosmos_wording_softened,formalize necessity as law-stability not absolute metaphysical necessity
+2,Eternal,derived,medium,mapped,strong,weak,passes_as_derived,cosmos_claim_overstrong,local_fixable,derive from necessary+self-existent or downgrade physics to temporal invariance
+3,Immutable,primitive_core,strong,mapped,strong,strong,passes_structural_gate,good_with_constant-drift_caveat,low,represent drift as negative control
+4,Simple,bridge_risk,weak,mapped,partial,partial,not_primitive_load_bearing,high_bridge_risk,local_fixable_if_bridge_only,keep as compression heuristic not divine simplicity proof
+5,Consistent,primitive_core,strong,strong,strong,strong,passes_structural_gate,strong,low,formalize contradiction collapse/ex falso or paraconsistent rival
+6,Universal,primitive_core,strong,mapped,strong,strong,passes_structural_gate,strong_with_domain_limits,low,formalize locality failure
+7,Immaterial,bridge_risk,weak,mapped,contested,contested,not_primitive_load_bearing,high_bridge_risk,local_fixable_if_bridge_only,separate mathematical abstractness from physical law ontology
+8,Foundational,primitive_core,strong,strong,strong,strong,passes_structural_gate,strong,low,formalize dependency hierarchy
+9,Self-existent,primitive_core,medium,strong,contested,partial,passes_structural_gate,needs_grounding_argument,medium,connect to E5 grounding graph
+10,Infinite,derived,medium,strong,strong,partial,passes_as_derived,physics_claim_needs_precision,local_fixable,derive from generative+necessary arithmetic
+11,Perfect,derived,medium,strong,strong,partial,passes_as_derived,needs_exact_vs_model_distinction,local_fixable,derive from true+consistent and separate measurement error
+12,True,primitive_core,strong,strong,strong,strong,passes_structural_gate,strong,low,formalize truth-bearing role
+13,Rational,primitive_core,strong,strong,strong,strong,passes_structural_gate,strong,low,formalize inference-preservation
+14,Order-giving,primitive_core,medium,strong,mapped,strong,passes_structural_gate,needs no-smuggling wording,medium,formalize order as constraint-generating structure
+15,Law-giving,primitive_core,strong,strong,strong,strong,passes_structural_gate,strong,low,formalize constraints and forbidden states
+16,Intelligible,primitive_core,strong,strong,strong,strong,passes_structural_gate,strong_with_Wigner_caveat,low,formalize knowability as model-accessibility
+17,Necessary for knowledge,derived,strong,strong,strong,strong,passes_as_derived,strong,low,derive from foundational+intelligible+rational
+18,Invariant,primitive_core,strong,strong,strong,strong,passes_structural_gate,strong,low,formalize frame/representation invariance
+19,Non-local,derived,medium,mapped,strong,partial,passes_as_derived,term_ambiguous,local_fixable,rename to non-spatial or domain-independent
+20,Transcendent,primitive_core,medium,strong,strong,partial,passes_structural_gate,needs explanatory-vs-descriptive distinction,medium,formalize irreducibility relation
+21,Objective,derived,strong,strong,strong,strong,passes_as_derived,strong,low,derive from true+universal+invariant
+22,Unified,primitive_core,medium,strong,mapped,partial,passes_structural_gate,programmatic_for_physics,medium,formalize coherence across subtheories
+23,Generative,primitive_core,strong,strong,strong,strong,passes_structural_gate,strong,low,formalize finite description to many consequences
+24,Judging,primitive_core,strong,strong,strong,strong,passes_structural_gate,strong_if_E_operator_used,low,connect to evaluation operator and standard-verdict-transition
