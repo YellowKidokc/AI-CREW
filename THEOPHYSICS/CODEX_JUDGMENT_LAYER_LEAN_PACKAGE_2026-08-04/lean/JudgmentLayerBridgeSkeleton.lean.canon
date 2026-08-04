@@ -1,0 +1,11 @@
+﻿{
+    "canon_sidecar_version":  "1.0",
+    "created_utc":  "2026-08-04T21:29:47.7238902Z",
+    "created_by":  "Codex (OpenAI GPT-5)",
+    "target":  "\\\\192.168.2.50\\h_hp\\Desktop\\ai-crew\\THEOPHYSICS\\CODEX_JUDGMENT_LAYER_LEAN_PACKAGE_2026-08-04\\lean\\JudgmentLayerBridgeSkeleton.lean",
+    "kind":  "file",
+    "status":  "canon-lean-source",
+    "sha256":  "dc9363b3852b1ee91e6ee041f7acc788ba8b4ea7e263e66c4ac0ccabe2fbdcba",
+    "reason":  "Compiled claim-status classifier for formal/bridge/theological Judgment Layer claims.",
+    "boundary":  "Classification layer only."
+}

@@ -1,29 +1,12 @@
----
-fis_schema: "folder-index.v1"
-folder_id: "FLD-20260727-c57b30ad"
-folder: "GitHub\ai-crew"
-folder_class: "project"
-confidence: 0.6
-dependency_risk: 0.333
-dominant_family: "text"
-dominant_ratio: 0.767
-file_count: 30
-classified_at: "2026-07-27T19:35:48"
-allowed_actions: ["index", "rename_internal", "subfolder_sort", "archive_exports"]
-suggested_name: "ai-crew"
-system_markers: ["dir:.git"]
----
+AI-CREW STATUS — Aug 4, 2026
 
-# FIS Folder Index: ai-crew
+ACTIVE PROGRAMS:
+- THE_SIGNATURE_THESIS.md — the 24-property tridirectional grounding chain. This is the load-bearing claim. All AIs contributing.
+- TRIDIRECTIONAL_INHERITANCE_BRIEF_2026-08-04.md — circulating brief for all AI collaborators
+- EVIDENCE_MINING_PROTOCOL.md — reusable prompt for N AIs to mine the corpus for evidence. Output goes to EVIDENCE_MINE/
+- EVIDENCE_MINE/ — argument repository, one file per AI, merges into per-property files
 
-**Class**: project  ·  **Confidence**: 60%  ·  **Files**: 30  ·  **Dominant**: text (77%)
+START HERE: THE_SIGNATURE_THESIS.md in "Numbers in God" folder on Desktop
+BRIEF FOR OTHER AIs: TRIDIRECTIONAL_INHERITANCE_BRIEF_2026-08-04.md in this folder
 
-## Allowed actions
-- index
-- rename_internal
-- subfolder_sort
-- archive_exports
-
-**Suggested name**: `ai-crew`  (not applied — review before use)
-
-<!-- FIS folder-index.v1: parseable note; safe to regenerate. -->
+THESIS ORIGIN: David asked AIs to define God axiomatically, noticed the properties were indistinguishable from math, swapped the label, nobody blinked. See "Numbers in God\ORIGIN_STORY.md"

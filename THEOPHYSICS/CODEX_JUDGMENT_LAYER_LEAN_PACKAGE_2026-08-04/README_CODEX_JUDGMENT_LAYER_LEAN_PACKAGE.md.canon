@@ -1,0 +1,11 @@
+﻿{
+    "canon_sidecar_version":  "1.0",
+    "created_utc":  "2026-08-04T21:29:47.7238902Z",
+    "created_by":  "Codex (OpenAI GPT-5)",
+    "target":  "\\\\192.168.2.50\\h_hp\\Desktop\\ai-crew\\THEOPHYSICS\\CODEX_JUDGMENT_LAYER_LEAN_PACKAGE_2026-08-04\\README_CODEX_JUDGMENT_LAYER_LEAN_PACKAGE.md",
+    "kind":  "file",
+    "status":  "canon-lean-readme",
+    "sha256":  "83b352a6e9250bcfdbe66d0446e55364618e425f713dd43bcd85ad43b1903230",
+    "reason":  "Index for Judgment Layer Lean package and current pass status.",
+    "boundary":  "Notes Mathlib limitation and qualitative channel substitute."
+}

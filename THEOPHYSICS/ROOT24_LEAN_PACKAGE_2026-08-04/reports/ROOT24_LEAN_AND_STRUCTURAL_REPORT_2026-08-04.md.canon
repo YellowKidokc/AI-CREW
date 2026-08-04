@@ -1,0 +1,11 @@
+﻿{
+    "canon_sidecar_version":  "1.0",
+    "created_utc":  "2026-08-04T21:29:47.7238902Z",
+    "created_by":  "Codex (OpenAI GPT-5)",
+    "target":  "\\\\192.168.2.50\\h_hp\\Desktop\\ai-crew\\THEOPHYSICS\\ROOT24_LEAN_PACKAGE_2026-08-04\\reports\\ROOT24_LEAN_AND_STRUCTURAL_REPORT_2026-08-04.md",
+    "kind":  "file",
+    "status":  "canon-lean-report",
+    "sha256":  "b847d3ff6c0278eccd389c15b4f664df433cef451fbfd8b6f9128e87dc58bb22",
+    "reason":  "Structural assessment of ROOT24: what passes, what is weak, what remains bridge-risk.",
+    "boundary":  "Lean/report boundary must stay visible."
+}

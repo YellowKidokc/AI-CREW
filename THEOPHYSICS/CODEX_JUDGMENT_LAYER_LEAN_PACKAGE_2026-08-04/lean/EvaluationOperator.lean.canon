@@ -1,0 +1,11 @@
+﻿{
+    "canon_sidecar_version":  "1.0",
+    "created_utc":  "2026-08-04T21:29:47.7238902Z",
+    "created_by":  "Codex (OpenAI GPT-5)",
+    "target":  "\\\\192.168.2.50\\h_hp\\Desktop\\ai-crew\\THEOPHYSICS\\CODEX_JUDGMENT_LAYER_LEAN_PACKAGE_2026-08-04\\lean\\EvaluationOperator.lean",
+    "kind":  "file",
+    "status":  "canon-lean-source",
+    "sha256":  "984f29a3b25321ba2d02e0df75bc1e80ab2c56b503326201b739a2de71597af3",
+    "reason":  "Compiled Lean source for evaluation operator and no-event-without-criterion theorem.",
+    "boundary":  "Formal event structure only."
+}

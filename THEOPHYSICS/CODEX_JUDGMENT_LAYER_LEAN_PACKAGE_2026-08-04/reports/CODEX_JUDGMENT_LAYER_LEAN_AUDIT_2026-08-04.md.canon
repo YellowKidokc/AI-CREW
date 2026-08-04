@@ -1,0 +1,11 @@
+﻿{
+    "canon_sidecar_version":  "1.0",
+    "created_utc":  "2026-08-04T21:29:47.7238902Z",
+    "created_by":  "Codex (OpenAI GPT-5)",
+    "target":  "\\\\192.168.2.50\\h_hp\\Desktop\\ai-crew\\THEOPHYSICS\\CODEX_JUDGMENT_LAYER_LEAN_PACKAGE_2026-08-04\\reports\\CODEX_JUDGMENT_LAYER_LEAN_AUDIT_2026-08-04.md",
+    "kind":  "file",
+    "status":  "canon-lean-report",
+    "sha256":  "7fefb0a6eed0399c6adaa1f927f98eabcd00fee9fed56fafc2076e5ec499c501",
+    "reason":  "Audit report separating formalized Judgment Layer claims from bridge/theological interpretation.",
+    "boundary":  "Does not claim Lean proves Heaven, Grace, or quantum judgment identity."
+}

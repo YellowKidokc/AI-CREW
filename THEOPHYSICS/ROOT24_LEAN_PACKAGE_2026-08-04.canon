@@ -1,0 +1,11 @@
+﻿{
+    "canon_sidecar_version":  "1.0",
+    "created_utc":  "2026-08-04T21:29:47.7238902Z",
+    "created_by":  "Codex (OpenAI GPT-5)",
+    "target":  "\\\\192.168.2.50\\h_hp\\Desktop\\ai-crew\\THEOPHYSICS\\ROOT24_LEAN_PACKAGE_2026-08-04",
+    "kind":  "folder",
+    "status":  "canon-lean-package",
+    "sha256":  null,
+    "reason":  "Runnable ROOT24 Lean-facing package with structural profile and semantic bridge skeleton.",
+    "boundary":  "Formal profile package; does not prove theological identification or semantic adequacy."
+}
