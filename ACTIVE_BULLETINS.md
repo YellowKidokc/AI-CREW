@@ -17,6 +17,8 @@ It carries decided verdicts (D1-D7) with confidence numbers and a `PANEL VOTES` 
 
 **Votes in so far:** Codex GPT-5 (all D1-D7), Claude Opus 4.8 (all D1-D7, 2026-07-27). Opus flagged D4 as a HARD BLOCKER on D1 (validator still enforces legacy fields → two sources of truth until fixed) and proposed the orthogonality test for D3 (can you hold logicalType fixed and vary evidenceType? if yes in >1 cell, they're separate axes → split). Awaiting the remaining panel AIs.
 
+**⚠ 2026-08-07 audit note (Kimi):** Kimi's sign-off (`SIGN-OFFS/2026-07-27-kimi-v12-ratification-vote.md`) records a D1-D7 vote cast 2026-07-27, but it was appended to the atom repo's LOCAL copy (`D:\GitHub\Faith-through-physics-atoms\_docs\`), which is NOT synced to GitHub — the ratification file does not exist in the atom repo's GitHub copy. Kimi's vote is therefore invisible to the panel. David: paste the local vote block or push the atom repo, and it gets ported here.
+
 ---
 
 ### BULLETIN 2026-07-26: MASTER EQUATION DYNAMICS RERUN
@@ -83,3 +85,22 @@ Related candidate file:
 `CANON_DECISIONS/SPIRITUAL_DERIVATIVES_LAW_LENS_GRID_CANDIDATE_v0_1.md`
 
 Immediate next work: define what belongs inside `L_D` from the Shannon/D terms, Law 5 decay, Law 9 `Gamma_sin`, adversarial perturbation, hidden drift, and boundary/admittance failures. Do not assume the eigenmode count is eight.
+
+---
+
+### BULLETIN 2026-08-07: KIMI NIGHT-SESSION DEPOSITS FILED — NOMINATIONS AWAIT DAVID'S RULING
+
+Kimi's 2026-08-07 night-session materials are now in the repo:
+
+- **Sign-off:** `SIGN-OFFS/2026-08-07-kimi-night-session-state.md` — 44-work canon weave confirmed fully built in HTML; canon checks on Unity of Science (2 flags: pre-ruling axiom count, number discipline) and Grace Derivation (canon-solid; Part V displacement fork still unrulled); do-not-revert rulings restated.
+- **Handoff:** `handoffs/HANDOFF_2026-08-07_KIMI_night-deposits.md` — deposit lists for site repo (A: Spine Map tool page) and data/content repo (B: Book 6 v1.1→v1.2 patch set, verified Judgment Layer citation pack, v3.2 outline seeds). Section C items are David-carry (seed file, JUDGMENT-LAYER-CANONICAL_1.md, NAS sign-off verification, Hebûn–Zanabûn receipts). Section D: not for deposit.
+- **Nominations:** `CANON_NOMINATIONS_2026-08-07_KIMI.md` (+ `.canon` sidecar, STATUS: REVIEW) — 5 framework-canon nominations, 3 book-canon nominations, 3 explicit non-nominations, each with grade + kill condition. Kimi's top ask: **#1 the open-both-ways rule** (an OPEN-stamped question stays open in both directions; asserting the negative = asserting the positive).
+- **Numbers in God core case:** `Evolution/NUMBERS_IN_GOD_CORE_CASE_2026-08-05.md` — session compression, [T]/[C]/[D] graded. Book-canon working material; NAS remains canonical program home per `POINTER_NUMBERS_IN_GOD.md`.
+
+**Open rulings queue for David (from the sign-off):**
+1. Grace displacement fork (Part V) — Option 2 recommended by the doc itself.
+2. Judgment Layer CANONICAL_3 frontmatter fix — treat as draft/[C] until audited; three named repairs before any HTML.
+3. Confirm Ẋ = W∇χ + η survived the W3 master-equation page merge.
+4. W6.4 Series Opener — build as labeled-hypothesis page or skip.
+
+**Crew-relevant standing notes:** THE-JUDGMENT-LAYER-CANONICAL_3.md is DRAFT despite its frontmatter label — do not cite as canonical. Any page still saying "five grace properties derived" cites superseded ISO-002 (correct: 2 derived, 1 weak, 1 model-derived, 2 theological commitments). `CANONICAL_spiritual-terms.md` (2026-08-04) is the 40-term source of truth; `spiritual-terms.md` and `07-spiritual-terms.md` are superseded.
