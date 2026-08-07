@@ -88,19 +88,23 @@ Immediate next work: define what belongs inside `L_D` from the Shannon/D terms, 
 
 ---
 
-### BULLETIN 2026-08-07: KIMI NIGHT-SESSION DEPOSITS FILED — NOMINATIONS AWAIT DAVID'S RULING
+### BULLETIN 2026-08-07: KIMI NIGHT-SESSION DEPOSITS FILED — PARTIAL RULINGS RECORDED
 
 Kimi's 2026-08-07 night-session materials are now in the repo:
 
-- **Sign-off:** `SIGN-OFFS/2026-08-07-kimi-night-session-state.md` — 44-work canon weave confirmed fully built in HTML; canon checks on Unity of Science (2 flags: pre-ruling axiom count, number discipline) and Grace Derivation (canon-solid; Part V displacement fork still unrulled); do-not-revert rulings restated.
-- **Handoff:** `handoffs/HANDOFF_2026-08-07_KIMI_night-deposits.md` — deposit lists for site repo (A: Spine Map tool page) and data/content repo (B: Book 6 v1.1→v1.2 patch set, verified Judgment Layer citation pack, v3.2 outline seeds). Section C items are David-carry (seed file, JUDGMENT-LAYER-CANONICAL_1.md, NAS sign-off verification, Hebûn–Zanabûn receipts). Section D: not for deposit.
-- **Nominations:** `CANON_NOMINATIONS_2026-08-07_KIMI.md` (+ `.canon` sidecar, STATUS: REVIEW) — 5 framework-canon nominations, 3 book-canon nominations, 3 explicit non-nominations, each with grade + kill condition. Kimi's top ask: **#1 the open-both-ways rule** (an OPEN-stamped question stays open in both directions; asserting the negative = asserting the positive).
-- **Numbers in God core case:** `Evolution/NUMBERS_IN_GOD_CORE_CASE_2026-08-05.md` — session compression, [T]/[C]/[D] graded. Book-canon working material; NAS remains canonical program home per `POINTER_NUMBERS_IN_GOD.md`.
+- **Sign-off:** `SIGN-OFFS/2026-08-07-kimi-night-session-state.md` — 44-work canon weave confirmed fully built in HTML; canon checks on Unity of Science (2 flags: pre-ruling axiom count, number discipline) and Grace Derivation (canon-solid); do-not-revert rulings restated.
+- **Handoff:** `handoffs/HANDOFF_2026-08-07_KIMI_night-deposits.md` — deposit lists for site repo (A: Spine Map tool page) and data/content repo (B: Book 6 v1.1→v1.2 patch set, verified Judgment Layer citation pack, v3.2 outline seeds). Section C items are David-carry. Section D: not for deposit.
+- **Nominations:** `CANON_NOMINATIONS_2026-08-07_KIMI.md` (+ `.canon` sidecar).
+- **Numbers in God core case:** `Evolution/NUMBERS_IN_GOD_CORE_CASE_2026-08-05.md`.
 
-**Open rulings queue for David (from the sign-off):**
-1. Grace displacement fork (Part V) — Option 2 recommended by the doc itself.
-2. Judgment Layer CANONICAL_3 frontmatter fix — treat as draft/[C] until audited; three named repairs before any HTML.
-3. Confirm Ẋ = W∇χ + η survived the W3 master-equation page merge.
+**⚖️ RULED BY DAVID 2026-08-07 (recorded in `GLOBAL-RULINGS/RULINGS.md`):**
+- Nomination #1, **open-both-ways rule → CANON.** An OPEN-stamped question stays open in both directions; asserting the negative = overclaiming the positive. Governance rule, no kill condition. Binding on all agents immediately.
+- Nomination #3, **two-axis resemblance statement → HOLD as conjecture.** Kill condition: stable inversion on either axis.
+- **Grace displacement fork → Option 2.** Second Law diagnoses; grace overrides; physics silent on the cure. GRACE-CANON-v1.0 Part V may publish on this basis.
+- **THE-JUDGMENT-LAYER-CANONICAL_3.md → draft/[C].** Frontmatter must be fixed; three named repairs before any HTML (see RULINGS.md).
+
+**Still awaiting David's ruling:** nominations #2 (direction-of-discovery penalty), #4 (Friendship Theorem Tier-1), #5 (welded scope note), #6–#8 (book canon), plus:
+3. Confirm Ẋ = W∇χ + η survived the W3 master-equation page merge (a check, not a vote — any crew member with the file).
 4. W6.4 Series Opener — build as labeled-hypothesis page or skip.
 
-**Crew-relevant standing notes:** THE-JUDGMENT-LAYER-CANONICAL_3.md is DRAFT despite its frontmatter label — do not cite as canonical. Any page still saying "five grace properties derived" cites superseded ISO-002 (correct: 2 derived, 1 weak, 1 model-derived, 2 theological commitments). `CANONICAL_spiritual-terms.md` (2026-08-04) is the 40-term source of truth; `spiritual-terms.md` and `07-spiritual-terms.md` are superseded.
+**Crew-relevant standing notes:** Any page still saying "five grace properties derived" cites superseded ISO-002 (correct: 2 derived, 1 weak, 1 model-derived, 2 theological commitments). `CANONICAL_spiritual-terms.md` (2026-08-04) is the 40-term source of truth; `spiritual-terms.md` and `07-spiritual-terms.md` are superseded.
