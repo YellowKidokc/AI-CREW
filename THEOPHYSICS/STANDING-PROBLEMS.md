@@ -68,6 +68,14 @@ map* (intent), NOT Lean-verified. The **minimality** question — can the theore
 substrate than Logos? — is a Lane-4 (Lean) substitution test, still open. Load-bearing: shown. Minimal:
 untested. See [[lean4-verification]], [[node-graph-system]].
 
+### SP-11: Capability basis, atomic requirements, and coherence aggregation
+tags: #master-equation #chi #coherence #derivation #unverified
+The current nine-factor Master Equation is canonically ruled as a normalized product, but the new capability-basis audit exposed an unresolved semantic foundation. Pairwise absence, parameter orthogonality, and monotone co-variation all count physical knobs rather than irreducible world requirements. The leading candidate reframes each X_i as adequacy against a requirement over a shared dimensionless parameter space.
+
+Open gates: define the ambient candidate-world space Omega; define W_phys independently of theology; operationalize all X_i; anchor robust threshold bands; construct nine leave-one-out witnesses; complete the K failed-record witness; test revised M as dynamical actualization; define an admissible atomic-requirement grammar so arbitrary bundling cannot change the count; separate nearest-boundary margin rho from integrated coherence chi; compare product/min/other aggregators against an external outcome; test causal pair/triple interactions; update Lean only after the mathematical object is ruled.
+
+Candidate source: `THEOPHYSICS/CANDIDATE-capability-basis-irredundant-constraints.md`.
+
 ---
 
 ## Solved
