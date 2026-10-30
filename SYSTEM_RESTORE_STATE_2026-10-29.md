@@ -340,6 +340,41 @@ The four `Rescue*.lean` files were written to make the missing premises explicit
 - FATAL rescue case: `C:/theophysics/OPUS/AXIOMS/OUTBOX/FATAL_RESCUE_CASE_2026-10-28.md`
 - Open question: `10_VAULTS/14_MASTER_EQUATION/OPEN_QUESTION_WHERE_IS_MORAL_LAW.md`
 
+### 8.5.7 Isomorphism count — honest audit
+
+The word **isomorphism** is used in several places with different strengths. This is the honest count for the LEAN_BRIDGES layer as of Oct 29, 2026.
+
+**Named structural-isomorphism theorems (custom `Iso` structures, no custom axioms):**
+
+| # | Mapping | File | Condition / caveat |
+|---|---|---|---|
+| 1 | Gravity ↔ Grace (orbital capture) | `GravityAndGrace.lean` | Three-regime abstraction |
+| 2 | Grace ↔ Geodesic ↔ Rocket | `Law1GeodesicAndRocket.lean` | Three-regime abstraction; 3 pairwise isos in one theorem |
+| 3 | EM wave ↔ Truth wave | `Law3ElectromagnetismTruth.lean` | At full acceptance `A = 1` |
+| 4 | Information ↔ static Logos | `Law6Information.lean` | Source term silenced |
+| 5 | Quantum measurement ↔ Faith commitment | `Law7QuantumFaith.lean` | At crossed threshold `Θ_c` |
+| 6 | Relativity ↔ Relationship | `Law8Relativity.lean` | Shared-time systems |
+| 7 | Weak force ↔ Sin-decay | `Law9WeakForce.lean` | At fixed will rate `P_will = 1` |
+| 8 | Four physical laws share one shape | `LawToLaw.lean` | 6 pairwise isos among coarse two-state models |
+| — | Fruits within-family isomorphisms | `FruitFamilies.lean` | 4 proven same-family isos + cross-family non-isos |
+
+So the answer to *"do we have 8 isomorphisms?"* is roughly **yes, counted as 8 named law-bridge theorems**, but with caveats:
+- They are `Iso` structures inside deliberately simple models, not necessarily full Mathlib `Equiv` objects.
+- Several carry parameters / conditions (`A = 1`, `Θ_c`, `P_will = 1`, coarse two-state abstraction).
+- `Law2Motion.lean`, `Law5JusticeMercy.lean`, and `Law10Coherence.lean` are **not** isomorphism proofs; they are conservation / uniqueness / wrapper proofs.
+- The older `lean4-verification.md` audit (2026-07-18) says *"Tier A real isomorphisms = ZERO"* because it was judging the earlier `Theophysics_Core.lean` placeholders (`True := by trivial`). The new LEAN_BRIDGES files change the picture for the bridges listed above, but they do not retroactively upgrade the old placeholders.
+
+**Spiritual derivatives — which ones have isomorphism proofs?**
+
+| Family | Isomorphism status |
+|---|---|
+| Fruits of the Spirit | **Yes** — 4 within-family `FruitIso` theorems + 9↔9 bijection record |
+| Armor of God | No — threshold / protection model, not an iso |
+| Beatitudes | No — phase-threshold non-monotonicity proof |
+| I AM statements | Partial — boundary conditions on the truth wave, not a full iso |
+| Gifts of the Spirit | Undrafted |
+| Ten Commandments / Seven Churches | Canonical mappings, no formal iso yet |
+
 ---
 
 ## 9. The 12 open research problems (from v4.0 source)
