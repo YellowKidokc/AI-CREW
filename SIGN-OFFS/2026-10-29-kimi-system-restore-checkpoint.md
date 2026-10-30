@@ -23,6 +23,21 @@
    - Red holes (admitted gaps)
    - Standing problems and active bulletins
    - Prioritized next moves
+3. Added Section 8.5 covering the `10_VAULTS/14_MASTER_EQUATION/LEAN_BRIDGES` working layer and its live source `C:/theophysics/OPUS/AXIOMS/LEAN/`.
+4. Recorded the 19 Lean bridge + rescue files and their conditional / working status.
+5. Recorded ME-COR-001/002/003 authorized corrections and the Master Equation Mistake Ledger guardrails.
+6. Added the ~89 legacy `True` marker warning from `Theophysics_Core.lean`.
+7. Added the FATAL rescue case (21 FATALs rescuable, 4 rescue files compiled, remaining gaps).
+8. Added the open cold-review question `OPEN_QUESTION_WHERE_IS_MORAL_LAW.md`.
+
+## Vault / Lean bridge audit findings
+
+- **19 Lean files** exist in `C:/theophysics/OPUS/AXIOMS/LEAN/` (15 bridge files + 4 rescue files). All compile with Lean 4.30.0, use no custom `axiom` declarations, and report only standard Lean foundations.
+- **Joint consistency is not yet run.** Files compile separately; no single `import all` environment has been built.
+- **FATAL rescue case (Oct 28, 2026):** All 21 FATAL obstructions are classified as rescuable (2 graph artifacts, 13 missing premises, 6 scope errors). The four `Rescue*.lean` files make the missing premises explicit. Claims become conditional, not unconditional.
+- **Remaining honest gaps:** BC6 literal infinity, FP-ALTERNATIVES, χ-field physical instantiation, coherence–morality identity, R1 root rule, joint consistency environment, and 14 retire / 21 merge rulings pending.
+- **Legacy `True` markers:** `Theophysics_Core.lean` contains ~89 theorem names with spiritual/physical labels but `True := by trivial` bodies. These are naming placeholders, not proofs, and must not be cited as Lean-verified.
+- **Mistake ledger guardrails:** `C` is wrapper not peer; only normalized coordinates enter the product; physics does not prove theology; isomorphism requires strict proof; old Law 08/09 numbering maps to current Law 09/08.
 
 ## What did not change
 
@@ -37,7 +52,10 @@
 
 - Repo file reads: verified paths and contents of `_READ_ME_FIRST.md`, `INDEX.md`, `ACTIVE_BULLETINS.md`, `CURRENT_STATE_2026-08-04.md`, `LEAN4_FULL_AUDIT_STATUS_2026-08-03.md`, `03-BOUNDARIES.md`, `THEOPHYSICS/CANON/*.md`, `THEOPHYSICS/topics/*.md`, `THEOPHYSICS/RULINGS.md`, `THEOPHYSICS/STANDING-PROBLEMS.md`, `PROJECTS/ai-crew/STATUS.md`, `SIGN-OFFS/2026-08-07-kimi-night-session-state.md`, `CANON_DECISIONS/FABEL_GRADIENT_MASTER_EQUATION_RULING_v3.md`.
 - v4.0 source reviewed: `Master-Equation-Complete-Derivation-Chain_v4_0_SOURCE_OF_TRUTH.html` (2805 lines, full read).
-- Git status checked: only the new system-restore file untracked.
+- Vault audited: `10_VAULTS/14_MASTER_EQUATION/00_FIX_LIST_2026-09-22.md`, `060_MISTAKES_RETIRED_FORMS/00_MASTER_MISTAKE_LEDGER.md`, `OPEN_QUESTION_WHERE_IS_MORAL_LAW.md`.
+- Lean bridge source audited: `C:/theophysics/OPUS/AXIOMS/LEAN/00_LEAN_BRIDGE_RECAP.md`, all 19 `.lean` files listed, `C:/theophysics/OPUS/AXIOMS/OUTBOX/FATAL_RESCUE_CASE_2026-10-28.md`, `FATAL_RESCUE_SUMMARY.md`.
+- `Theophysics_Core.lean` inspected for legacy `True` marker count.
+- Git status checked: only the new system-restore file and sign-off were modified.
 
 ## What remains uncertain
 

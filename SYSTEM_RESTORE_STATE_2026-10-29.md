@@ -255,6 +255,93 @@ Status: CANDIDATE, registry-gated. If it still looks obvious after sitting, prom
 
 ---
 
+## 8.5 Master Equation vault / LEAN_BRIDGES working layer (Oct 25–28, 2026)
+
+**Status:** WORKING / CANDIDATE — not canon. This layer sits in `10_VAULTS/14_MASTER_EQUATION/LEAN_BRIDGES/` and is authored from `C:/theophysics/OPUS/AXIOMS/LEAN/`. It is newer than the v3 ruling and the v4.0 HTML, and it has **not** been ratified as a canon replacement. Read it as an expansion pass that still needs panel review and a single joint-consistency build.
+
+### 8.5.1 The 19 Lean bridge + rescue files
+
+All files compile with Lean 4.30.0, use no custom `axiom` declarations, and report only standard Lean foundations (`propext`, `Classical.choice`, `Quot.sound`). They have been compiled separately; a single imported environment that imports all native modules has not yet been run.
+
+| File | Law / Topic | Key idea | Status |
+|---|---|---|---|
+| `Wall.lean` | Boundary | Sign-preserving self-operations cannot flip the moral sign. | Compiled |
+| `ThreeAgents.lean` | Boundary | Person + adversary still cannot flip sign; grace flips with consent. | Compiled |
+| `Law1GeodesicAndRocket.lean` | Law 1 — Gravity ↔ Grace | Three-regime grace matches geodesic surrender and rocket ignition. | Compiled |
+| `GravityAndGrace.lean` | Law 1 — Gravity ↔ Grace | Orbital capture requires a third body, mapping to outside rescue. | Compiled |
+| `Law2Motion.lean` | Law 2 — Motion ↔ Repentance | Internal forces cancel; repentance requires external impulse. | Compiled |
+| `Law3ElectromagnetismTruth.lean` | Law 3 — EM ↔ Truth | Truth propagates like a wave but adds an acceptance gate. | Compiled |
+| `Law5JusticeMercy.lean` | Law 5 — Thermodynamics ↔ Judgment | Cross is the unique point where justice and mercy are both maximal. | Compiled |
+| `Law6Information.lean` | Law 6 — Information ↔ Logos | Information = silent Logos; real Logos has a source term. | Compiled |
+| `Law7QuantumFaith.lean` | Law 7 — Quantum ↔ Faith | Faith collapse uses a commitment threshold; Armor protects the committed state. | Compiled |
+| `Law8Relativity.lean` | Law 8 — Relativity ↔ Relationship | Shared proper time requires mutual consent. | Compiled |
+| `Law9WeakForce.lean` | Law 9 — Weak Force ↔ Sin-Decay | Decay is gated by the will and recorded irreversibly. | Compiled |
+| `Law10Coherence.lean` | Law 10 — Coherence wrapper | `C_W` is a wrapper, not a peer factor; preserves the veto. | Compiled |
+| `FruitFamilies.lean` | Law 4 — Fruits | Nine fruits fall into five mathematical families. | Compiled |
+| `BeatitudesOrder.lean` | Law 5 — Beatitudes | No single monotone ordering spans all eight thresholds across all three models. | Compiled |
+| `LawToLaw.lean` | Cross-law shape | Four physical laws share a two-state pattern; the person pattern has three regimes. | Compiled |
+| `RescueSign.lean` | FATAL rescue A8.2 | If self-operations preserve sign, no sequence flips it. | Compiled Oct 28 |
+| `RescueGraceScope.lean` | FATAL rescue P9.1, E9.1 | Terminal reset is idempotent; growth is not; the 2×2 reset matrix is unique. | Compiled Oct 28 |
+| `RescueCoherence.lean` | FATAL rescue P3.1, D19.6 | Coherence is defined non-negative; entropy non-decrease ⇒ coherence non-increase. | Compiled Oct 28 |
+| `RescueFruits.lean` | FATAL rescue F1, F3 | Love metric bounded; peace decreases conflict/variance under rescue constraints. | Compiled Oct 28 |
+
+### 8.5.2 Honest framing of what these files prove
+
+None of them proves that God exists, that the Bible is true, or that a historical event occurred. They prove structural conditionals: **if** a system has the stated properties, **then** the stated conclusion follows. Theological premises are written in the theorem signature, not hidden as axioms.
+
+### 8.5.3 Corrections and guardrails already recorded in the vault
+
+**Authorized corrections (ME-COR-001/002/003, 2026-09-22):**
+- **ME-COR-001 — Incomplete wrapper profile:** Carry endpoint normalization, continuity, and strict increase into Law 10; restrict the profile to the normalized scalar domain `[0,1]`; distinguish fixed-point consistency from attraction.
+- **ME-COR-002 — Human observer / faith conflated with quantum measurement:** Preserve the physical-actualization versus moral-accountability distinction; remove the claim that the measurement equation establishes faith-driven collapse.
+- **ME-COR-003 — Noether conclusion outruns its own boundary:** Physical conservation does not by itself certify the proposed spiritual isomorphisms.
+
+**Master Equation Mistake Ledger (`060_MISTAKES_RETIRED_FORMS/00_MASTER_MISTAKE_LEDGER.md`):**
+- `C` is a wrapper/reader/integrator, not a tenth peer factor.
+- Only normalized dimensionless coordinates enter the product.
+- Physics does not prove theology; bridges must be graded.
+- Isomorphism requires reversible mapping, preserved operations, boundary behavior, and negative controls.
+- Old `LAW_08_FERMI_CONSERVATION` maps to current Law 9; old `LAW_09_EINSTEIN_FRAME` maps to current Law 8.
+
+### 8.5.4 The ~89 legacy `True` marker warning
+
+`Theophysics_Core.lean` (production-adjacent bundle) contains roughly 89 theorem names that carry spiritual/physical language (e.g., `cross_has_entropy_and_death_contact`, `incarnation_is_finite_compression`, `fall_has_parallel_death_and_judgment`) but whose bodies are simply `True := by trivial`. They are **compatibility markers / naming placeholders**, not proofs. They must not be cited as Lean-verified claims.
+
+### 8.5.5 FATAL rescue case (Oct 28, 2026)
+
+`C:/theophysics/OPUS/AXIOMS/OUTBOX/FATAL_RESCUE_CASE_2026-10-28.md` argues that all 21 `FATAL` obstructions in `CHAIN_RERUN_2026-10-25/Q15_OBSTRUCTIONS.md` are rescuable:
+- 2 graph artifacts (A2.1 ↔ A2.2 cycle)
+- 13 missing-premise rescues
+- 6 scope-error rescues
+
+The four `Rescue*.lean` files were written to make the missing premises explicit. After rescue, the claims become **conditional**, not unconditional.
+
+**Gaps that remain after rescue:**
+
+| Gap | Why it matters |
+|---|---|
+| **BC6 literal infinity** | Not shown necessary by any theorem. |
+| **FP-ALTERNATIVES / free-choice alternatives** | Conditional on admitted actual-alternatives premises. |
+| **χ-field physical instantiation** | Soul-field / Master Equation predictions unverified physically. |
+| **Coherence–morality identity** | Framework definition, not a cross-framework theorem. |
+| **R1 root rule (`A0` / God Is)** | Ruled as governing, not formally proved. |
+| **Joint consistency environment** | No single Lean file imports all native modules yet. |
+| **David's rulings** | 14 retire / 21 merge recommendations pending. |
+
+### 8.5.6 Open cold-review question
+
+`OPEN_QUESTION_WHERE_IS_MORAL_LAW.md` (Oct 25, 2026) is a five-question prompt sent cold to AI reviewers, asking where moral law would be located if a personal, rational, good God embedded law into the physical world. No expected answer; answers are intended to surface assumptions.
+
+**Source / working locations:**
+- Vault copy: `10_VAULTS/14_MASTER_EQUATION/LEAN_BRIDGES/` (also `070_LEAN_RECEIPTS/`)
+- Live source: `C:/theophysics/OPUS/AXIOMS/LEAN/`
+- Recap: `C:/theophysics/OPUS/AXIOMS/LEAN/00_LEAN_BRIDGE_RECAP.md`
+- Mistake ledger: `10_VAULTS/14_MASTER_EQUATION/060_MISTAKES_RETIRED_FORMS/00_MASTER_MISTAKE_LEDGER.md`
+- FATAL rescue case: `C:/theophysics/OPUS/AXIOMS/OUTBOX/FATAL_RESCUE_CASE_2026-10-28.md`
+- Open question: `10_VAULTS/14_MASTER_EQUATION/OPEN_QUESTION_WHERE_IS_MORAL_LAW.md`
+
+---
+
 ## 9. The 12 open research problems (from v4.0 source)
 
 | ID | Problem | What closes it |
@@ -400,6 +487,13 @@ From `ACTIVE_BULLETINS.md` (still active as of this checkpoint):
 | Rulings | `THEOPHYSICS/RULINGS.md`, `GLOBAL-RULINGS/RULINGS.md` |
 | Sign-offs | `SIGN-OFFS/` |
 | v4.0 derivation source | `Master-Equation-Complete-Derivation-Chain_v4_0_SOURCE_OF_TRUTH.html` (local attachment) |
+| Master Equation vault | `C:/Users/David/Documents/faiththruphysics.com/10_VAULTS/14_MASTER_EQUATION/` |
+| Lean bridge files (vault copy) | `10_VAULTS/14_MASTER_EQUATION/LEAN_BRIDGES/` |
+| Lean bridge files (live source) | `C:/theophysics/OPUS/AXIOMS/LEAN/` |
+| Lean bridge recap | `C:/theophysics/OPUS/AXIOMS/LEAN/00_LEAN_BRIDGE_RECAP.md` |
+| Master Equation mistake ledger | `10_VAULTS/14_MASTER_EQUATION/060_MISTAKES_RETIRED_FORMS/00_MASTER_MISTAKE_LEDGER.md` |
+| FATAL rescue case | `C:/theophysics/OPUS/AXIOMS/OUTBOX/FATAL_RESCUE_CASE_2026-10-28.md` |
+| Open moral-law question | `10_VAULTS/14_MASTER_EQUATION/OPEN_QUESTION_WHERE_IS_MORAL_LAW.md` |
 
 ---
 
@@ -408,6 +502,7 @@ From `ACTIVE_BULLETINS.md` (still active as of this checkpoint):
 | Date | Change | Agent |
 |---|---|---|
 | 2026-10-29 | Created system-restore checkpoint from repo audit + v4.0 derivation source. | Kimi |
+| 2026-10-29 | Added Master Equation vault / LEAN_BRIDGES layer: 19 Lean files, ME-COR-001/002/003, mistake ledger, FATAL rescue case, legacy `True` marker warning, open moral-law question. | Kimi |
 
 ---
 
