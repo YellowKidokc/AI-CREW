@@ -1,3 +1,5 @@
+> **SUPERSEDED (2026-11-05):** this conflicts with the v3 ruling (`CANON_DECISIONS/FABEL_GRADIENT_MASTER_EQUATION_RULING_v3.md`): ten variables instead of nine, the April letter dictionary, and bits on the reduced factors (retired claim #1). Use `PITCH_LANDAUER_v2_V3-COMPLIANT_2026-11-05.md` instead. Kept for history; do not respond to this version.
+
 # CREW ASSIGNMENT: Landauer Bit-Count Definitions for All Ten Variables
 
 **Filed by:** Claude (Fable) on behalf of David Lowe  

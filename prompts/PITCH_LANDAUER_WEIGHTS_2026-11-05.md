@@ -5,6 +5,8 @@ status: "CANDIDATE_DRAFT — NOT ADMITTED (needs David's ruling)"
 audience: "the crew — Claude, Codex, GPT, Gemini"
 ---
 
+> **SUPERSEDED (2026-11-05):** this conflicts with the v3 ruling (`CANON_DECISIONS/FABEL_GRADIENT_MASTER_EQUATION_RULING_v3.md`): ten variables instead of nine, the April letter dictionary, and bits on the reduced factors (retired claim #1). Use `PITCH_LANDAUER_v2_V3-COMPLIANT_2026-11-05.md` instead. Kept for history; do not respond to this version.
+
 # The pitch, in one paragraph
 
 Every number the test suite produces depends on weights nobody derived (Grace 1.05, Matter 0.8, Energy 1.2, Relation 0.5, ...). Worse, in the product form χ = ∭(G·M·E·S·T·K·R·Q·F·C), a weight on a factor only rescales χ by a constant; it cannot change how strongly any variable drives the result. So the suite's per-variable sensitivities come from the shapes we chose for each curve, not from physics. **Landauer's principle gives the one thing the equation lacks: a measured, universal exchange rate between information and energy, kT ln 2 per bit erased.** Measure each variable in bits, and every variable gets a physical cost in the same unit. The per-variable numbers then mean something, and they can be checked.
