@@ -38,3 +38,51 @@ providers, publish externally, delete data, or weaken David's override.
 
 These observations are configuration evidence, not a security certification.
 
+## Prototype
+
+The local dispatcher is in `prototype/crew_dispatcher.py`. It provides:
+
+- allowlisted provider routing for fake, DeepSeek/OpenAI-compatible, Ollama,
+  Anthropic, and Gemini adapters;
+- bounded, visible round-robin AI conversations;
+- SQLite task records and hash-chained receipts;
+- replay protection for Mattermost event IDs;
+- a host-enforced `data/STOP_ALL` control checked before every provider call;
+- a polling Mattermost bridge that returns results to the originating thread;
+- no secret values in configuration, logs, or repository files.
+
+Create the local configuration and start the HTTP service:
+
+```powershell
+.\START_DISPATCHER.ps1
+```
+
+Health endpoint:
+
+```text
+GET http://127.0.0.1:8765/health
+```
+
+Start a bounded local conversation:
+
+```powershell
+python .\prototype\crew_dispatcher.py talk --agents fake --rounds 1 "Test topic"
+```
+
+For Antimatter, place `MATTERMOST_TOKEN` and `MATTERMOST_CHANNEL_ID` in the
+service process environment, set `mattermost.enabled` to `true` in the ignored
+`config.json`, and run:
+
+```powershell
+.\START_DISPATCHER.ps1 -MattermostWatch
+```
+
+Mattermost command syntax:
+
+```text
+!crew deepseek,codex rounds=2 Discuss this question and identify disagreements.
+```
+
+Live providers remain limited by `enabled`, the provider roster, output-token
+caps, conversation-round caps, and available environment credentials.
+

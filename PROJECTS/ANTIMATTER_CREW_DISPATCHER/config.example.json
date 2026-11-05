@@ -1,0 +1,68 @@
+{
+  "listen_host": "127.0.0.1",
+  "listen_port": 8765,
+  "data_dir": "data",
+  "max_message_chars": 24000,
+  "max_rounds": 4,
+  "providers": {
+    "fake": {
+      "kind": "fake",
+      "enabled": true
+    },
+    "deepseek": {
+      "kind": "openai-compatible",
+      "enabled": true,
+      "base_url": "https://api.deepseek.com",
+      "model": "deepseek-chat",
+      "api_key_env": "DEEPSEEK_API_KEY",
+      "max_output_tokens": 1200
+    },
+    "codex": {
+      "kind": "openai-compatible",
+      "enabled": true,
+      "base_url": "https://api.openai.com/v1",
+      "model": "gpt-5-mini",
+      "api_key_env": "OPENAI_API_KEY",
+      "max_output_tokens": 1200
+    },
+    "ollama": {
+      "kind": "ollama",
+      "enabled": true,
+      "base_url": "http://127.0.0.1:11434",
+      "model": "qwen3:4b-instruct",
+      "max_output_tokens": 1200
+    },
+    "local-deepseek": {
+      "kind": "ollama",
+      "enabled": true,
+      "base_url": "http://127.0.0.1:11434",
+      "model": "deepseek-r1:latest",
+      "max_output_tokens": 1200
+    },
+    "claude": {
+      "kind": "anthropic",
+      "enabled": false,
+      "base_url": "https://api.anthropic.com",
+      "model": "claude-sonnet-4-5",
+      "api_key_env": "ANTHROPIC_API_KEY",
+      "max_output_tokens": 1200
+    },
+    "gemini": {
+      "kind": "gemini",
+      "enabled": false,
+      "base_url": "https://generativelanguage.googleapis.com",
+      "model": "gemini-2.5-flash",
+      "api_key_env": "GEMINI_API_KEY",
+      "max_output_tokens": 1200
+    }
+  },
+  "mattermost": {
+    "enabled": false,
+    "url": "https://chat.dlowehomelab.com",
+    "token_env": "MATTERMOST_TOKEN",
+    "channel_id_env": "MATTERMOST_CHANNEL_ID",
+    "poll_seconds": 3,
+    "trigger_prefix": "!crew"
+  }
+}
+

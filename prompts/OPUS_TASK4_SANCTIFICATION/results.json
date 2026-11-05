@@ -1,0 +1,443 @@
+{
+  "S1_threshold": {
+    "analytic": 0.3849001794597505,
+    "simulated": 0.3849354294557088
+  },
+  "S2_grid": [
+    {
+      "beta": 0.0,
+      "sigma": 0.0,
+      "barrier": 0.25,
+      "escaped_frac": 0.0,
+      "mfpt_censored": 300.0,
+      "occ_plus": 1.0,
+      "late_occ_plus": 1.0
+    },
+    {
+      "beta": 0.0,
+      "sigma": 0.2,
+      "barrier": 0.25,
+      "escaped_frac": 0.0,
+      "mfpt_censored": 300.0,
+      "occ_plus": 0.9999849666666667,
+      "late_occ_plus": 0.9999904
+    },
+    {
+      "beta": 0.0,
+      "sigma": 0.3,
+      "barrier": 0.25,
+      "escaped_frac": 0.369,
+      "mfpt_censored": 239.45163,
+      "occ_plus": 0.8784543333333333,
+      "late_occ_plus": 0.8300252
+    },
+    {
+      "beta": 0.0,
+      "sigma": 0.4,
+      "barrier": 0.25,
+      "escaped_frac": 0.993,
+      "mfpt_censored": 59.636379999999996,
+      "occ_plus": 0.5766652333333334,
+      "late_occ_plus": 0.49893113333333333
+    },
+    {
+      "beta": 0.0,
+      "sigma": 0.5,
+      "barrier": 0.25,
+      "escaped_frac": 1.0,
+      "mfpt_censored": 18.71753,
+      "occ_plus": 0.4928865666666667,
+      "late_occ_plus": 0.46510799999999997
+    },
+    {
+      "beta": 0.1,
+      "sigma": 0.0,
+      "barrier": 0.15766495734760555,
+      "escaped_frac": 0.0,
+      "mfpt_censored": 300.0,
+      "occ_plus": 1.0,
+      "late_occ_plus": 1.0
+    },
+    {
+      "beta": 0.1,
+      "sigma": 0.2,
+      "barrier": 0.15766495734760555,
+      "escaped_frac": 0.018,
+      "mfpt_censored": 297.27388,
+      "occ_plus": 0.9924544999999999,
+      "late_occ_plus": 0.9890081333333333
+    },
+    {
+      "beta": 0.1,
+      "sigma": 0.3,
+      "barrier": 0.15766495734760555,
+      "escaped_frac": 0.901,
+      "mfpt_censored": 116.54687000000001,
+      "occ_plus": 0.4880165,
+      "late_occ_plus": 0.2942804666666667
+    },
+    {
+      "beta": 0.1,
+      "sigma": 0.4,
+      "barrier": 0.15766495734760555,
+      "escaped_frac": 1.0,
+      "mfpt_censored": 26.127630000000003,
+      "occ_plus": 0.1886173,
+      "late_occ_plus": 0.0886008
+    },
+    {
+      "beta": 0.1,
+      "sigma": 0.5,
+      "barrier": 0.15766495734760555,
+      "escaped_frac": 1.0,
+      "mfpt_censored": 11.99035,
+      "occ_plus": 0.2115763333333333,
+      "late_occ_plus": 0.17694306666666668
+    },
+    {
+      "beta": 0.2,
+      "sigma": 0.0,
+      "barrier": 0.08171349704692416,
+      "escaped_frac": 0.0,
+      "mfpt_censored": 300.0,
+      "occ_plus": 1.0,
+      "late_occ_plus": 1.0
+    },
+    {
+      "beta": 0.2,
+      "sigma": 0.2,
+      "barrier": 0.08171349704692416,
+      "escaped_frac": 0.554,
+      "mfpt_censored": 204.36610000000002,
+      "occ_plus": 0.6929490333333334,
+      "late_occ_plus": 0.5619364666666666
+    },
+    {
+      "beta": 0.2,
+      "sigma": 0.3,
+      "barrier": 0.08171349704692416,
+      "escaped_frac": 1.0,
+      "mfpt_censored": 35.05992,
+      "occ_plus": 0.12988929999999999,
+      "late_occ_plus": 0.007023199999999999
+    },
+    {
+      "beta": 0.2,
+      "sigma": 0.4,
+      "barrier": 0.08171349704692416,
+      "escaped_frac": 1.0,
+      "mfpt_censored": 13.78448,
+      "occ_plus": 0.06079230000000001,
+      "late_occ_plus": 0.009389333333333333
+    },
+    {
+      "beta": 0.2,
+      "sigma": 0.5,
+      "barrier": 0.08171349704692416,
+      "escaped_frac": 1.0,
+      "mfpt_censored": 7.64226,
+      "occ_plus": 0.07673033333333333,
+      "late_occ_plus": 0.04750766666666666
+    },
+    {
+      "beta": 0.3,
+      "sigma": 0.0,
+      "barrier": 0.025221335518885432,
+      "escaped_frac": 0.0,
+      "mfpt_censored": 300.0,
+      "occ_plus": 1.0,
+      "late_occ_plus": 1.0
+    },
+    {
+      "beta": 0.3,
+      "sigma": 0.2,
+      "barrier": 0.025221335518885432,
+      "escaped_frac": 1.0,
+      "mfpt_censored": 32.413940000000004,
+      "occ_plus": 0.10340880000000001,
+      "late_occ_plus": 0.0017253333333333335
+    },
+    {
+      "beta": 0.3,
+      "sigma": 0.3,
+      "barrier": 0.025221335518885432,
+      "escaped_frac": 1.0,
+      "mfpt_censored": 13.04856,
+      "occ_plus": 0.04218433333333334,
+      "late_occ_plus": 0.0
+    },
+    {
+      "beta": 0.3,
+      "sigma": 0.4,
+      "barrier": 0.025221335518885432,
+      "escaped_frac": 1.0,
+      "mfpt_censored": 7.71258,
+      "occ_plus": 0.027572199999999998,
+      "late_occ_plus": 0.0010138666666666667
+    },
+    {
+      "beta": 0.3,
+      "sigma": 0.5,
+      "barrier": 0.025221335518885432,
+      "escaped_frac": 1.0,
+      "mfpt_censored": 5.48494,
+      "occ_plus": 0.032009100000000006,
+      "late_occ_plus": 0.012206266666666667
+    }
+  ],
+  "S2_kramers_slope": {
+    "fitted": 1.4942802343840282,
+    "theory": 2.0,
+    "n_points": 11
+  },
+  "S3_grace": [
+    {
+      "g_constant": 0.0,
+      "escaped_frac": 1.0,
+      "mfpt_censored": 13.78448,
+      "occ_plus": 0.06079230000000001,
+      "late_occ_plus": 0.009389333333333333
+    },
+    {
+      "g_constant": 0.1,
+      "escaped_frac": 1.0,
+      "mfpt_censored": 26.127630000000003,
+      "occ_plus": 0.1886173,
+      "late_occ_plus": 0.0886008
+    },
+    {
+      "g_constant": 0.2,
+      "escaped_frac": 0.993,
+      "mfpt_censored": 59.636379999999996,
+      "occ_plus": 0.5766652333333334,
+      "late_occ_plus": 0.49893113333333333
+    },
+    {
+      "g_constant": 0.3,
+      "escaped_frac": 0.86,
+      "mfpt_censored": 132.21295,
+      "occ_plus": 0.9058506333333333,
+      "late_occ_plus": 0.8984139999999999
+    },
+    {
+      "g_constant": 0.4,
+      "escaped_frac": 0.497,
+      "mfpt_censored": 216.14673,
+      "occ_plus": 0.983772,
+      "late_occ_plus": 0.9867759333333334
+    },
+    {
+      "g_intermittent": 0.4,
+      "duty": 0.25,
+      "mean_g": 0.1,
+      "escaped_frac": 1.0,
+      "mfpt_censored": 21.18603,
+      "occ_plus": 0.24445613333333333,
+      "late_occ_plus": 0.18575733333333336
+    },
+    {
+      "g_intermittent": 0.4,
+      "duty": 0.5,
+      "mean_g": 0.2,
+      "escaped_frac": 1.0,
+      "mfpt_censored": 32.1784,
+      "occ_plus": 0.5087481666666667,
+      "late_occ_plus": 0.46011646666666667
+    },
+    {
+      "g_intermittent": 0.4,
+      "duty": 0.75,
+      "mean_g": 0.30000000000000004,
+      "escaped_frac": 0.998,
+      "mfpt_censored": 61.405300000000004,
+      "occ_plus": 0.7904382333333333,
+      "late_occ_plus": 0.7696812666666667
+    }
+  ],
+  "S4_maturity": [
+    {
+      "mu": 0.0,
+      "kappa_max": 1.0,
+      "escaped_frac": 1.0,
+      "mfpt_censored": 13.78448,
+      "occ_plus": 0.03494833333333334,
+      "late_occ_plus": 0.009104366666666667,
+      "hazard": [
+        {
+          "t0": 0.0,
+          "t1": 100.0,
+          "at_risk": 1000,
+          "hazard_per_unit_time": 0.01
+        },
+        {
+          "t0": 100.0,
+          "t1": 200.0,
+          "at_risk": 0,
+          "hazard_per_unit_time": null
+        },
+        {
+          "t0": 200.0,
+          "t1": 300.0,
+          "at_risk": 0,
+          "hazard_per_unit_time": null
+        },
+        {
+          "t0": 300.0,
+          "t1": 400.0,
+          "at_risk": 0,
+          "hazard_per_unit_time": null
+        },
+        {
+          "t0": 400.0,
+          "t1": 500.0,
+          "at_risk": 0,
+          "hazard_per_unit_time": null
+        },
+        {
+          "t0": 500.0,
+          "t1": 600.0,
+          "at_risk": 0,
+          "hazard_per_unit_time": null
+        }
+      ]
+    },
+    {
+      "mu": 0.01,
+      "kappa_max": 2.0,
+      "escaped_frac": 1.0,
+      "mfpt_censored": 18.25774,
+      "occ_plus": 0.052852983333333325,
+      "late_occ_plus": 0.014789866666666667,
+      "hazard": [
+        {
+          "t0": 0.0,
+          "t1": 100.0,
+          "at_risk": 1000,
+          "hazard_per_unit_time": 0.00988
+        },
+        {
+          "t0": 100.0,
+          "t1": 200.0,
+          "at_risk": 12,
+          "hazard_per_unit_time": 0.008333333333333333
+        },
+        {
+          "t0": 200.0,
+          "t1": 300.0,
+          "at_risk": 2,
+          "hazard_per_unit_time": 0.0
+        },
+        {
+          "t0": 300.0,
+          "t1": 400.0,
+          "at_risk": 2,
+          "hazard_per_unit_time": 0.005
+        },
+        {
+          "t0": 400.0,
+          "t1": 500.0,
+          "at_risk": 1,
+          "hazard_per_unit_time": 0.0
+        },
+        {
+          "t0": 500.0,
+          "t1": 600.0,
+          "at_risk": 1,
+          "hazard_per_unit_time": 0.01
+        }
+      ]
+    },
+    {
+      "mu": 0.05,
+      "kappa_max": 2.0,
+      "escaped_frac": 0.997,
+      "mfpt_censored": 50.27278,
+      "occ_plus": 0.1625207,
+      "late_occ_plus": 0.0688526,
+      "hazard": [
+        {
+          "t0": 0.0,
+          "t1": 100.0,
+          "at_risk": 1000,
+          "hazard_per_unit_time": 0.00844
+        },
+        {
+          "t0": 100.0,
+          "t1": 200.0,
+          "at_risk": 156,
+          "hazard_per_unit_time": 0.006153846153846154
+        },
+        {
+          "t0": 200.0,
+          "t1": 300.0,
+          "at_risk": 60,
+          "hazard_per_unit_time": 0.006166666666666667
+        },
+        {
+          "t0": 300.0,
+          "t1": 400.0,
+          "at_risk": 23,
+          "hazard_per_unit_time": 0.005217391304347826
+        },
+        {
+          "t0": 400.0,
+          "t1": 500.0,
+          "at_risk": 11,
+          "hazard_per_unit_time": 0.006363636363636364
+        },
+        {
+          "t0": 500.0,
+          "t1": 600.0,
+          "at_risk": 4,
+          "hazard_per_unit_time": 0.0025
+        }
+      ]
+    },
+    {
+      "mu": 0.05,
+      "kappa_max": 5.0,
+      "escaped_frac": 0.184,
+      "mfpt_censored": 490.41785,
+      "occ_plus": 0.8845170833333335,
+      "late_occ_plus": 0.8935430333333334,
+      "hazard": [
+        {
+          "t0": 0.0,
+          "t1": 100.0,
+          "at_risk": 1000,
+          "hazard_per_unit_time": 0.00183
+        },
+        {
+          "t0": 100.0,
+          "t1": 200.0,
+          "at_risk": 817,
+          "hazard_per_unit_time": 1.2239902080783353e-05
+        },
+        {
+          "t0": 200.0,
+          "t1": 300.0,
+          "at_risk": 816,
+          "hazard_per_unit_time": 0.0
+        },
+        {
+          "t0": 300.0,
+          "t1": 400.0,
+          "at_risk": 816,
+          "hazard_per_unit_time": 0.0
+        },
+        {
+          "t0": 400.0,
+          "t1": 500.0,
+          "at_risk": 816,
+          "hazard_per_unit_time": 0.0
+        },
+        {
+          "t0": 500.0,
+          "t1": 600.0,
+          "at_risk": 816,
+          "hazard_per_unit_time": 0.0
+        }
+      ]
+    }
+  ]
+}

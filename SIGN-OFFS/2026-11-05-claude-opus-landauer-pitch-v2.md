@@ -14,6 +14,12 @@ v1 was written against the April JAX suite, not the v3 ruling: ten variables ins
 - Did not check whether each factor's Level-0 parent actually has a definable information channel; that is the crew assignment.
 - Did not commit or push this repo.
 
+## Amendment (2026-11-05, after Codex's v3 context review)
+- **Withdrawn:** "settles gate 6." Bounded starting values are not dynamical invariance of [0,1]^9.
+- **Narrowed:** floor ÷ actual cost is valid only where both describe the same implemented erasure. It is not a nine-factor rule.
+- **Adopted:** Codex's plan. One channel (K) gets the full chain of units first; Landauer stays local if that chain doesn't close.
+- Details: `prompts/OPUS_RESPONSE_TERNARY_LEDGER_AND_REVIEWS_2026-11-05.md`.
+
 ## Next agent, check first
 - The April JAX suite sits in a folder named `ZZZ_Archive/DELETE`; classify it under retest #1 before anyone cleans that folder.
 - David has not ruled on v2. Nothing here is canon.

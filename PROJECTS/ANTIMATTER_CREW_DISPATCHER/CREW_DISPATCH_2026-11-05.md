@@ -57,7 +57,7 @@ handle as authentication.
 
 ## Independent lanes
 
-### Lane A — Architecture and reference implementation — Codex
+### Lane A — Architecture and reference implementation — Codex — CLAIMED 2026-11-05
 
 Design the bridge boundaries, routing table, queue, provider adapter interface,
 receipt format, and Mattermost thread correlation. Produce the smallest local
